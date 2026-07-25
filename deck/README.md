@@ -1,11 +1,61 @@
-# Parallelism — facilitator deck (PowerPoint)
+# Parallelism — PowerPoint decks
+
+Two decks live here.
+
+| File | What it is |
+|---|---|
+| `build/parallelism-in-grammar.pptx` | **Primary.** 14 slides, light corporate style, rebuilt strictly from the source presentation by Iffat Jahan Suchona (see below). Generator: `build-corporate.js` + `assets-corporate.js`. |
+| `build/parallelism-training.pptx` | Earlier 21-slide facilitator deck on parallelism for instructional designers, dark liquid-glass style. Generator: `build.js` + `assets.js`. |
+
+---
+
+## 1. Parallelism (in Grammar) — corporate deck
+
+Content source: **“Parallelism (in Grammar)”, Iffat Jahan Suchona, Department of
+English, University of Dhaka** (11 slides, supplied as PDF). Every definition and
+every example sentence is taken verbatim from that source, including the four
+contexts, the four not-parallel/parallel pairs, the worked "sincerely / with
+passion" example, and the three references. Sequencing, layout, illustrations and
+speaker notes are the presentation layer.
+
+```bash
+node deck/build-corporate.js
+python3 deck/inject_morph.py deck/build/parallelism-in-grammar.pptx
+python3 deck/render.py    deck/build/parallelism-in-grammar.pptx -o deck/build/render-corp
+python3 /root/.claude/skills/pptx/scripts/office/validate.py deck/build/parallelism-in-grammar.pptx
+```
+
+**Design system**
+
+| Token | Value | Means |
+|---|---|---|
+| navy | `16233A` | dominant — headings, title and closing slides |
+| ochre | `B4832B` | accent — eyebrows, numbers, emphasis |
+| red / tint | `B3261E` / `FBEDEB` | **NOT PARALLEL** |
+| green / tint | `1E7A4F` / `EAF4EF` | **PARALLEL** |
+| panel / hairline | `F6F8FB` / `DFE5EE` | card surfaces and edges |
+
+Typography is **Cambria** headings over **Calibri** body — both ship with Office
+and both render true-to-width in QA. Structure is a light sandwich: navy title and
+closing slides, white content slides. Illustrations are generated line art
+(`assets-corporate.js`): parallel railway track and a balance beam, both echoing
+the source deck's own images, plus a "join" diagram for the four contexts.
+
+**Morph:** slides 8–12 use `byObject` — the four-context grid on slide 7 collapses
+into the persistent rail on 8–11, and folds back into the summary row on 12.
+Everything else fades.
+
+---
+
+## 2. Parallelism — facilitator deck (earlier)
 
 A 21-slide, ~60-minute working session on grammatical parallelism for
 instructional designers and content developers. Companion to the interactive web
 app in the repository root.
 
 `build/parallelism-training.pptx` — 1920 × 1080 (13.333in × 7.5in), speaker notes
-on all 21 slides, on-screen navigation, Morph transitions.
+on all 21 slides, on-screen navigation, Morph transitions. Its content is original,
+not drawn from the source presentation above.
 
 ## Build
 

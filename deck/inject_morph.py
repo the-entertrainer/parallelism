@@ -23,15 +23,26 @@ import zipfile
 from pathlib import Path
 
 # slide number (1-based) -> morph option: byObject | byWord | byChar
-MORPH = {
-    3: "byWord",    # broken Caesar line re-assembles into the real one
-    5: "byWord",    # broken JFK line re-assembles into the real one
-    11: "byObject",  # five-item grid collapses into the persistent rail
-    12: "byObject",  # rail highlight slides down, panes swap
-    13: "byObject",
-    14: "byObject",
-    15: "byObject",
-    20: "byObject",  # rail unfolds back into the grid — the bookend
+MORPH_SETS = {
+    # the corporate "Parallelism (in Grammar)" deck
+    "parallelism-in-grammar": {
+        8: "byObject",   # four-context grid collapses into the persistent rail
+        9: "byObject",   # rail highlight steps down, example pair swaps
+        10: "byObject",
+        11: "byObject",
+        12: "byObject",  # rail unfolds back into the summary row
+    },
+    # the earlier facilitator deck
+    "parallelism-training": {
+        3: "byWord",    # broken Caesar line re-assembles into the real one
+        5: "byWord",    # broken JFK line re-assembles into the real one
+        11: "byObject",  # five-item grid collapses into the persistent rail
+        12: "byObject",  # rail highlight slides down, panes swap
+        13: "byObject",
+        14: "byObject",
+        15: "byObject",
+        20: "byObject",  # rail unfolds back into the grid — the bookend
+    },
 }
 # every other slide gets a quiet fade so the deck feels of one piece
 FADE_DEFAULT = True
@@ -97,6 +108,13 @@ def main() -> int:
     args = ap.parse_args()
 
     src = Path(args.pptx)
+    morph = None
+    for key, table in MORPH_SETS.items():
+        if src.stem.startswith(key):
+            morph = table
+            break
+    if morph is None:
+        raise SystemExit(f"no morph map for {src.stem}; add one to MORPH_SETS")
     out = Path(args.out) if args.out else src
     tmp = src.with_suffix(".morph.tmp.pptx")
 
@@ -115,7 +133,7 @@ def main() -> int:
                 if m:
                     n = int(m.group(1))
                     data = namespace_auto_names(data.decode("utf-8"), n).encode("utf-8")
-                    opt = MORPH.get(n)
+                    opt = morph.get(n)
                     if opt:
                         data = insert(data.decode("utf-8"), morph_xml(opt)).encode("utf-8")
                         applied[n] = opt
@@ -125,7 +143,7 @@ def main() -> int:
                 zout.writestr(item, data)
 
     shutil.move(str(tmp), str(out))
-    unknown = set(MORPH) - set(slide_nums)
+    unknown = set(morph) - set(slide_nums)
     if unknown:
         print("WARNING: MORPH targets missing slides:", sorted(unknown), file=sys.stderr)
     for n in sorted(applied):

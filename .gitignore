@@ -7,3 +7,4 @@ dist/
 .idea/
 deck/build/render/
 deck/build/*.pdf
+deck/build/render-corp/
