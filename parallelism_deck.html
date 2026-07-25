@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Parallelism — Interactive Deck</title>
+<meta name="description" content="An interactive 16:9 deck on parallel structure, built from “Parallelism (in Grammar)” by Iffat Jahan Suchona." />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+          serif: ['ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'serif'],
+          mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', 'monospace'],
+        },
+      },
+    },
+  };
+</script>
+<style>
+  :root { --stage-w: 1600px; --stage-h: 900px; }
+  html, body { height: 100%; }
+  body {
+    background: #020617; /* slate-950 */
+    overflow: hidden;
+  }
+  /* ---- 16:9 stage, scaled to fit any viewport -------------------------- */
+  #stage-wrap { position: fixed; inset: 0; overflow: hidden; }
+  /* centred with translate rather than flex/grid centring: an item larger than
+     its container does not centre reliably under place-items:center */
+  #stage {
+    width: var(--stage-w); height: var(--stage-h);
+    position: absolute; left: 50%; top: 50%;
+    transform-origin: center center;
+    transform: translate(-50%, -50%);
+  }
+  .slide {
+    position: absolute; inset: 0;
+    opacity: 0; visibility: hidden;
+    transform: translateY(18px) scale(0.995);
+    transition: opacity .38s ease, transform .38s ease, visibility 0s linear .38s;
+  }
+  .slide.is-active {
+    opacity: 1; visibility: visible; transform: none;
+    transition: opacity .38s ease, transform .38s ease, visibility 0s;
+  }
+  /* ---- ambient background ---------------------------------------------- */
+  .glow { position: absolute; border-radius: 9999px; filter: blur(90px); pointer-events: none; }
+  /* ---- reveal + feedback animations ------------------------------------ */
+  @keyframes riseIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  .rise { animation: riseIn .42s cubic-bezier(.22,.8,.28,1) both; }
+  @keyframes shake {
+    10%, 90% { transform: translateX(-2px); } 20%, 80% { transform: translateX(4px); }
+    30%, 50%, 70% { transform: translateX(-7px); } 40%, 60% { transform: translateX(7px); }
+  }
+  .shake { animation: shake .5s cubic-bezier(.36,.07,.19,.97) both; }
+  @keyframes pulseRing { 0% { box-shadow: 0 0 0 0 rgba(52,211,153,.45); } 100% { box-shadow: 0 0 0 22px rgba(52,211,153,0); } }
+  .pulse-ring { animation: pulseRing .9s ease-out 1; }
+  /* !important: Tailwind's display utilities (grid, flex) are injected after this
+     block by the CDN runtime and would otherwise win against a plain rule. */
+  .hidden-soft { display: none !important; }
+  /* ---- typography helpers ---------------------------------------------- */
+  .kicker { letter-spacing: .32em; }
+  .strike-soft { text-decoration: line-through; text-decoration-color: rgba(244,63,94,.65); text-decoration-thickness: 2px; }
+  /* ---- focus visibility ------------------------------------------------- */
+  :focus-visible { outline: 2px solid #34d399; outline-offset: 3px; border-radius: 6px; }
+  @media (prefers-reduced-motion: reduce) {
+    .slide, .rise, .shake, .pulse-ring { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body class="font-sans text-white antialiased">
+
+<div id="stage-wrap">
+  <div id="stage">
+
+    <!-- ambient wash, shared by every slide -->
+    <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
+      <div class="glow" style="width:720px;height:720px;left:-180px;top:-260px;background:rgba(16,185,129,.16)"></div>
+      <div class="glow" style="width:640px;height:640px;right:-160px;bottom:-240px;background:rgba(244,63,94,.14)"></div>
+      <div class="glow" style="width:520px;height:520px;right:280px;top:-220px;background:rgba(56,189,248,.08)"></div>
+    </div>
+
+    <!-- ================= CHROME ================= -->
+    <header class="absolute top-0 left-0 right-0 z-30 flex items-center justify-between px-14 pt-8">
+      <div class="flex items-center gap-3">
+        <span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-400"></span>
+        <span class="text-[13px] font-semibold uppercase kicker text-slate-400">Parallelism · in grammar</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <span id="slide-label" class="text-[13px] font-medium text-slate-400"></span>
+        <span class="font-mono text-[13px] tabular-nums text-slate-500">
+          <span id="counter-current" class="text-white">01</span> / <span id="counter-total">07</span>
+        </span>
+      </div>
+    </header>
+
+    <footer class="absolute bottom-0 left-0 right-0 z-30 px-14 pb-7">
+      <div class="flex items-center justify-between">
+        <button id="notes-toggle" type="button" aria-pressed="false" aria-controls="notes-panel"
+          class="group flex items-center gap-2.5 rounded-full border border-slate-700/80 bg-slate-900/70 px-4 py-2 text-[12.5px] font-medium text-slate-300 backdrop-blur transition hover:border-emerald-400/60 hover:text-white">
+          <svg class="h-3.5 w-3.5 text-slate-500 transition group-hover:text-emerald-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path d="M4 3.5A1.5 1.5 0 015.5 2h9A1.5 1.5 0 0116 3.5v13a1.5 1.5 0 01-2.3 1.27L10 15.4l-3.7 2.37A1.5 1.5 0 014 16.5v-13z"/>
+          </svg>
+          <span id="notes-toggle-label">Show presenter notes</span>
+          <kbd class="ml-1 rounded border border-slate-700 px-1.5 py-0.5 font-mono text-[10px] text-slate-500">N</kbd>
+        </button>
+
+        <div class="flex items-center gap-3">
+          <button id="prev" type="button" aria-label="Previous slide"
+            class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-700/80 bg-slate-900/70 text-slate-300 backdrop-blur transition hover:border-emerald-400/60 hover:text-white disabled:cursor-not-allowed disabled:opacity-30">
+            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg>
+          </button>
+          <button id="next" type="button" aria-label="Next slide"
+            class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-700/80 bg-slate-900/70 text-slate-300 backdrop-blur transition hover:border-emerald-400/60 hover:text-white disabled:cursor-not-allowed disabled:opacity-30">
+            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- progress bar -->
+      <div class="mt-5 h-[3px] w-full overflow-hidden rounded-full bg-slate-800">
+        <div id="progress" class="h-full rounded-full bg-gradient-to-r from-emerald-400 to-emerald-300 transition-[width] duration-500 ease-out" style="width:14.28%"></div>
+      </div>
+    </footer>
+
+    <!-- presenter notes drawer -->
+    <aside id="notes-panel" hidden
+      class="absolute bottom-0 left-0 right-0 z-20 border-t border-slate-700/70 bg-slate-900/95 px-14 pb-24 pt-6 backdrop-blur-xl">
+      <div class="flex items-start gap-4">
+        <span class="mt-0.5 rounded-full bg-emerald-400/15 px-2.5 py-1 text-[11px] font-bold uppercase kicker text-emerald-400">Presenter notes</span>
+        <p id="notes-text" class="max-w-5xl text-[15px] leading-relaxed text-slate-300"></p>
+      </div>
+    </aside>
+
+    <!-- ================= SLIDE 1 — THE HOOK ================= -->
+    <section class="slide" data-slide="1" data-label="The hook"
+      data-notes="Put this up and say nothing for ten seconds. Ask them to point at the word that feels wrong — not to explain why. Almost everyone lands on “the sofa” without being able to name the rule, and that instinct is the whole lesson: the ear detects a broken pattern before the mind can label it. The two neighbours are prepositional phrases; the middle item is a bare noun. Reveal the fix, then move on quickly — the explanation belongs on slide 2.">
+      <div class="flex h-full flex-col justify-center px-16">
+        <div class="grid grid-cols-12 gap-6">
+
+          <div class="col-span-12 flex items-end justify-between">
+            <div>
+              <p class="text-[12px] font-bold uppercase kicker text-rose-400">Warm-up · 3 minutes</p>
+              <h1 class="mt-3 text-[62px] font-black leading-[1.02] tracking-tight">Spot the brain glitch.</h1>
+            </div>
+            <p class="mb-3 max-w-[360px] text-right text-[15px] leading-relaxed text-slate-400">
+              One sentence. One item wearing the wrong clothes. <span class="text-slate-200">Click the part that trips you.</span>
+            </p>
+          </div>
+
+          <!-- the sentence -->
+          <div class="col-span-12 rounded-3xl border border-slate-800 bg-slate-900/60 p-10 backdrop-blur">
+            <p id="hook-sentence" class="text-[36px] font-medium leading-snug text-slate-100">
+              Trying desperately to find his keys, he looked
+<button type="button" class="hook-opt -mx-1 rounded-lg px-1.5 py-0.5 align-baseline transition hover:bg-slate-800" data-correct="false">in his bedroom</button><span class="-ml-1">,</span>
+              <button type="button" class="hook-opt -mx-1 rounded-lg px-1.5 py-0.5 align-baseline transition hover:bg-slate-800" data-correct="true">the sofa</button>
+              and
+              <button type="button" class="hook-opt -mx-1 rounded-lg px-1.5 py-0.5 align-baseline transition hover:bg-slate-800" data-correct="false">on the kitchen counter</button><span class="-ml-1">.</span>
+            </p>
+            <p id="hook-feedback" class="mt-6 text-[16px] font-medium text-slate-500">Three items, one job — but one of them changed shape.</p>
+          </div>
+
+          <!-- reveal -->
+          <div id="hook-reveal" class="hidden-soft col-span-12 grid grid-cols-12 gap-6">
+            <div class="col-span-7 rounded-3xl border border-emerald-400/30 bg-emerald-400/[0.07] p-8">
+              <p class="text-[11px] font-bold uppercase kicker text-emerald-400">The repair</p>
+              <p class="mt-4 text-[26px] leading-snug text-white">
+                … he looked <span class="text-emerald-300">in his bedroom</span>,
+                <span class="rounded bg-emerald-400/20 px-1.5 text-emerald-300">under the sofa</span>
+                and <span class="text-emerald-300">on the kitchen counter</span>.
+              </p>
+            </div>
+            <div class="col-span-5 rounded-3xl border border-slate-800 bg-slate-900/60 p-8">
+              <p class="text-[11px] font-bold uppercase kicker text-slate-500">Why it itched</p>
+              <p class="mt-4 text-[17px] leading-relaxed text-slate-300">
+                Two prepositional phrases and one bare noun. Add <span class="font-mono text-emerald-300">under</span> and all three items match — nothing else changed.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SLIDE 2 — CORE CONCEPT ================= -->
+    <section class="slide" data-slide="2" data-label="The formula"
+      data-notes="Read the definition once, slowly. The key phrase is “the same grammatical structure” — not the same words, the same structure. Point at the formula: two elements, one join, one shape. Mention the three names people will meet in style guides: parallelism, parallel structure, parallel construction. If someone asks whether it is a rule or a preference: with conjunctions and comparisons it is grammar; in lists and headings it is clarity.">
+      <div class="flex h-full flex-col justify-center px-16">
+        <p class="text-[12px] font-bold uppercase kicker text-emerald-400">The core concept</p>
+        <h2 class="mt-3 max-w-4xl text-[56px] font-black leading-[1.05] tracking-tight">
+          Same job in the sentence,<br /><span class="text-emerald-400">same grammatical form.</span>
+        </h2>
+
+        <div class="mt-10 grid grid-cols-12 gap-6">
+          <!-- hero formula -->
+          <div class="col-span-8 rounded-3xl border border-slate-800 bg-slate-900/60 p-10 backdrop-blur">
+            <p class="text-[11px] font-bold uppercase kicker text-slate-500">The formula</p>
+            <div class="mt-8 flex items-center justify-between gap-5">
+              <div class="flex-1 rounded-2xl border border-emerald-400/40 bg-emerald-400/[0.08] py-8 text-center">
+                <p class="font-mono text-[13px] uppercase kicker text-emerald-400">element A</p>
+                <p class="mt-2 text-[30px] font-semibold">verb phrase</p>
+              </div>
+              <div class="shrink-0 text-center">
+                <p class="font-mono text-[34px] font-bold text-slate-600">+</p>
+                <p class="mt-1 font-mono text-[12px] text-slate-500">the join</p>
+              </div>
+              <div class="flex-1 rounded-2xl border border-emerald-400/40 bg-emerald-400/[0.08] py-8 text-center">
+                <p class="font-mono text-[13px] uppercase kicker text-emerald-400">element B</p>
+                <p class="mt-2 text-[30px] font-semibold">verb phrase</p>
+              </div>
+              <div class="shrink-0 text-center">
+                <p class="font-mono text-[34px] font-bold text-slate-600">=</p>
+              </div>
+              <div class="flex-1 rounded-2xl border border-emerald-400/60 bg-emerald-400/20 py-8 text-center">
+                <p class="font-mono text-[13px] uppercase kicker text-emerald-300">result</p>
+                <p class="mt-2 text-[30px] font-black text-emerald-300">balance</p>
+              </div>
+            </div>
+            <p class="mt-8 font-mono text-[15px] text-slate-400">
+              gerund + gerund ✓ &nbsp;·&nbsp; infinitive + infinitive ✓ &nbsp;·&nbsp;
+              <span class="text-rose-400">gerund + infinitive ✗</span>
+            </p>
+          </div>
+
+          <!-- definition bento -->
+          <div class="col-span-4 flex flex-col gap-6">
+            <div class="rounded-3xl border border-slate-800 bg-slate-900/60 p-8">
+              <p class="text-[11px] font-bold uppercase kicker text-slate-500">Parallelism is…</p>
+              <p class="mt-4 text-[19px] leading-relaxed text-slate-200">
+                having the <span class="text-white">same grammatical structure</span> within one or more sentences of similar phrases or clauses.
+              </p>
+            </div>
+            <div class="rounded-3xl border border-slate-800 bg-slate-900/60 p-8">
+              <p class="text-[11px] font-bold uppercase kicker text-slate-500">Also known as</p>
+              <p class="mt-4 text-[19px] leading-relaxed text-slate-200">
+                parallel structure &nbsp;·&nbsp; parallel construction
+              </p>
+            </div>
+          </div>
+
+          <!-- four contexts strip -->
+          <div class="col-span-12 grid grid-cols-4 gap-4">
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/40 px-6 py-4">
+              <p class="font-mono text-[11px] text-slate-500">01</p>
+              <p class="mt-1 text-[17px] font-semibold">Coordinating conjunctions</p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/40 px-6 py-4">
+              <p class="font-mono text-[11px] text-slate-500">02</p>
+              <p class="mt-1 text-[17px] font-semibold">Correlative conjunctions</p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/40 px-6 py-4">
+              <p class="font-mono text-[11px] text-slate-500">03</p>
+              <p class="mt-1 text-[17px] font-semibold">Comparisons</p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/40 px-6 py-4">
+              <p class="font-mono text-[11px] text-slate-500">04</p>
+              <p class="mt-1 text-[17px] font-semibold">Lists</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SLIDES 3–6 — BEFORE vs AFTER ================= -->
+    <!-- rendered from data by script below -->
+
+    <!-- ================= SLIDE 7 — QUIZ ================= -->
+    <section class="slide" data-slide="7" data-label="Lightning round"
+      data-notes="Three questions, thirty seconds each, hands down and no conferring. Read each stem aloud, let them answer on the screen, then take a show of hands for confidence before revealing. Question 2 is the one that splits a room — “both … and” must join two items of the same kind, so “it is educational” cannot sit opposite the adjective “enjoyable”. Finish on the score card and give them the one-line takeaway: same job, same form.">
+      <div class="flex h-full flex-col justify-center px-16">
+        <div class="flex items-end justify-between">
+          <div>
+            <p class="text-[12px] font-bold uppercase kicker text-emerald-400">Lightning round</p>
+            <h2 class="mt-3 text-[52px] font-black leading-[1.05] tracking-tight">Three questions. No conferring.</h2>
+          </div>
+          <div class="flex items-center gap-6">
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 px-7 py-4 text-center">
+              <p class="font-mono text-[11px] uppercase kicker text-slate-500">Score</p>
+              <p class="mt-1 font-mono text-[30px] font-bold"><span id="quiz-score" class="text-emerald-400">0</span><span class="text-slate-600">/3</span></p>
+            </div>
+            <button id="quiz-reset" type="button"
+              class="rounded-full border border-slate-700/80 bg-slate-900/70 px-5 py-2.5 text-[13px] font-medium text-slate-300 transition hover:border-emerald-400/60 hover:text-white">
+              Reset
+            </button>
+          </div>
+        </div>
+
+        <div id="quiz" class="mt-9 grid grid-cols-3 gap-6"></div>
+
+        <p id="quiz-done" class="hidden-soft mt-8 text-center text-[19px] font-medium text-emerald-300"></p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(() => {
+  "use strict";
+
+  // ---------------------------------------------------------------- content
+  // Every rule and example sentence below is taken verbatim from
+  // “Parallelism (in Grammar)” — Iffat Jahan Suchona, University of Dhaka.
+  const BREAKDOWNS = [
+    {
+      n: 3, tag: "Context 01", label: "Coordinating conjunctions",
+      title: "Coordinating conjunctions",
+      cue: "for · and · but · or · yet",
+      rule: "While adding two or more clauses or phrases with a coordinating conjunction (for, and, but, or, yet).",
+      bad: "My friend took me dancing and to a show.",
+      good: "My friend took me to a dance and a show.",
+      badParts: ["dancing", "to a show"],
+      goodParts: ["to a dance", "a show"],
+      badWhy: "gerund + prepositional phrase",
+      goodWhy: "noun phrase + noun phrase",
+      insight: "The fix is not longer — it is matched. One preposition governs both items.",
+      notes: "Read the broken version aloud and stop at “and”. Ask what kind of word “dancing” is, then what “to a show” is — a gerund beside a prepositional phrase. Cover the second half and ask the room to finish the sentence themselves; most people produce the parallel version without being told. This is the most common of the four contexts, so spend the time here.",
+    },
+    {
+      n: 4, tag: "Context 02", label: "Correlative conjunctions",
+      title: "Correlative conjunctions",
+      cue: "not only…but also · either…or · neither…nor · if…then",
+      rule: "While connecting two clauses or phrases with a correlative conjunction (not only…but also, either…or, neither…nor, if…then, etc.).",
+      bad: "The dog not only likes to play fetch, but also chase cars.",
+      good: "The dog likes not only to play fetch, but also to chase cars.",
+      badParts: ["to play fetch", "chase cars"],
+      goodParts: ["to play fetch", "to chase cars"],
+      badWhy: "infinitive + bare verb",
+      goodWhy: "infinitive + infinitive",
+      insight: "Correlatives come in pairs. Whatever follows the first half must match what follows the second.",
+      notes: "The trick here is placement. In the broken version “not only” sits before “likes”, so the two halves can never line up. Moving “likes” in front of “not only” fixes the frame, and then both halves take an infinitive. This is the context people get wrong most often in real writing — flag it as the highest-value slide of the four.",
+    },
+    {
+      n: 5, tag: "Context 03", label: "Comparisons",
+      title: "Phrases or clauses of comparison",
+      cue: "than · as",
+      rule: "While joining two clauses or phrases with a word of comparison, such as than or as.",
+      bad: "I would rather pay for my education than financial aid.",
+      good: "I would rather pay for my education than receive financial aid.",
+      badParts: ["pay for my education", "financial aid"],
+      goodParts: ["pay for my education", "receive financial aid"],
+      badWhy: "verb phrase + noun phrase",
+      goodWhy: "verb phrase + verb phrase",
+      insight: "A comparison must compare like with like. Read it literally and the mismatch is obvious.",
+      notes: "Read the broken sentence completely literally: it compares the act of paying with a thing, financial aid. Adding the verb “receive” restores the match. Tell them to watch for “than” and “as” — quiet little words that carry a grammatical obligation. If the room stalls, ask exactly what is being compared with what.",
+    },
+    {
+      n: 6, tag: "Context 04", label: "Lists",
+      title: "Lists",
+      cue: "items in a series",
+      rule: "While comparing elements in lists.",
+      bad: "He made cake, pie and he baked dumplings.",
+      good: "He made cake, pie and dumplings.",
+      badParts: ["cake", "pie", "he baked dumplings"],
+      goodParts: ["cake", "pie", "dumplings"],
+      badWhy: "noun + noun + full clause",
+      goodWhy: "noun + noun + noun",
+      insight: "The verb is already there. Every item can hang from it, so nothing needs repeating.",
+      notes: "Lists are where a reader most expects a pattern, so a break is most audible here. Read the broken version and let them hear the third item change shape from a noun into a whole clause. Then make the transfer explicit: this applies to bulleted lists in documents and on slides exactly as it applies inside a sentence.",
+    },
+  ];
+
+  const QUIZ = [
+    {
+      q: "Which version is parallel?",
+      options: [
+        { t: "She likes jogging, and to read", ok: false },
+        { t: "She likes jogging and reading.", ok: true },
+        { t: "She likes to jog, and reading", ok: false },
+      ],
+      why: "Two gerunds — jogging and reading — take the same form.",
+    },
+    {
+      q: "Fix the correlative pair.",
+      options: [
+        { t: "The show is both enjoyable and it is educational", ok: false },
+        { t: "The show is both enjoyable and educational", ok: true },
+        { t: "The show is both enjoyable and it educates", ok: false },
+      ],
+      why: "“Both … and” must join two items of the same kind: adjective + adjective.",
+    },
+    {
+      q: "Which comparison is parallel?",
+      options: [
+        { t: "I would rather pay for my education than financial aid.", ok: false },
+        { t: "I would rather pay for my education than receive financial aid.", ok: true },
+        { t: "I would rather pay for my education than financial aid received.", ok: false },
+      ],
+      why: "“Than” compares like with like — pay against receive, not against a noun.",
+    },
+  ];
+
+  // ------------------------------------------------- build slides 3–6
+  const stage = document.getElementById("stage");
+  const quizSlide = document.querySelector('[data-slide="7"]');
+
+  const chip = (text, tone) =>
+    `<span class="rounded-full border px-3 py-1 font-mono text-[12px] ${
+      tone === "bad"
+        ? "border-rose-500/40 bg-rose-500/10 text-rose-300"
+        : "border-emerald-400/40 bg-emerald-400/10 text-emerald-300"
+    }">${text}</span>`;
+
+  BREAKDOWNS.forEach((b, i) => {
+    const flip = i % 2 === 1; // alternate the layout to avoid visual fatigue
+    const el = document.createElement("section");
+    el.className = "slide";
+    el.dataset.slide = String(b.n);
+    el.dataset.label = b.label;
+    el.dataset.notes = b.notes;
+    el.innerHTML = `
+      <div class="flex h-full flex-col justify-center px-16">
+        <div class="flex items-end justify-between gap-10">
+          <div>
+            <p class="text-[12px] font-bold uppercase kicker text-emerald-400">${b.tag} of 04</p>
+            <h2 class="mt-3 text-[50px] font-black leading-[1.05] tracking-tight">${b.title}</h2>
+          </div>
+          <div class="mb-2 flex flex-col items-end gap-2">
+            <p class="font-mono text-[14px] text-slate-400">${b.cue}</p>
+            <button type="button" class="reveal-btn rounded-full bg-emerald-400 px-6 py-2.5 text-[13.5px] font-bold text-slate-950 transition hover:bg-emerald-300">
+              Reveal the fix <kbd class="ml-1.5 rounded bg-slate-950/20 px-1.5 py-0.5 font-mono text-[10px]">↵</kbd>
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-7 rounded-2xl border border-slate-800 bg-slate-900/50 px-8 py-5">
+          <p class="text-[16.5px] leading-relaxed text-slate-300"><span class="font-bold uppercase kicker text-[11px] text-slate-500">The rule &nbsp;</span>${b.rule}</p>
+        </div>
+
+        <div class="mt-6 grid grid-cols-2 gap-6 ${flip ? "direction-flip" : ""}">
+          <!-- BEFORE -->
+          <div class="rounded-3xl border border-rose-500/30 bg-rose-500/[0.06] p-9 ${flip ? "order-2" : ""}">
+            <div class="flex items-center justify-between">
+              <p class="text-[11px] font-bold uppercase kicker text-rose-400">Not parallel</p>
+              <span class="font-mono text-[12px] text-rose-400/70">✗</span>
+            </div>
+            <p class="mt-5 text-[27px] font-medium leading-snug text-slate-100 strike-soft">${b.bad}</p>
+            <div class="mt-6 flex flex-wrap items-center gap-2">${b.badParts.map((p) => chip(p, "bad")).join("")}</div>
+            <p class="mt-5 font-mono text-[13.5px] text-rose-300/90">${b.badWhy}</p>
+          </div>
+          <!-- AFTER -->
+          <div class="after-card hidden-soft rounded-3xl border border-emerald-400/40 bg-emerald-400/[0.08] p-9 ${flip ? "order-1" : ""}">
+            <div class="flex items-center justify-between">
+              <p class="text-[11px] font-bold uppercase kicker text-emerald-400">Parallel</p>
+              <span class="font-mono text-[12px] text-emerald-400/80">✓</span>
+            </div>
+            <p class="mt-5 text-[27px] font-medium leading-snug text-white">${b.good}</p>
+            <div class="mt-6 flex flex-wrap items-center gap-2">${b.goodParts.map((p) => chip(p, "good")).join("")}</div>
+            <p class="mt-5 font-mono text-[13.5px] text-emerald-300">${b.goodWhy}</p>
+          </div>
+          <!-- placeholder shown before the reveal -->
+          <div class="before-card grid place-items-center rounded-3xl border border-dashed border-slate-700 bg-slate-900/30 p-9 ${flip ? "order-1" : ""}">
+            <p class="text-center text-[17px] leading-relaxed text-slate-500">
+              What does the repair look like?<br />
+              <span class="text-slate-400">Press <kbd class="rounded border border-slate-700 px-1.5 py-0.5 font-mono text-[12px]">Enter</kbd> or hit reveal.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="insight-row hidden-soft mt-6 rounded-2xl border border-slate-800 bg-slate-900/50 px-8 py-5">
+          <p class="text-[16.5px] leading-relaxed text-slate-300"><span class="font-bold uppercase kicker text-[11px] text-emerald-400">Takeaway &nbsp;</span>${b.insight}</p>
+        </div>
+      </div>`;
+    stage.insertBefore(el, quizSlide);
+  });
+
+  // ------------------------------------------------- reveal interaction
+  stage.querySelectorAll(".reveal-btn").forEach((btn) => {
+    btn.addEventListener("click", () => toggleReveal(btn.closest(".slide"), true));
+  });
+
+  function toggleReveal(slide, show) {
+    if (!slide) return;
+    const after = slide.querySelector(".after-card");
+    const before = slide.querySelector(".before-card");
+    const insight = slide.querySelector(".insight-row");
+    const btn = slide.querySelector(".reveal-btn");
+    if (!after || !before) return;
+    if (show) {
+      before.classList.add("hidden-soft");
+      after.classList.remove("hidden-soft");
+      after.classList.add("rise");
+      insight.classList.remove("hidden-soft");
+      insight.classList.add("rise");
+      if (btn) { btn.textContent = "Hide the fix"; btn.dataset.shown = "1"; }
+    } else {
+      after.classList.add("hidden-soft");
+      after.classList.remove("rise");
+      before.classList.remove("hidden-soft");
+      insight.classList.add("hidden-soft");
+      insight.classList.remove("rise");
+      if (btn) { btn.innerHTML = 'Reveal the fix <kbd class="ml-1.5 rounded bg-slate-950/20 px-1.5 py-0.5 font-mono text-[10px]">↵</kbd>'; delete btn.dataset.shown; }
+    }
+  }
+
+  // ------------------------------------------------- slide 1 interaction
+  const hookFeedback = document.getElementById("hook-feedback");
+  const hookReveal = document.getElementById("hook-reveal");
+  document.querySelectorAll(".hook-opt").forEach((opt) => {
+    opt.addEventListener("click", () => {
+      const correct = opt.dataset.correct === "true";
+      if (correct) {
+        document.querySelectorAll(".hook-opt").forEach((o) => (o.disabled = true));
+        opt.classList.add("bg-emerald-400/20", "text-emerald-300", "pulse-ring");
+        hookFeedback.textContent = "That is the one. Two prepositional phrases, then a bare noun — the pattern broke.";
+        hookFeedback.className = "mt-6 text-[16px] font-medium text-emerald-300";
+        hookReveal.classList.remove("hidden-soft");
+        hookReveal.classList.add("rise");
+      } else {
+        opt.classList.add("shake");
+        opt.classList.add("bg-rose-500/15", "text-rose-300");
+        setTimeout(() => opt.classList.remove("shake"), 520);
+        hookFeedback.textContent = "That one is fine — it is a prepositional phrase, like its neighbour. Keep looking.";
+        hookFeedback.className = "mt-6 text-[16px] font-medium text-rose-300";
+      }
+    });
+  });
+
+  // ------------------------------------------------- slide 7 quiz
+  const quizEl = document.getElementById("quiz");
+  const scoreEl = document.getElementById("quiz-score");
+  const doneEl = document.getElementById("quiz-done");
+  let score = 0;
+  let answered = 0;
+
+  function buildQuiz() {
+    score = 0; answered = 0;
+    scoreEl.textContent = "0";
+    doneEl.classList.add("hidden-soft");
+    quizEl.innerHTML = QUIZ.map((q, qi) => `
+      <div class="flex flex-col rounded-3xl border border-slate-800 bg-slate-900/60 p-7" data-card="${qi}">
+        <p class="font-mono text-[12px] text-slate-500">Q${qi + 1}</p>
+        <p class="mt-2 text-[22px] font-bold leading-snug">${q.q}</p>
+        <div class="mt-5 flex flex-1 flex-col gap-3">
+          ${q.options.map((o, oi) => `
+            <button type="button" class="quiz-opt rounded-2xl border border-slate-700/70 bg-slate-950/40 px-5 py-4 text-left text-[15.5px] leading-snug text-slate-200 transition hover:border-slate-500 hover:bg-slate-800/60"
+              data-q="${qi}" data-o="${oi}" data-ok="${o.ok}">${o.t}</button>`).join("")}
+        </div>
+        <p class="quiz-why hidden-soft mt-4 text-[14px] leading-relaxed text-emerald-300">${q.why}</p>
+      </div>`).join("");
+
+    quizEl.querySelectorAll(".quiz-opt").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const card = btn.closest("[data-card]");
+        if (card.dataset.locked === "1") return;
+        const ok = btn.dataset.ok === "true";
+        if (ok) {
+          card.dataset.locked = "1";
+          answered += 1; score += 1;
+          scoreEl.textContent = String(score);
+          btn.className = "quiz-opt rounded-2xl border border-emerald-400/70 bg-emerald-400/15 px-5 py-4 text-left text-[15.5px] font-semibold leading-snug text-emerald-200";
+          card.querySelectorAll(".quiz-opt").forEach((b) => { if (b !== btn) b.disabled = true; });
+          card.querySelector(".quiz-why").classList.remove("hidden-soft");
+          if (answered === QUIZ.length) {
+            doneEl.textContent = `${score} / 3 — same job, same form. That is the whole rule.`;
+            doneEl.classList.remove("hidden-soft");
+            doneEl.classList.add("rise");
+          }
+        } else {
+          btn.className = "quiz-opt shake rounded-2xl border border-rose-500/60 bg-rose-500/10 px-5 py-4 text-left text-[15.5px] leading-snug text-rose-300";
+          btn.disabled = true;
+          setTimeout(() => btn.classList.remove("shake"), 520);
+        }
+      });
+    });
+  }
+  buildQuiz();
+  document.getElementById("quiz-reset").addEventListener("click", buildQuiz);
+
+  // ------------------------------------------------- deck engine
+  const slides = Array.from(stage.querySelectorAll(".slide"))
+    .sort((a, b) => Number(a.dataset.slide) - Number(b.dataset.slide));
+  const total = slides.length;
+  const counterCurrent = document.getElementById("counter-current");
+  const counterTotal = document.getElementById("counter-total");
+  const progress = document.getElementById("progress");
+  const labelEl = document.getElementById("slide-label");
+  const notesPanel = document.getElementById("notes-panel");
+  const notesText = document.getElementById("notes-text");
+  const notesToggle = document.getElementById("notes-toggle");
+  const notesToggleLabel = document.getElementById("notes-toggle-label");
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
+
+  let index = 0;
+  let notesOpen = false;
+
+  counterTotal.textContent = String(total).padStart(2, "0");
+
+  function render() {
+    slides.forEach((s, i) => s.classList.toggle("is-active", i === index));
+    counterCurrent.textContent = String(index + 1).padStart(2, "0");
+    progress.style.width = ((index + 1) / total) * 100 + "%";
+    labelEl.textContent = slides[index].dataset.label || "";
+    notesText.textContent = slides[index].dataset.notes || "No notes for this slide.";
+    prevBtn.disabled = index === 0;
+    nextBtn.disabled = index === total - 1;
+    location.hash = "slide-" + (index + 1);
+  }
+
+  function go(to) {
+    const next = Math.max(0, Math.min(total - 1, to));
+    if (next === index) return;
+    index = next;
+    render();
+  }
+
+  function setNotes(open) {
+    notesOpen = open;
+    notesPanel.hidden = !open;
+    notesToggle.setAttribute("aria-pressed", String(open));
+    notesToggleLabel.textContent = open ? "Hide presenter notes" : "Show presenter notes";
+  }
+
+  prevBtn.addEventListener("click", () => go(index - 1));
+  nextBtn.addEventListener("click", () => go(index + 1));
+  notesToggle.addEventListener("click", () => setNotes(!notesOpen));
+
+  document.addEventListener("keydown", (e) => {
+    const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName || "");
+    if (typing) return;
+    switch (e.key) {
+      case "ArrowRight": case "PageDown": e.preventDefault(); go(index + 1); break;
+      case "ArrowLeft": case "PageUp": e.preventDefault(); go(index - 1); break;
+      case " ": e.preventDefault(); go(index + 1); break;
+      case "Home": e.preventDefault(); go(0); break;
+      case "End": e.preventDefault(); go(total - 1); break;
+      case "n": case "N": e.preventDefault(); setNotes(!notesOpen); break;
+      case "Enter": {
+        const slide = slides[index];
+        const btn = slide.querySelector(".reveal-btn");
+        if (btn) { e.preventDefault(); toggleReveal(slide, btn.dataset.shown !== "1"); }
+        break;
+      }
+      default: break;
+    }
+  });
+
+  // ------------------------------------------------- responsive 16:9 scaling
+  const stageWrap = document.getElementById("stage-wrap");
+  function fit() {
+    const scale = Math.min(stageWrap.clientWidth / 1600, stageWrap.clientHeight / 900);
+    stage.style.transform = `translate(-50%, -50%) scale(${scale})`;
+  }
+  window.addEventListener("resize", fit);
+
+  // deep link support: #slide-4
+  const fromHash = Number((location.hash.match(/slide-(\d+)/) || [])[1]);
+  if (fromHash >= 1 && fromHash <= total) index = fromHash - 1;
+
+  fit();
+  render();
+})();
+</script>
+</body>
+</html>

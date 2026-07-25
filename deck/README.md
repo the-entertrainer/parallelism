@@ -5,6 +5,7 @@ Two decks live here.
 | File | What it is |
 |---|---|
 | `build/parallelism-in-grammar.pptx` | **Primary.** 14 slides, light corporate style, rebuilt strictly from the source presentation by Iffat Jahan Suchona (see below). Generator: `build-corporate.js` + `assets-corporate.js`. |
+| `../parallelism_deck.html` | Interactive 16:9 HTML deck — 7 slides, dark Tailwind theme, keyboard-driven, same source content. See below. |
 | `build/parallelism-training.pptx` | Earlier 21-slide facilitator deck on parallelism for instructional designers, dark liquid-glass style. Generator: `build.js` + `assets.js`. |
 
 ---
@@ -44,6 +45,34 @@ the source deck's own images, plus a "join" diagram for the four contexts.
 **Morph:** slides 8–12 use `byObject` — the four-context grid on slide 7 collapses
 into the persistent rail on 8–11, and folds back into the summary row on 12.
 Everything else fades.
+
+---
+
+## 1b. parallelism_deck.html — interactive web deck
+
+Same source content, delivered as a single self-contained HTML file at the repo
+root. Open it directly in a browser, or serve the folder.
+
+- **7 slides:** interactive “Spot the brain glitch” hook · visual formula ·
+  four before/after breakdowns (coordinating, correlative, comparison, lists) ·
+  three-question lightning round.
+- **Theme:** slate-950 ground, white type, emerald-400 = parallel,
+  rose-500 = not parallel. Bento cards, split-screen comparisons and hero
+  formula cards, with the layout mirrored on alternate breakdown slides.
+- **Controls:** ← / → (also PageUp/PageDown, Space), Home / End, `Enter` to
+  reveal the fix on a breakdown slide, `N` to toggle presenter notes. Progress
+  bar, `03 / 07` counter and deep links (`#slide-4`).
+- **Tailwind** loads from the CDN, so first load needs a connection.
+
+```bash
+python3 -m http.server 8123          # then open /parallelism_deck.html
+curl -sL https://cdn.tailwindcss.com -o /tmp/tw.js   # cache for the test run
+node deck/test-html-deck.js          # 45 assertions + screenshots
+```
+
+`deck/test-html-deck.js` drives the deck in Chromium: navigation, every
+interaction, computed visibility, overflow inside the 16:9 frame, and stage
+scaling at 1280×720. It writes screenshots to `deck/build/html-qa/`.
 
 ---
 

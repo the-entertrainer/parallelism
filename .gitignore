@@ -8,3 +8,4 @@ dist/
 deck/build/render/
 deck/build/*.pdf
 deck/build/render-corp/
+deck/build/html-qa/
