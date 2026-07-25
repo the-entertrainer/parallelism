@@ -5,3 +5,5 @@ dist/
 .env
 .vscode/
 .idea/
+deck/build/render/
+deck/build/*.pdf
