@@ -1,0 +1,1198 @@
+{
+  "module": "B",
+  "title": "Products Deep Dive",
+  "review_url": "https://360.articulate.com/review/content/737cabbf-b4ee-4c62-8ce6-0d9a16527cd6/review",
+  "base": "https://articulateusercontent.com/review/uploads/LPABCAopJ3zRMchyQcSTbSBjQ3kbSZfJ/5sfAJDFK/index.html",
+  "screens": [
+    {
+      "id": "B1.1",
+      "lesson": "Lesson 1 of 12 — Introduction",
+      "screen": "Introduction to PayPal Products",
+      "href": "#/lessons/uftDL_q6OIlgiXQZfrkOLSEREGn_6skY",
+      "prep": [],
+      "items": [
+        {
+          "quote": "and PayPal delivers exactly that",
+          "comment": "Change “and PayPal delivers exactly that” to “and PayPal provides them”",
+          "reason": "“Delivers exactly that” is vague marketing language."
+        },
+        {
+          "quote": "This module will take you on a journey through PayPal's core merchant offerings",
+          "comment": "Change to “This module covers PayPal’s core merchant products”",
+          "reason": "“Take you on a journey” is filler. Use plain language."
+        },
+        {
+          "quote": "Whether it's a small business exploring Pay Later options or an enterprise merchant looking for robust API integrations, knowing the right solution makes all the difference.",
+          "comment": "Change to “Whether a merchant is a small business exploring Pay Later options or an enterprise looking for robust API integrations, knowing the right solution makes all the difference.”",
+          "reason": "The opening clause has no subject that connects to the rest of the sentence, so it dangles."
+        },
+        {
+          "quote": "By the end of this module, you'll be equipped to have confident, informed conversations",
+          "comment": "Delete this sentence",
+          "reason": "The Objectives block immediately below already begins “By the end of this module, you should be able to:”. The same promise is made twice on one screen."
+        },
+        {
+          "quote": "solutions that truly work for their business",
+          "comment": "Change “their business” to “their businesses”",
+          "reason": "“Merchants” is plural, so the noun should be plural."
+        }
+      ]
+    },
+    {
+      "id": "B2.1",
+      "lesson": "Lesson 2 of 12 — In Person Payments",
+      "screen": "Introduction to In Person Payments",
+      "href": "#/lessons/7rEIUxom3zoxfwgH6zbwIcS96g-jQ7z0",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Introduction to In Person Payments",
+          "comment": "Change “In Person Payments” to “In-Person Payments” in the lesson title, the course menu and this heading",
+          "reason": "Hyphenate the compound adjective. The In-Person Payments with PayPal module writes it with a hyphen."
+        },
+        {
+          "quote": "PayPal's in-person payment solutions let businesses accept payments at a physical location",
+          "comment": "Split this sentence into two: “PayPal’s in-person payment solutions let businesses accept payments at a physical location — a shop, a market stall, or a mobile service. Everything is managed from a single PayPal business account, alongside any online sales.”",
+          "reason": "The sentence runs to 40 words and uses two dashes. Prefer short, simple sentences."
+        },
+        {
+          "quote": "so businesses of any size can find a fit",
+          "comment": "Change “can find a fit” to “can find an option that suits them”",
+          "reason": "“Find a fit” is informal."
+        }
+      ]
+    },
+    {
+      "id": "B2.2",
+      "lesson": "Lesson 2 of 12 — In Person Payments",
+      "screen": "PayPal POS System (Zettle)",
+      "href": "#/lessons/7rEIUxom3zoxfwgH6zbwIcS96g-jQ7z0",
+      "prep": [],
+      "items": [
+        {
+          "quote": "although the Zettle terminal will still appear on our website",
+          "comment": "Change to “although the Zettle Terminal name will still appear on the PayPal website”",
+          "reason": "“Our website” is vague in a training module, and “Terminal” is part of the product name."
+        },
+        {
+          "quote": "its vision is to be more than just a button at checkout",
+          "comment": "Change “its vision” to “our vision”",
+          "reason": "The style guide says to refer to PayPal as “we” or “our”. The previous sentence already says “our website”, so the paragraph switches person."
+        },
+        {
+          "quote": "expanding its role beyond digital transactions",
+          "comment": "Change to “expanding our role beyond online payments”",
+          "reason": "The style guide says to use “payment” or “purchase” rather than “transaction”."
+        },
+        {
+          "quote": "on their PayPal account via the Zettle workflow",
+          "comment": "Change “via the Zettle workflow” to “in the Zettle workflow”",
+          "reason": "“Via” is more formal than needed."
+        },
+        {
+          "quote": "makes accepting payments simple, fast, and easy for any business",
+          "comment": "Change to “makes accepting payments simple and fast for any business”",
+          "reason": "“Simple” and “easy” mean the same thing here."
+        }
+      ]
+    },
+    {
+      "id": "B2.3",
+      "lesson": "Lesson 2 of 12 — In Person Payments",
+      "screen": "Benefits of PayPal POS and Merchant Pain Points",
+      "href": "#/lessons/7rEIUxom3zoxfwgH6zbwIcS96g-jQ7z0",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Accepts credit/debit cards, contactless payments, and PayPal.",
+          "comment": "Change “credit/debit cards” to “credit and debit cards”",
+          "reason": "A slash reads as “or”. Spell out the connecting word."
+        },
+        {
+          "quote": "Mobile Access: Can be used on mobile devices for flexible sales.",
+          "comment": "Change to “Mobile Access: Works on mobile devices for flexible sales.”",
+          "reason": "Parallelism. The other four bullets start with an active verb (“Accepts”, “Helps”, “Provides”, “Stores”); this one is passive."
+        },
+        {
+          "quote": "Initial Setup: Installing and integrating the system may take time.",
+          "comment": "Change to “Initial Setup: Merchants may need time to install and integrate the system.”",
+          "reason": "Parallelism. The other four bullets begin with the person or thing affected; this one begins with a gerund."
+        },
+        {
+          "quote": "Hardware Costs: Merchant may need to purchase devices",
+          "comment": "Change to “Hardware Costs: Merchants may need to buy devices such as card readers and tablets.”",
+          "reason": "“Merchant” should be plural, and “buy” is simpler than “purchase”."
+        },
+        {
+          "quote": "guide merchants on how to sign up for a reader",
+          "comment": "Spell out “BRE” on first use",
+          "reason": "Acronyms must be expanded the first time they appear. “BRE” is never explained in either module."
+        }
+      ]
+    },
+    {
+      "id": "B2.4",
+      "lesson": "Lesson 2 of 12 — In Person Payments",
+      "screen": "Zettle market availability note",
+      "href": "#/lessons/7rEIUxom3zoxfwgH6zbwIcS96g-jQ7z0",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Zettle is available in selected markets including the U.S.",
+          "comment": "Change “selected markets including” to “selected markets, including”",
+          "reason": "A comma is needed before “including”."
+        },
+        {
+          "quote": "Sweden, Netherlands, Italy",
+          "comment": "Change “Netherlands” to “the Netherlands”",
+          "reason": "Definite article is missing."
+        },
+        {
+          "quote": "It is not currently available in Brazil. (Zettle was withdrawn from Brazil in 2023)",
+          "comment": "Change to “Zettle was withdrawn from Brazil in 2023 and is not available there.”",
+          "reason": "The two sentences say the same thing, and the bracketed sentence has no full stop inside the closing bracket."
+        },
+        {
+          "quote": "Zettle is available in selected markets",
+          "comment": "Correct either this note or the table in Lesson 10 — the note lists the U.S. as available, while the table shows “Zettle (POS): U.S. ❌ Withdrawn 2023” and “LATAM ✅ MX + BR only”",
+          "reason": "The two lessons state opposite facts for the U.S. and for Brazil. A learner cannot tell which is right."
+        }
+      ]
+    },
+    {
+      "id": "B3.1",
+      "lesson": "Lesson 3 of 12 — No-Code Solutions",
+      "screen": "No-Code Solutions introduction",
+      "href": "#/lessons/9pckUG7HH8DjXOpp1suJdTcNrl45ehG6",
+      "prep": [],
+      "items": [
+        {
+          "quote": "without the need for extensive coding or technical expertise",
+          "comment": "Change to “without extensive coding or technical expertise”",
+          "reason": "“The need for” adds nothing to the sentence."
+        },
+        {
+          "quote": "This feature is particularly beneficial for small business owners",
+          "comment": "Change “This feature is particularly beneficial for” to “No-Code Solutions are particularly useful for”",
+          "reason": "No-Code Solutions is a set of tools, not a single feature."
+        },
+        {
+          "quote": "a secure and reliable payment option to their online presence",
+          "comment": "Change to “an easy way to take payments on their website”",
+          "reason": "“Secure and reliable payment option” appears in the sentence directly above. Avoid repeating the same phrase."
+        },
+        {
+          "quote": "can set up pay links, buttons, and QR codes to accept payments directly on their website",
+          "comment": "Change to “can set up Pay Links, buttons, and QR codes on their website”",
+          "reason": "“Pay Links” is capitalised elsewhere as a product name, and “accept payments” appears twice in the same sentence."
+        },
+        {
+          "quote": "You don't need a developer, coding knowledge, or even a website",
+          "comment": "Change to “Merchants don’t need a developer, coding knowledge, or even a website to start accepting payments. If they already have a website, they can copy and paste PayPal buttons to start taking payments straight away.”",
+          "reason": "The module addresses the teammate as “you”, so “you” here reads as though the teammate is the merchant."
+        },
+        {
+          "quote": "copy and paste PayPal buttons to enable transactions instantly",
+          "comment": "Change “transactions” to “payments”",
+          "reason": "The style guide says to use “payment” or “purchase” rather than “transaction”."
+        }
+      ]
+    },
+    {
+      "id": "B3.2",
+      "lesson": "Lesson 3 of 12 — No-Code Solutions",
+      "screen": "No-Code Solution — Buttons",
+      "href": "#/lessons/9pckUG7HH8DjXOpp1suJdTcNrl45ehG6",
+      "prep": [],
+      "items": [
+        {
+          "quote": "No-Code Solution — Buttons",
+          "comment": "Change “No-Code Solution — Buttons” to “No-Code Solutions — Buttons”",
+          "reason": "The rest of the module uses the plural “No-Code Solutions”."
+        },
+        {
+          "quote": "customizable payment buttons provided by PayPal",
+          "comment": "Change to “customizable payment buttons”",
+          "reason": "“PayPal Buttons” already says who provides them."
+        },
+        {
+          "quote": "to facilitate transactions",
+          "comment": "Change “to facilitate transactions” to “to take payments”",
+          "reason": "The style guide prefers “payment” to “transaction”, and “facilitate” is more formal than needed."
+        },
+        {
+          "quote": "using their PayPal account or credit/debit cards",
+          "comment": "Change “credit/debit cards” to “a credit or debit card”",
+          "reason": "A slash reads as “or”. Spell out the connecting word."
+        },
+        {
+          "quote": "PayPal offers different types of buttons to support various payment needs. These are:",
+          "comment": "Change to “PayPal offers three types of buttons:”",
+          "reason": "“These are:” is a filler sentence, and naming the number helps the reader."
+        },
+        {
+          "quote": "Helps charities and non-profit organizations accept donations",
+          "comment": "Change “non-profit” to “nonprofit”",
+          "reason": "The style guide spells it “nonprofit”, with no space and no hyphen."
+        }
+      ]
+    },
+    {
+      "id": "B3.3",
+      "lesson": "Lesson 3 of 12 — No-Code Solutions",
+      "screen": "Pay Links tab",
+      "href": "#/lessons/9pckUG7HH8DjXOpp1suJdTcNrl45ehG6",
+      "prep": [
+        {
+          "type": "tab",
+          "index": 0
+        }
+      ],
+      "items": [
+        {
+          "quote": "PAY LINKS",
+          "comment": "Change the tab labels to title case: “Pay Links”, “Sell on Social”, “QR Code”",
+          "reason": "The style guide reserves ALL CAPS for acronyms and job titles."
+        },
+        {
+          "quote": "PayPal's Pay Link feature allows merchants to create",
+          "comment": "Change the tab label to “Pay Link”, or change the body text to “Pay Links”",
+          "reason": "The tab label is plural and the body text is singular for the same product."
+        },
+        {
+          "quote": "making it easy to accept payments and complete transactions",
+          "comment": "Change to “making it easy to accept payments”",
+          "reason": "“Accept payments” and “complete transactions” say the same thing, and the style guide prefers “payments”."
+        },
+        {
+          "quote": "Flexible Use: Suitable for selling products, services, collecting donations, or event payments.",
+          "comment": "Change to “Flexible Use: Use them to sell products and services, collect donations, or take event payments.”",
+          "reason": "Parallelism, twice over. The five bullets mix instructions, adjectives and passive sentences, and within this bullet the series mixes “selling products, services” with “collecting donations” and “event payments”."
+        },
+        {
+          "quote": "Easy Setup: Quick to create and share with no technical expertise required.",
+          "comment": "Change to “Easy Setup: Create and share a link in minutes, with no technical expertise required.”",
+          "reason": "Parallelism. Start the bullet with a verb, as the first two bullets do."
+        },
+        {
+          "quote": "Secure Payments: Transactions are safely processed through PayPal's platform.",
+          "comment": "Change to “Secure Payments: PayPal processes every payment securely.”",
+          "reason": "The sentence is passive, and the style guide prefers “payment” to “transaction”."
+        },
+        {
+          "quote": "descriptions, and other transaction details",
+          "comment": "Change “transaction details” to “payment details”",
+          "reason": "The style guide prefers “payment” to “transaction”."
+        }
+      ]
+    },
+    {
+      "id": "B3.4",
+      "lesson": "Lesson 3 of 12 — No-Code Solutions",
+      "screen": "Sell on Social tab",
+      "href": "#/lessons/9pckUG7HH8DjXOpp1suJdTcNrl45ehG6",
+      "prep": [
+        {
+          "type": "tab",
+          "index": 1
+        }
+      ],
+      "items": [
+        {
+          "quote": "Here are the main features of this solution:",
+          "comment": "Change “of this solution” to “of Sell on Social”",
+          "reason": "The other two tabs name the product. Keep the pattern the same."
+        },
+        {
+          "quote": "Product Listings: List multiple products with images, descriptions, and prices",
+          "comment": "Change to “Product Listings: Merchants can list multiple products with images, descriptions, and prices on their social media profiles.”",
+          "reason": "Parallelism. The other two bullets describe what happens; this one gives an instruction."
+        },
+        {
+          "quote": "Customers can click the product listings and complete purchases",
+          "comment": "Change to “Customers can click a product listing and complete the purchase”",
+          "reason": "The singular reads more naturally and matches “a product listing”."
+        },
+        {
+          "quote": "Sell on Social leverages the reach and engagement of social media platforms",
+          "comment": "Change “leverages” to “uses”",
+          "reason": "“Leverages” is jargon. The style guide asks for jargon-free language."
+        },
+        {
+          "quote": "Marketing Reach",
+          "comment": "Add two more features to this tab",
+          "reason": "This tab lists three features while the other two tabs list five each, so the interaction feels unbalanced."
+        }
+      ]
+    },
+    {
+      "id": "B3.5",
+      "lesson": "Lesson 3 of 12 — No-Code Solutions",
+      "screen": "QR Code tab",
+      "href": "#/lessons/9pckUG7HH8DjXOpp1suJdTcNrl45ehG6",
+      "prep": [
+        {
+          "type": "tab",
+          "index": 2
+        }
+      ],
+      "items": [
+        {
+          "quote": "Here are the main features of QR Code:",
+          "comment": "Change to “Here are the main features of QR Code payments:”",
+          "reason": "The article is missing — “features of QR Code” reads as an incomplete phrase."
+        },
+        {
+          "quote": "Contactless Payments: Supports safe, touch-free transactions.",
+          "comment": "Change “transactions” to “payments”",
+          "reason": "The style guide prefers “payment” to “transaction”."
+        },
+        {
+          "quote": "Easy to Use: Customers scan the code and pay in seconds.",
+          "comment": "Change the labels “Easy to Use” and “Versatile” to noun phrases such as “Simple Setup” and “Wide Use”",
+          "reason": "Parallelism. Three labels are noun phrases (“Contactless Payments”, “Secure Transactions”, “No Extra Hardware Needed”) and two are adjectives."
+        },
+        {
+          "quote": "Secure Transactions: Payments are processed through PayPal's platform.",
+          "comment": "Change to “Secure Payments: PayPal processes every payment securely.”",
+          "reason": "The label says “Transactions” but the sentence says “Payments”, and the sentence is passive."
+        }
+      ]
+    },
+    {
+      "id": "B3.6",
+      "lesson": "Lesson 3 of 12 — No-Code Solutions",
+      "screen": "Merchant Pain Points, Benefits and note",
+      "href": "#/lessons/9pckUG7HH8DjXOpp1suJdTcNrl45ehG6",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Some of the pain points of merchants are listed below:",
+          "comment": "Change to “Merchants may face the following pain points:”",
+          "reason": "The original is indirect and wordy."
+        },
+        {
+          "quote": "Complex Payment Processes: Without Pay Links, merchants may need to set up",
+          "comment": "Change “Without Pay Links” to “Without no-code tools”",
+          "reason": "This section covers all the no-code solutions, not just Pay Links."
+        },
+        {
+          "quote": "Without PayPal's security features, merchant may face a greater risk",
+          "comment": "Change “merchant may face” to “merchants may face”",
+          "reason": "“Merchant” should be plural."
+        },
+        {
+          "quote": "No-Code Solutions offers several benefits for business. These are:",
+          "comment": "Change to “No-Code Solutions offer several benefits for businesses:”",
+          "reason": "Three problems in one line. “Solutions” is plural so the verb is “offer”, “business” should be plural, and “These are:” is a filler sentence."
+        },
+        {
+          "quote": "help protect both merchant and customers from fraud",
+          "comment": "Change “both merchant and customers” to “both merchants and customers”",
+          "reason": "“Merchant” should be plural to match “customers”."
+        },
+        {
+          "quote": "Easy to Use: Quickly create and share payment links",
+          "comment": "Change the label “Easy to Use” to a noun phrase such as “Simple Setup”",
+          "reason": "Parallelism. The other four labels in this list are noun phrases."
+        },
+        {
+          "quote": "availability depends on the market, so confirm availability before publishing",
+          "comment": "Change to “Sell on Social (Facebook and Instagram) is not available in every market. Check availability for the merchant’s market.”",
+          "reason": "Two problems. “Before publishing” is an instruction to the course author, not to the learner, and “availability” appears twice in one sentence."
+        }
+      ]
+    },
+    {
+      "id": "B4.1",
+      "lesson": "Lesson 4 of 12 — Subscriptions",
+      "screen": "Subscriptions overview and pain points",
+      "href": "#/lessons/0wpECAZTCe65JfrrO5y-GPXaO91_F66X",
+      "prep": [],
+      "items": [
+        {
+          "quote": "sell products or services on a regular basis, such as monthly memberships, subscription boxes, or software as a service (SaaS)",
+          "comment": "Change to “sell products or services regularly, such as gyms, subscription box sellers, or software-as-a-service (SaaS) providers”",
+          "reason": "The examples name business types, not products or services, so they do not match the sentence they follow. Also “on a regular basis” is simply “regularly”."
+        },
+        {
+          "quote": "Manual Billing: Manual invoicing can be time-consuming",
+          "comment": "Change to “Manual Billing: Invoicing by hand takes time and can lead to errors.”",
+          "reason": "“Manual” appears in the label and again in the sentence."
+        },
+        {
+          "quote": "Higher Costs: Manual processes can increase administrative time",
+          "comment": "Change to “Higher Costs: Working by hand increases admin time and operating costs.”",
+          "reason": "“Manual processes” repeats the wording of the first bullet in the same list."
+        }
+      ]
+    },
+    {
+      "id": "B4.2",
+      "lesson": "Lesson 4 of 12 — Subscriptions",
+      "screen": "Benefits of Subscriptions and video lead-in",
+      "href": "#/lessons/0wpECAZTCe65JfrrO5y-GPXaO91_F66X",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Automated Billing: Customers are charged automatically at scheduled intervals.",
+          "comment": "Change to “Automated Billing: PayPal charges customers automatically at set intervals.”",
+          "reason": "The sentence is passive. The other bullets say who does what."
+        },
+        {
+          "quote": "Easy Integration: Subscription features can be added to websites without extensive coding.",
+          "comment": "Change to “Easy Integration: Merchants can add subscription features to their website without extensive coding.”",
+          "reason": "The sentence is passive."
+        },
+        {
+          "quote": "Watch the video below to learn how to manage your recurring payments in PayPal.",
+          "comment": "Change to “Watch the video below to see how merchants manage recurring payments in PayPal.”",
+          "reason": "“Your recurring payments” suggests the teammate has them. The module is about supporting merchants, not about the learner's own account."
+        }
+      ]
+    },
+    {
+      "id": "B5.1",
+      "lesson": "Lesson 5 of 12 — PayPal Pay Later",
+      "screen": "Installment Payments: PayPal Pay Later — opening section",
+      "href": "#/lessons/2_MOvtZY7L57oeP19VX1wOGbVLXTrvx_",
+      "prep": [],
+      "items": [
+        {
+          "quote": "PayPal Virtual Terminal is:",
+          "comment": "Replace “PayPal Virtual Terminal is:” and the three bullets below it with a description of PayPal Pay Later",
+          "reason": "This is the wrong product. The opening section of the Pay Later lesson describes Virtual Terminal, and the identical text appears again in Lesson 6. This is the most serious error in the module."
+        },
+        {
+          "quote": "Helps businesses expand payment options and offer customers a convenient and flexible way to pay.",
+          "comment": "If the stem “… is:” is kept, change this bullet to “A solution that helps businesses expand payment options and offer customers a convenient, flexible way to pay.”",
+          "reason": "Parallelism. “Virtual Terminal is: Helps businesses…” does not read as a sentence — the third bullet does not follow the stem, unlike the first two."
+        }
+      ]
+    },
+    {
+      "id": "B5.2",
+      "lesson": "Lesson 5 of 12 — PayPal Pay Later",
+      "screen": "Key Features of PayPal Pay Later and availability note",
+      "href": "#/lessons/2_MOvtZY7L57oeP19VX1wOGbVLXTrvx_",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Here are the key features of PayPal Pay Later suite:",
+          "comment": "Change to “Here are the key features of the PayPal Pay Later suite:”",
+          "reason": "Definite article is missing."
+        },
+        {
+          "quote": "Instant Approval: The approval process is quick, and decisions are often provided during checkout.",
+          "comment": "Change the label “Instant Approval” to “Fast Approval”",
+          "reason": "The label says “Instant” but the sentence says “quick” and “often”, which is weaker than instant."
+        },
+        {
+          "quote": "No Hidden Fees: Clear and transparent terms help customers",
+          "comment": "Change “Clear and transparent terms” to “Clear terms”",
+          "reason": "“Clear” and “transparent” mean the same thing here."
+        },
+        {
+          "quote": "Flexible payment options can help merchant attract more customers",
+          "comment": "Change “help merchant attract” to “help merchants attract”",
+          "reason": "“Merchant” should be plural."
+        },
+        {
+          "quote": "Pay in 3: Available in the U.K.",
+          "comment": "Correct either this note or the table in Lesson 10 — the note says Pay in 3 is available in the U.K. and does not list Pay in 4 there, while the table shows “Pay Later — Pay in 4: U.K. / EMEA ✅ UK + select EU”",
+          "reason": "The two lessons give different availability for the U.K. A learner cannot tell which is right."
+        }
+      ]
+    },
+    {
+      "id": "B6.1",
+      "lesson": "Lesson 6 of 12 — Virtual Terminal",
+      "screen": "Virtual Terminal",
+      "href": "#/lessons/plvMUteIPvcB8WgB8Izzc56AoiIo4-3u",
+      "prep": [],
+      "items": [
+        {
+          "quote": "PayPal Virtual Terminal is a secure web-based solution",
+          "comment": "Add “Merchant Pain Points” and “Benefits of Virtual Terminal” sections to this lesson",
+          "reason": "Every other product lesson has a description, pain points, benefits and a note. This lesson has only a description and one screenshot, so it is much thinner than its siblings."
+        },
+        {
+          "quote": "It is ideal for businesses that do not use a physical card reader",
+          "comment": "After fixing Lesson 5, confirm this is the only place Virtual Terminal is described",
+          "reason": "The same three points currently appear at the top of the PayPal Pay Later lesson."
+        }
+      ]
+    },
+    {
+      "id": "B7.1",
+      "lesson": "Lesson 7 of 12 — API and Integration",
+      "screen": "Lesson opening and Why This Matters",
+      "href": "#/lessons/4sqeXbEZqbNZnXTDAiWMJ_Uq-knoaaPg",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Now let's understand what API is and how an API connects merchant products to PayPal.",
+          "comment": "Change to “Now let’s look at what an API is and how it connects merchant products to PayPal.”",
+          "reason": "The article “an” is missing before “API”, and “understand what … is” is wordy."
+        },
+        {
+          "quote": "We will also go through a basic PayPal Checkout example",
+          "comment": "Change “We will also” to “We’ll also”",
+          "reason": "Use positive contractions to sound natural and conversational."
+        },
+        {
+          "quote": "they typically do not share a screen or a database directly",
+          "comment": "Change to “they don’t usually share a screen or a database”",
+          "reason": "Use contractions, and “typically” is simply “usually”."
+        },
+        {
+          "quote": "An API works as a waiter in a restaurant.",
+          "comment": "Change “works as a waiter” to “works like a waiter”",
+          "reason": "“Works as a waiter” means it is employed as one. “Like” makes the comparison."
+        },
+        {
+          "quote": "the kitchen prepares the request and sends back the result",
+          "comment": "Change “prepares the request” to “prepares it”",
+          "reason": "The sentence switches from “order” to “request” for the same thing."
+        },
+        {
+          "quote": "Now let's understand what API is",
+          "comment": "Spell out API, and later JSON and OAuth, on first use",
+          "reason": "Acronyms must be expanded the first time they appear. “API” is never expanded anywhere in the module."
+        }
+      ]
+    },
+    {
+      "id": "B7.2",
+      "lesson": "Lesson 7 of 12 — API and Integration",
+      "screen": "How APIs Work and Typical API Flow",
+      "href": "#/lessons/4sqeXbEZqbNZnXTDAiWMJ_Uq-knoaaPg",
+      "prep": [],
+      "items": [
+        {
+          "quote": "The following steps explain how an APIs works:",
+          "comment": "Change to “The following steps explain how an API works:”",
+          "reason": "“An APIs works” mixes singular and plural."
+        },
+        {
+          "quote": "Client API: The user clicks",
+          "comment": "Change the label “Client API” to “User Action”",
+          "reason": "The step describes what the user does, not a client API. The label does not match its content."
+        },
+        {
+          "quote": "User Action: The buyer reviews and approves the payment.",
+          "comment": "Rename the four labels so they follow one pattern, for example “User Action”, “API Request”, “API Response”, “Buyer Approval”",
+          "reason": "Parallelism. “Client API” does not follow the pattern of the other three labels, and “User Action” is used for the last step while the first step is also a user action."
+        },
+        {
+          "quote": "API Response: PayPal responds with an order ID and an approval link.",
+          "comment": "Add a final step for capturing the payment",
+          "reason": "The flow stops at approval, while Lesson 8 shows capture as the final step. The two flows do not match."
+        }
+      ]
+    },
+    {
+      "id": "B8.1",
+      "lesson": "Lesson 8 of 12 — PayPal Payment Flow",
+      "screen": "PayPal Payment Flow and End-to-End Process",
+      "href": "#/lessons/oQd6ro7p_bIfiLD6xCNohC6K1rEvNdim",
+      "prep": [],
+      "items": [
+        {
+          "quote": "the merchant captures the payment to complete the transaction",
+          "comment": "Change “complete the transaction” to “complete the purchase”",
+          "reason": "The style guide says to use “purchase” or “payment” rather than “transaction”."
+        },
+        {
+          "quote": "Return Order ID: PayPal returns an order ID along with an approval path",
+          "comment": "Change “approval path” to “approval link”",
+          "reason": "Lesson 7 calls it an approval link. Use one term for the same thing."
+        },
+        {
+          "quote": "Buyer Approval: The customer chooses PayPal or a card",
+          "comment": "Change “The customer chooses” to “The buyer chooses”",
+          "reason": "The label says “Buyer” but the sentence says “customer”."
+        },
+        {
+          "quote": "Capture Order: The application instructs PayPal to capture the funds",
+          "comment": "Change “capture the funds” to “capture the money”",
+          "reason": "The style guide says to use “money”, not “funds”."
+        },
+        {
+          "quote": "Create Order: The application sends product and pricing details to PayPal",
+          "comment": "Add full stops to these four bullets, or remove them from the other bullet lists in the module",
+          "reason": "These bullets have no full stops while every other labelled bullet list in the module ends with one."
+        }
+      ]
+    },
+    {
+      "id": "B8.2",
+      "lesson": "Lesson 8 of 12 — PayPal Payment Flow",
+      "screen": "Key Terms",
+      "href": "#/lessons/oQd6ro7p_bIfiLD6xCNohC6K1rEvNdim",
+      "prep": [],
+      "items": [
+        {
+          "quote": "A URL that performs a specific function, such as creating or capturing an order.",
+          "comment": "Change to “A web address that a specific function is called on, such as creating or capturing an order.”",
+          "reason": "A URL is an address; it does not perform a function."
+        },
+        {
+          "quote": "A structured data format used to exchange requests and response data.",
+          "comment": "Change “requests and response data” to “request and response data”",
+          "reason": "The two words in the pair should match — one is plural and one is singular."
+        },
+        {
+          "quote": "The step where the payment is finalized and funds are secured.",
+          "comment": "Change to “The step in which the payment is finalized and the money is secured.”",
+          "reason": "“Where” refers to a place, not a step, and the style guide says to use “money”, not “funds”."
+        }
+      ]
+    },
+    {
+      "id": "B8.3",
+      "lesson": "Lesson 8 of 12 — PayPal Payment Flow",
+      "screen": "Security and Best Practices",
+      "href": "#/lessons/oQd6ro7p_bIfiLD6xCNohC6K1rEvNdim",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Payment API should never be treated like open or public links.",
+          "comment": "Change “Payment API” to “Payment APIs”",
+          "reason": "“API” should be plural to match “links”."
+        },
+        {
+          "quote": "before the capture step is successfully completed",
+          "comment": "Change to “before the capture step succeeds”",
+          "reason": "“Complete” and “completed” appear in the same sentence."
+        },
+        {
+          "quote": "Why this matters in training:",
+          "comment": "Put this on its own line as a heading, and change it to “Why This Matters in Training”",
+          "reason": "It runs on from the end of the “Do Not” paragraph, and the earlier heading in this lesson uses title case (“Why This Matters”)."
+        },
+        {
+          "quote": "Even non-technical teams benefit from understanding this flow",
+          "comment": "Delete this paragraph or rewrite it for the learner",
+          "reason": "The paragraph speaks to the course designer about why the topic is in the course, not to the learner."
+        }
+      ]
+    },
+    {
+      "id": "B8.4",
+      "lesson": "Lesson 8 of 12 — PayPal Payment Flow",
+      "screen": "Types of API — Classic API tab",
+      "href": "#/lessons/oQd6ro7p_bIfiLD6xCNohC6K1rEvNdim",
+      "prep": [
+        {
+          "type": "tab",
+          "index": 0
+        }
+      ],
+      "items": [
+        {
+          "quote": "Types of API",
+          "comment": "Move the “Types of API” section into Lesson 7, “API and Integration”",
+          "reason": "This section explains what the two API types are, which belongs with the API lesson. It currently sits at the end of the PayPal Payment Flow lesson, after the payment flow, key terms and security sections."
+        },
+        {
+          "quote": "There are two types of API that merchants can use",
+          "comment": "Change “two types of API” to “two types of APIs”",
+          "reason": "“Types of” takes the plural."
+        },
+        {
+          "quote": "integrate their PayPal account with an eCommerce website",
+          "comment": "Change “eCommerce” to “e-commerce”",
+          "reason": "The same lesson writes “e-commerce” in the Business Example above. Use one spelling."
+        },
+        {
+          "quote": "A merchant can choose only one type for integration.",
+          "comment": "Add a lead line here, above the tabs, for example “Select each tab below to compare the two API types.”",
+          "reason": "The style guide requires a lead line before any interactive element. Lesson 3 has one before its tabs; this interaction has none."
+        },
+        {
+          "quote": "This is the older version of PayPal API.",
+          "comment": "Change to “Classic APIs are the older version of the PayPal API.”",
+          "reason": "The definite article is missing before “PayPal API”, and the bullet needs a clear subject."
+        },
+        {
+          "quote": "These API are accessed directly from the PayPal account.",
+          "comment": "Change to “Merchants access these APIs directly from their PayPal account.”",
+          "reason": "“API” should be plural, and the passive sentence is clearer in the active voice."
+        },
+        {
+          "quote": "It offers two authentication methods: Signature and Certificate.",
+          "comment": "Start each bullet the same way, for example “Classic APIs are…”, “Classic APIs offer…”, “Merchants access…”",
+          "reason": "Parallelism. The four bullets start with “This is”, “It offers”, “These API are” and “They are”, so the reader has to work out what each one refers to."
+        }
+      ]
+    },
+    {
+      "id": "B8.5",
+      "lesson": "Lesson 8 of 12 — PayPal Payment Flow",
+      "screen": "Types of API — REST API tab",
+      "href": "#/lessons/oQd6ro7p_bIfiLD6xCNohC6K1rEvNdim",
+      "prep": [
+        {
+          "type": "tab",
+          "index": 1
+        }
+      ],
+      "items": [
+        {
+          "quote": "Unlike Classic APIs, REST APIs are fully equipped for modern payment experiences",
+          "comment": "Change to “Before choosing REST APIs, understand their capabilities:”",
+          "reason": "The Classic API tab uses a short lead-in; this one is much longer and uses a dash. Keep both tabs the same shape."
+        },
+        {
+          "quote": "This is the latest and recommended version of PayPal API.",
+          "comment": "Change to “REST APIs are the latest and recommended version of the PayPal API.”",
+          "reason": "Definite article is missing before “PayPal API”."
+        },
+        {
+          "quote": "It uses Client ID and Secret for authentication.",
+          "comment": "Change to “They use a Client ID and Secret for authentication.”",
+          "reason": "The article is missing before “Client ID”, and the subject should match the other bullets."
+        },
+        {
+          "quote": "Pay in 4, and crypto payments",
+          "comment": "Change “crypto payments” to “cryptocurrency payments”",
+          "reason": "The Classic API tab uses “cryptocurrency”. Keep one term."
+        }
+      ]
+    },
+    {
+      "id": "B9.1",
+      "lesson": "Lesson 9 of 12 — The Fastlane Experience",
+      "screen": "Fastlane by PayPal",
+      "href": "#/lessons/G0PxR9M5MFL32cpv9pg02NUXUH3QsqnU",
+      "prep": [],
+      "items": [
+        {
+          "quote": "these details can be automatically filled where Fastlane is available",
+          "comment": "Change to “Fastlane fills in these details automatically where it is available”",
+          "reason": "The sentence is passive. The style guide prefers active voice."
+        },
+        {
+          "quote": "https://www.paypal.com/guestcheckout",
+          "comment": "Change “merchants can visit: https://www.paypal.com/guestcheckout.” to “merchants can visit the **PayPal guest checkout page**.”",
+          "reason": "Every other link in the module uses a label. A raw web address is harder to read and to hear on a screen reader."
+        },
+        {
+          "quote": "Drive conversion with",
+          "comment": "Replace this marketing graphic with a screenshot of the Fastlane experience",
+          "reason": "The image is merchant-facing marketing with an “Enable Fastlane” button that does nothing in the module.",
+          "box": {
+            "selector": ".block-image",
+            "nth": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "B9.2",
+      "lesson": "Lesson 9 of 12 — The Fastlane Experience",
+      "screen": "How to Get Started with Fastlane",
+      "href": "#/lessons/G0PxR9M5MFL32cpv9pg02NUXUH3QsqnU",
+      "prep": [],
+      "items": [
+        {
+          "quote": "creating a PayPal Business account",
+          "comment": "Change “PayPal Business account” to “PayPal business account”",
+          "reason": "The style guide says to lowercase “business account”."
+        },
+        {
+          "quote": "Once approved for Expanded Checkout, Fastlane can be enabled by creating a REST API and checking the toggle Fastlane option",
+          "comment": "Change to “Once the merchant is approved for Expanded Checkout, they can enable Fastlane by creating REST API credentials and turning on the Fastlane toggle in the PayPal Developer portal.”",
+          "reason": "Three problems. As written, Fastlane is the thing being approved; “checking the toggle Fastlane option” is garbled; and merchants create API credentials, not an API."
+        },
+        {
+          "quote": "refer to the Knowledge Center EMAIL334",
+          "comment": "Change to “refer to the Knowledge Center article EMAIL334”",
+          "reason": "The word “article” is missing. The note at the end of this lesson writes it correctly."
+        }
+      ]
+    },
+    {
+      "id": "B9.3",
+      "lesson": "Lesson 9 of 12 — The Fastlane Experience",
+      "screen": "Consumer Queries — FAQ accordion",
+      "href": "#/lessons/G0PxR9M5MFL32cpv9pg02NUXUH3QsqnU",
+      "prep": [
+        {
+          "type": "accordionAll"
+        }
+      ],
+      "items": [
+        {
+          "quote": "In addition to merchant inquiries, support team may also receive questions",
+          "comment": "Change “support team may also receive” to “the support team may also receive”",
+          "reason": "Definite article is missing."
+        },
+        {
+          "quote": "Here are FAQs to provide support for consumers:",
+          "comment": "Change to “Here are the FAQs you can use to support customers:”",
+          "reason": "The article is missing and the phrasing is indirect."
+        },
+        {
+          "quote": "Consumer Queries",
+          "comment": "Change the heading to “Customer Queries” and use “customers” throughout the section",
+          "reason": "The section uses “consumer” in the heading and “customers” in the body for the same people."
+        },
+        {
+          "quote": "Data privacy: We encrypt your information",
+          "comment": "Change “Data privacy” and “Identity verification” to “Data Privacy” and “Identity Verification”",
+          "reason": "Every other labelled bullet in the module uses title case."
+        },
+        {
+          "quote": "your full card number or CVV code",
+          "comment": "Change “CVV code” to “CVV”, and spell out CVV on first use",
+          "reason": "The last “V” in CVV already stands for “value”, so “code” repeats it. Acronyms must also be expanded on first use."
+        },
+        {
+          "quote": "with the places where you shop",
+          "comment": "Change “the places where you shop” to “the stores where you shop”",
+          "reason": "“Places” is vague."
+        }
+      ]
+    },
+    {
+      "id": "B9.4",
+      "lesson": "Lesson 9 of 12 — The Fastlane Experience",
+      "screen": "Consumer Queries — remaining FAQ panels",
+      "href": "#/lessons/G0PxR9M5MFL32cpv9pg02NUXUH3QsqnU",
+      "prep": [
+        {
+          "type": "accordionAll"
+        }
+      ],
+      "items": [
+        {
+          "quote": "You can add up to 8 cards and unlimited addresses.",
+          "comment": "Change “8 cards” to “eight cards”",
+          "reason": "The style guide says to spell out numbers one to nine."
+        },
+        {
+          "quote": "You can add up to 8 cards",
+          "comment": "Remove the bullet and show this answer as a plain sentence",
+          "reason": "A list with only one item is not a list."
+        },
+        {
+          "quote": "Use the store's website or your receipt to find their contact information",
+          "comment": "Change “their contact information” to “its contact information”",
+          "reason": "“Store” is singular, so the pronoun should be “its”."
+        },
+        {
+          "quote": "contact Fastlane by PayPal Support. You can view your saved cards and addresses by logging in to Fastlane by PayPal.",
+          "comment": "Change to “contact Fastlane Support. You can view your saved cards and addresses when you log in.”",
+          "reason": "“Fastlane by PayPal” appears three times in two sentences."
+        },
+        {
+          "quote": "This feature isn't currently available",
+          "comment": "Change “isn’t” to “is not”",
+          "reason": "The style guide says to avoid negative contractions where they hide the word “not”, especially in status messages."
+        },
+        {
+          "quote": "Select Help",
+          "comment": "Use one verb for all four steps, for example “Select”, and format “Help”, “Delete Profile” and “Confirm” in bold",
+          "reason": "The list mixes “Select” and “Click” for the same kind of action, and the style guide says clickable actions are formatted in bold."
+        }
+      ]
+    },
+    {
+      "id": "B10.1",
+      "lesson": "Lesson 10 of 12 — Product Availability by Region",
+      "screen": "Product availability table — header and first rows",
+      "href": "#/lessons/ESNP9FoeQT07E5ePA4NETvTu8tKXKFQu",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Product Availability by Region",
+          "comment": "Delete this heading",
+          "reason": "The lesson title directly above already says “Product Availability by Region”."
+        },
+        {
+          "quote": "Product / Feature",
+          "comment": "Add a lead line above the table, for example “Use the table below to check which products are available in a merchant’s region.”",
+          "reason": "The style guide requires a lead line that connects an element to the surrounding content. The table appears with no introduction."
+        },
+        {
+          "quote": "APAC",
+          "comment": "Remove the 🌏 and 🌎 emoji from the APAC and LATAM headings, or add matching emoji to U.S. and U.K. / EMEA",
+          "reason": "Two of the four region headings carry an emoji and two do not."
+        },
+        {
+          "quote": "PayPal Business Account",
+          "comment": "Change “PayPal Business Account” to “PayPal business account”",
+          "reason": "The style guide says to lowercase “business account”."
+        },
+        {
+          "quote": "Expanded Checkout (ACDC/PPCP)",
+          "comment": "Spell out ACDC and PPCP, or remove them",
+          "reason": "Neither acronym is explained anywhere in the module."
+        }
+      ]
+    },
+    {
+      "id": "B10.2",
+      "lesson": "Lesson 10 of 12 — Product Availability by Region",
+      "screen": "Product availability table — remaining rows",
+      "href": "#/lessons/ESNP9FoeQT07E5ePA4NETvTu8tKXKFQu",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Sell on Social (FB/ Instagram)",
+          "comment": "Change to “Sell on Social (Facebook and Instagram)”",
+          "reason": "There is a stray space after the slash, and “FB” is an informal abbreviation. Lesson 3 writes both names in full."
+        },
+        {
+          "quote": "Subscriptions/Smart Subscribe",
+          "comment": "Introduce Smart Subscribe in Lesson 4, or remove it from this table",
+          "reason": "Smart Subscribe appears only here and is never explained."
+        },
+        {
+          "quote": "US Only",
+          "comment": "Change “US Only” to “U.S. only”",
+          "reason": "The column heading uses “U.S.” with periods, and “only” does not need a capital."
+        },
+        {
+          "quote": "UK + select EU",
+          "comment": "Change “UK + select EU” to “U.K. and select EU markets”, and “MX + BR only” to “Mexico and Brazil only”",
+          "reason": "The table mixes full country names, two-letter codes and plus signs for the same kind of information."
+        },
+        {
+          "quote": "Withdrawn 2023",
+          "comment": "Correct either this row or the note in Lesson 2 — this table shows Zettle withdrawn in the U.S. and available in Mexico and Brazil, while Lesson 2 says Zettle is available in the U.S. and was withdrawn from Brazil",
+          "reason": "The two lessons state opposite facts. The U.S. and Brazil entries appear to have been swapped."
+        },
+        {
+          "quote": "Standard/Legacy Buttons (WPS)",
+          "comment": "Spell out WPS, or remove it",
+          "reason": "The acronym is not explained anywhere in the module."
+        },
+        {
+          "quote": "PayPal Payments Pro/ VT 2.0",
+          "comment": "Change to “PayPal Payments Pro and Virtual Terminal 2.0”",
+          "reason": "There is a stray space after the slash and “VT” is not defined."
+        },
+        {
+          "quote": "Legacy product",
+          "comment": "Change “✅ Legacy product” to “⚠️ Legacy product”",
+          "reason": "“Legacy product” is not an availability status, and the green tick tells the learner the product is fully available."
+        }
+      ]
+    },
+    {
+      "id": "B10.3",
+      "lesson": "Lesson 10 of 12 — Product Availability by Region",
+      "screen": "Table legend",
+      "href": "#/lessons/ESNP9FoeQT07E5ePA4NETvTu8tKXKFQu",
+      "prep": [],
+      "items": [
+        {
+          "quote": "TBC = To Be Confirmed with regional product owners before curriculum launch",
+          "comment": "Change to “TBC = to be confirmed”",
+          "reason": "“With regional product owners before curriculum launch” is a note to the course team, not to the learner."
+        },
+        {
+          "quote": "Select markets",
+          "comment": "Use a different symbol for “TBC” than for “Select markets”",
+          "reason": "The same warning symbol marks both, so the legend does not tell the two apart."
+        },
+        {
+          "quote": "Not available",
+          "comment": "Replace the green, pink and amber cell fills with the brand palette, or use symbols and text on a white background",
+          "reason": "The green (#E8F5E9), pink and amber fills are not in the brand palette (White #FFFFFF, Black #000000, PayPal Blue #003087, Bright Blue #60CDFF)."
+        },
+        {
+          "quote": "TBC",
+          "comment": "Check the contrast of the orange “TBC” text on the amber fill and the red “Not available” text on the pink fill",
+          "reason": "These colour combinations look below the 4.5:1 minimum contrast ratio for body text."
+        }
+      ]
+    },
+    {
+      "id": "B11.1",
+      "lesson": "Lesson 11 of 12 — Quiz",
+      "screen": "Quiz introduction",
+      "href": "#/lessons/n_nbYpGhYbm4ksjVJeU8UV10ubUNH5sG",
+      "prep": [],
+      "items": [
+        {
+          "quote": "This quiz will test how well you can support Products Deep Dive.",
+          "comment": "Change to “This quiz will test how well you can support merchants with PayPal products.”",
+          "reason": "“Products Deep Dive” is the name of the module, not something a learner supports."
+        },
+        {
+          "quote": "This quiz comprises 5 questions.",
+          "comment": "Change “This quiz comprises 5 questions.” to “Answer all five questions”",
+          "reason": "Two problems. Parallelism — the other two bullets are instructions while this one is a statement. Also numbers one to nine are spelled out."
+        },
+        {
+          "quote": "Read each question carefully.",
+          "comment": "Remove the full stops from all three bullets",
+          "reason": "The style guide says bulleted lists in training modules should not end with periods."
+        }
+      ]
+    },
+    {
+      "id": "B11.2",
+      "lesson": "Lesson 11 of 12 — Quiz",
+      "screen": "Question 1 of 5",
+      "href": "#/lessons/n_nbYpGhYbm4ksjVJeU8UV10ubUNH5sG",
+      "prep": [
+        {
+          "type": "quizStart"
+        },
+        {
+          "type": "quizFind",
+          "text": "key benefit of PayPal No Code"
+        }
+      ],
+      "items": [
+        {
+          "quote": "PayPal No Code Solutions",
+          "comment": "Change “No Code Solutions” to “No-Code Solutions”",
+          "reason": "Lesson 3 hyphenates it. The same change is needed in the Question 3 options."
+        },
+        {
+          "quote": "Supports only cash transactions",
+          "comment": "Change “cash transactions” to “cash payments”",
+          "reason": "The style guide says to use “payment” rather than “transaction”."
+        }
+      ]
+    },
+    {
+      "id": "B11.3",
+      "lesson": "Lesson 11 of 12 — Quiz",
+      "screen": "Question — “Which PayPal product allows customers to split payments into installments?”",
+      "href": "#/lessons/n_nbYpGhYbm4ksjVJeU8UV10ubUNH5sG",
+      "prep": [
+        {
+          "type": "quizStart"
+        },
+        {
+          "type": "quizFind",
+          "text": "split payments into installments"
+        }
+      ],
+      "items": [
+        {
+          "quote": "APIs & Integration",
+          "comment": "Change “APIs & Integration” to “APIs and Integrations”",
+          "reason": "The style guide says to avoid ampersands in web text, and the lesson itself is called “API and Integration”."
+        }
+      ]
+    },
+    {
+      "id": "B11.4",
+      "lesson": "Lesson 11 of 12 — Quiz",
+      "screen": "Question — “Which PayPal feature helps speed up checkout…?”",
+      "href": "#/lessons/n_nbYpGhYbm4ksjVJeU8UV10ubUNH5sG",
+      "prep": [
+        {
+          "type": "quizStart"
+        },
+        {
+          "type": "quizFind",
+          "text": "securely saving customer payment and shipping"
+        }
+      ],
+      "items": [
+        {
+          "quote": "Shopping Cart",
+          "comment": "Replace “Shopping Cart” with a PayPal product covered in the module, such as “Subscriptions”",
+          "reason": "Shopping Cart is not one of the products taught, so it is not a fair answer option."
+        }
+      ]
+    },
+    {
+      "id": "B11.5",
+      "lesson": "Lesson 11 of 12 — Quiz",
+      "screen": "Question — “What is the primary purpose of PayPal APIs and Integrations?” and feedback",
+      "href": "#/lessons/n_nbYpGhYbm4ksjVJeU8UV10ubUNH5sG",
+      "prep": [
+        {
+          "type": "quizStart"
+        },
+        {
+          "type": "quizFind",
+          "text": "primary purpose of PayPal APIs"
+        },
+        {
+          "type": "quizSubmit"
+        }
+      ],
+      "items": [
+        {
+          "quote": "Managing employee payroll",
+          "comment": "Change “Managing employee payroll” to “To manage employee payroll”",
+          "reason": "Parallelism. The other three options start with “To” plus a verb; this one starts with a gerund."
+        },
+        {
+          "quote": "What is the primary purpose of PayPal APIs and Integrations?",
+          "comment": "Use one name for this topic across the module — “APIs and Integrations”",
+          "reason": "The lesson is called “API and Integration”, a Question 3 option says “APIs & Integration”, and this question says “APIs and Integrations”."
+        },
+        {
+          "quote": "correct response",
+          "comment": "Add specific feedback for each question explaining why the answer is right or wrong",
+          "reason": "Every question shows the same generic message, so a learner who answers incorrectly is told nothing that helps them learn."
+        }
+      ]
+    },
+    {
+      "id": "B12.1",
+      "lesson": "Lesson 12 of 12 — Summary",
+      "screen": "Wrap-Up",
+      "href": "#/lessons/lCQyBGZuwc_ExDDzhoITCfoDMm6UZRN3",
+      "prep": [],
+      "items": [
+        {
+          "quote": "You should be able to:",
+          "comment": "Change “You should be able to:” to “You should now be able to:”",
+          "reason": "The style guide sets this exact wrap-up phrase. The word “now” is missing."
+        },
+        {
+          "quote": "Click the EXIT MODULE button to close the training.",
+          "comment": "Format “EXIT MODULE” in bold",
+          "reason": "The style guide says clickable actions are formatted in bold."
+        }
+      ]
+    }
+  ],
+  "other": [
+    {
+      "title": "Two different table header colours across the curriculum",
+      "text": "The Lesson 10 table header uses PayPal Blue #003087, which is correct. The top navigation bar uses #0070CC and the In-Person Payments with PayPal module uses #008CFF for its table headers. Neither of those is in the brand palette (White #FFFFFF, Black #000000, PayPal Blue #003087, Bright Blue #60CDFF). Standardise on #003087."
+    },
+    {
+      "title": "Tab labels are set in ALL CAPS",
+      "text": "Tab labels render as “PAY LINKS”, “SELL ON SOCIAL”, “QR CODE”, “CLASSIC API” and “REST API”. The style guide reserves ALL CAPS for acronyms and job titles."
+    },
+    {
+      "title": "Product lessons are uneven in depth",
+      "text": "In Person Payments, No-Code Solutions and Subscriptions each have a description, pain points, benefits and a note. PayPal Pay Later has no pain points, and Virtual Terminal has only a description and a screenshot. Consider a consistent structure for every product lesson."
+    },
+    {
+      "title": "Lesson 7 API flow does not match Lesson 8",
+      "text": "Lesson 7 gives a four-step API flow that ends at buyer approval. Lesson 8 gives a four-step flow that ends at capture. The two are describing the same process and should agree."
+    },
+    {
+      "title": "No lead line before the Classic API / REST API tabs",
+      "text": "Lesson 3 correctly introduces its tabs with “Click the tabs below…”. The tabs in Lesson 7 appear with no lead line, which the style guide requires."
+    },
+    {
+      "title": "Authoring notes left in the published module",
+      "text": "Three pieces of text address the course team rather than the learner: “so confirm availability before publishing” (Lesson 3), “Why this matters in training…” (Lesson 8), and “TBC = To Be Confirmed with regional product owners before curriculum launch” (Lesson 10)."
+    },
+    {
+      "title": "Cross-module consistency",
+      "text": "This module writes “In Person Payments” without a hyphen; the In-Person Payments with PayPal module hyphenates it. This module’s quiz says “from the options below”; the other says “from the list below”. Both modules omit “now” from the wrap-up phrase, and neither expands “BRE”."
+    },
+    {
+      "title": "Video playback could not be verified",
+      "text": "The self-hosted MP4 videos would not play in the audit browser, although the files themselves are served correctly. This is a limitation of the audit environment, not a defect in the module. Please confirm playback manually."
+    }
+  ]
+}

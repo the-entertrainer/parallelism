@@ -1,0 +1,488 @@
+
+%%%%%%%%%%%% Introduction to PayPal POS (Zettle) %%%%%%%%%%%%
+
+[BLOCK text] PayPal POS builds commerce tools, such as mobile Card Readers and point-of-sale apps that enable small businesses to compete with the big players. PayPal helps its users to grow their businesses with simple and easy-to-use technology. 
+With PayPal POS, we offer users a powerful set of tools that help them to start, run, and grow their business. 
+
+[BLOCK text] 
+[H2] Objectives 
+
+By the end of this module, you should be able to: 
+
+• Remember the key features and components of PayPal POS (Zettle) 
+
+• Understand how PayPal POS enables merchant to accept in-person payments 
+
+• Explain the evolution from PayPal Here to Zettle and its benefits 
+
+• Apply knowledge to guide a merchant on setting up and using POS solutions 
+
+• Analyze merchant needs to determine when POS solutions and support escalation are required 
+
+[BLOCK text] 
+[H2] What is PayPal POS? 
+
+PayPal is widely known for online payments, but it also offers in-person payment solutions. To expand beyond online checkout, PayPal introduced POS products that allow merchants to accept payments face-to-face. 
+PayPal launched its first card reader, PayPal Here, in 2012. While it enabled in-person payments, evolving merchant needs and technology required a more advanced solution. 
+To address this, PayPal acquired Zettle, which offers a more comprehensive POS system. Zettle provides more than just a card reader and has replaced PayPal Here as the primary in-person payment solution. 
+
+[BLOCK embed] 
+[BLOCK quote] [IMG alt=""] Disclaimer 
+A basic understanding of the product, hardware, and features is sufficient for initial support from BRE teammates. 
+The primary role of BRE teammates is to guide merchants on how to sign up for a POS reader and provide general product information. Basic technical support may be offered in some cases. 
+More advanced queries or issues should be transferred to the PayPal POS support team (Level 2). 
+
+[BLOCK text] The PayPal POS Card Reader is the physical hardware device used to accept in-person payments as part of the PayPal Point of Sale system. Let us dive deeper into its details. 
+This video could not be loaded. 00:00 / 00:00 Current time 00:00 Duration 00:00 1 x 2x 1.75x 1.5x 1.25x 1x (Normal) 0.75x 0.5x 
+[BLOCK text] 
+[H2] POS Readers and Hardware 
+
+Before using PayPal POS (Zettle), merchant approval is required. The application process can be started through the PayPal POS page. 
+
+[BLOCK image] Zettle Reader 
+The functions and technical specifications of the Zettle reader are mentioned below: 
+
+• Supports Bluetooth Low Energy (BLE) 
+
+• No magnet strip, only Chip and Tap (Contactless) 
+
+• Battery time is 8+ hours 
+
+• Zettle Reader value is $79 USD, the first Zettle Reader is discounted at $29 USD 
+
+• Available in White and Black color options 
+
+[IMG alt=""] 
+[BLOCK embed] 
+[BLOCK text] 
+[H2] Ready-made Store Kits 
+
+Each Store Kit features a handpicked selection of hardware and accessories for every business. Designed with a modern business in mind, these sleek, space-saving kits are game-changers. 
+
+[BLOCK gallery] [IMG alt=""] 
+[GALLERY CAPTION] For those getting started 
+[IMG alt=""] 
+[GALLERY CAPTION] For those handing out paper receipts 
+[IMG alt=""] 
+[GALLERY CAPTION] For those managing larger inventories 
+[IMG alt=""] 
+[GALLERY CAPTION] For those on the move 
+
+[BLOCK text] 
+[H2] Addressing Merchant Needs 
+
+Here's some examples of feedback PayPal received from Merchants regarding their needs with accepting in-store payments: 
+
+• "We want to do more events and festivals and unfortunately reception isn’t always working in these places. It is vital that we allow offline payments .” 
+
+• “One negative thing we have heard about the V2 (Bluetooth) .” 
+
+• “It should be WIFI – that would solve the reach problem.” 
+
+• “I like that it is compact, but you could be setting the trend more. The screen looks old. ” 
+
+• “Some like to tip in % and some in £, it’s not very straightforward and I often have to guide people.” 
+
+• "We see some users that want to have two readers but only one POS/license they have to pair/unpair constantly . It must be the worst experience." 
+
+[BLOCK text] 
+[H2] Introducing the latest PayPal Reader 
+
+The latest PayPal Reader (V3) is an upgraded card reader designed to improve payment experience. It works with Android, iOS devices, and web support (expected in future updates). 
+
+[BLOCK image] [IMG alt=""] 
+[BLOCK text] Click the tabs below to learn about the key improvements in the PayPal reader v3. 
+
+[ACCORDION HEADER] 
+[H2] 
+[ACCORDION HEADER] Larger Display 
+
+[ACCORDION BODY] A 3.2-inch color touchscreen for better visibility, QR code display, and itemized purchase view. 
+[IMG alt=""] 
+[ACCORDION HEADER] 
+[H2] 
+[ACCORDION HEADER] Improved Connectivity 
+
+[ACCORDION BODY] It features Bluetooth, Wi-Fi, USB, and Android and iOS wired connections, which will help improve reliability if the customer should lose the Bluetooth connection. 
+[IMG alt=""] 
+[ACCORDION HEADER] 
+[H2] 
+[ACCORDION HEADER] Multi-Pay 
+
+[ACCORDION BODY] Enables multiple card readers to connect to a single POS system. 
+
+Note: The multipay feature is a future update which will be released later . 
+[IMG alt=""] 
+[ACCORDION HEADER] 
+[H2] 
+[ACCORDION HEADER] Tipping — Easier and faster 
+
+[ACCORDION BODY] Offers preset tip options such as 10%, 15%, 20%, or custom values. 
+[IMG alt=""] 
+[ACCORDION HEADER] 
+[H2] 
+[ACCORDION HEADER] Offline Payments 
+
+[ACCORDION BODY] Allows transactions even without internet access, reducing missed sales 
+
+[BLOCK text] 
+[H2] Pricing 
+
+The PayPal reader costs outlined below are structured to offer small and medium-sized businesses a competitively priced in-person payment solution. 
+
+[BLOCK text] 
+USD 
+GBP 
+EUR 
+DKK 
+SEK 
+NOK 
+PayPal Reader (V3) ​ 
+79 
+69 
+79 
+539 
+799 
+799 
+
+[BLOCK text] First Reader Discount: A discount will be offered on the PayPal Reader to new eligible business users. The Merchant should log in or sign up to check their eligibility. 
+
+[BLOCK text] 
+USD 
+GBP 
+EUR 
+DKK 
+SEK 
+NOK 
+PayPal Reader (V3) First Reader Discount ​ 
+29 
+29 
+29 
+199 
+299 
+299 
+
+[BLOCK text] Now let's explore the additional hardware accessories available to merchants as part of the PayPal POS system. The images below outline each accessory along with its corresponding price. 
+
+[BLOCK image] [IMG alt=""] 
+[BLOCK image] [IMG alt=""] 
+[BLOCK text] 
+[H2] What merchant would benefit using the PayPal Reader compared to the PayPal Terminal? 
+
+The PayPal Terminal will suit the following merchants profiles: 
+
+• Mobile Retail Services 
+
+• Events 
+
+• Table Service 
+
+• Retail 
+
+Whereas the PayPal Reader (V3) will be more suited to: 
+
+• Fixed location retail with counter payments 
+
+• Food and drink with tipping needs 
+
+• Multi-pay stations 
+
+• Kiosks 
+
+• Semi-attended stands 
+
+Complete the content above before moving on.
+
+%%%%%%%%%%%% Teammate View in Spark %%%%%%%%%%%%
+
+[BLOCK text] 
+[H2] 
+[H2] Zettle Workflow — Spark 
+
+Within Spark, teammates can see whether a merchant has applied, activated, or deactivated Zettle on their PayPal account using the following steps: 
+Step one - Choose Zettle from Workflow in Spark. 
+
+[BLOCK image] [IMG alt=""] 
+[BLOCK text] Step two - View the status of Zettle. 
+
+[BLOCK gallery] [IMG alt=""] 
+[GALLERY CAPTION] Not Applied 
+[IMG alt=""] 
+[GALLERY CAPTION] Activated 
+[IMG alt=""] 
+[GALLERY CAPTION] Deactivated 
+Complete the content above before moving on.
+
+%%%%%%%%%%%% Pairing/Troubleshooting %%%%%%%%%%%%
+
+[BLOCK image] 
+[H2] Pairing the PayPal Reader 
+The PayPal Reader can be paired using the following connectivity options : 
+
+• Bluetooth 
+
+• USB-C cable (connecting the reader to the POS device) 
+
+For the PayPal Reader, the Merchant can scan a QR code that will do either of the following depending on if the Merchant has the PayPal POS App installed or not: 
+If PayPal POS App is Not Installed 
+A setup page will open with instructions to install the app and complete the setup. 
+If PayPal POS App is Installed 
+The pairing process will automatically open within the PayPal POS app. 
+[IMG alt=""] 
+[BLOCK text] 
+[H2] QR Code Pairing Steps 
+
+Here are the steps to pair a PayPal reader using a QR code: 
+
+• Turn on Bluetooth on the device 
+
+• Power on the reader; a QR code will appear on the screen 
+
+• The Merchant will be directed to the PayPal POS App to either log in or continue with the steps (If the App is not yet installed, the Merchant will be directed to the Play/App store to install it) 
+
+• After logging in, the system will search for the reader 
+
+• A six digit code will display on the PayPal Reader for the Merchant to compare and confirm 
+
+• Press the confirm button on the reader; the screen will display “Reader Paired” 
+
+[BLOCK text] 
+[H3] Let's review these steps in action in the following video: 
+
+This video could not be loaded. 00:00 / 00:00 Current time 00:00 Duration 00:00 1 x 2x 1.75x 1.5x 1.25x 1x (Normal) 0.75x 0.5x 
+[BLOCK image] Alternative Pairing Method — Pair with Serial Number 
+If a merchant can't pair the reader using the QR code, they can still connect their reader to their device through the Reader serial number. 
+To display the serial number, press the power button on the left side of the reader. 
+[IMG alt=""] 
+[BLOCK text] Once the number appears, follow these steps to pair the device: 
+
+• Ensure Bluetooth on the device is turned on 
+
+• Merchant logs into their PayPal POS App and navigates to their settings 
+
+• Click Connect Card Reader 
+
+• Locate and select "PayPal Reader" 
+
+• The PayPal Reader will then be detected 
+
+• The Merchant confirms the three-digit code on their PayPal Reader and device 
+
+• A six-digit code will display on the PayPal Reader for the Merchant to compare and confirm 
+
+• Once the Merchant selects the blue confirm button in the screen of their Reader the Reader will display "Reader Paired" 
+
+[BLOCK image] Resetting the PayPal Reader 
+If the merchant's reader is not pairing or is unresponsive, perform a reset to restore it to pairing mode. 
+When to reset: 
+
+• Pairing fails or disconnects repeatedly 
+
+• The reader is not detected in the app 
+
+• The device becomes unresponsive 
+
+Steps to reset: 
+
+• Press and hold the power button (left side) and the No. 9 button at the same time 
+
+• Hold for about five seconds until a “Please wait” message appears on the screen 
+
+• Release the buttons and allow the reset to complete 
+
+• Turn the reader off , then on again 
+
+What happens after reset: 
+
+• The reader restarts and returns to pairing mode 
+
+• Any previous connection is cleared 
+
+[IMG alt=""] 
+[BLOCK text] Next step: Open the PayPal POS app and follow the pairing steps again to reconnect the reader. 
+Complete the content above before moving on.
+
+%%%%%%%%%%%% FAQs and Resources %%%%%%%%%%%%
+1 of 10 
+[SLIDE] 
+[SLIDE] 1 of 10 
+[CARD FRONT] Click to flip Will the PayPal reader deprecate the Zettle Reader 2? 
+
+[CARD BACK] Click to flip Reader 2 will be removed from the PayPal POS web shop in the but will still be available for direct sales. 
+Any broken Reader 2 will be replaced with Reader 2 until further notice. 
+
+[SLIDE] 2 of 10 
+[CARD FRONT] Click to flip Will Reader and the Dock be available in black and white at launch? 
+
+[CARD BACK] Click to flip Yes, the Merchant will be able to choose between black-and-white options for the Reader and the Dock. 
+
+[SLIDE] 3 of 10 
+[CARD FRONT] Click to flip Will there be a sign-up offer/discount for the first PayPal Reader? 
+
+[CARD BACK] Click to flip A discount will be offered on the PayPal Reader to new eligible business users. The Merchant should log in or sign up to check their eligibility. 
+
+[SLIDE] 4 of 10 
+[CARD FRONT] Click to flip Can the PayPal Reader Dock print receipts? 
+
+[CARD BACK] Click to flip No 
+
+[SLIDE] 5 of 10 
+[CARD FRONT] Click to flip How should I store/clean my PayPal Reader? 
+
+[CARD BACK] Click to flip The PayPal Reader should be kept in a cool dry place. When cleaning the Readers exterior, soft, damp cloth should be used. No liquid should be sprayed directly onto the device and avoid exposure of any of its openings to moisture. Solvents should not be used on the Reader. Ensure that nothing enters the card Reader through any openings, such as card slots. Avoid causing shock or negligent handling of the card Reader. 
+
+[SLIDE] 6 of 10 
+[CARD FRONT] Click to flip If the reader is displaying an error message, how do we get more info on the error code? 
+
+[CARD BACK] Click to flip Press the no.3 key on the Reader to display the error code, ask the Merchant for a photo of the code and their serial number to continue with an SLS escalation. 
+
+[SLIDE] 7 of 10 
+[CARD FRONT] Click to flip The merchant has complained that the volume on their Reader is too loud, can a merchant adjust this? 
+
+[CARD BACK] Click to flip This is intended functionality to alert the Merchant if their payment has been processed. However, an option to adjust the volume will be implemented in a future update. 
+
+[SLIDE] 8 of 10 
+[CARD FRONT] Click to flip Where can a customer go to sign up for PayPal POS (Zettle)? 
+
+[CARD BACK] Click to flip PayPal.com/POS 
+
+[SLIDE] 9 of 10 
+[CARD FRONT] Click to flip Should you transfer a merchant to Zettle teammates if they are having issues setting up their PayPal POS (Zettle) Card Reader? 
+
+[CARD BACK] Click to flip Yes, Transfer 
+
+[SLIDE] 10 of 10 
+[CARD FRONT] Click to flip Is there a new warranty process for the PayPal V3 Reader? 
+
+[CARD BACK] Click to flip No, the process will be exactly the same as the Zettle Reader 2 ( HELP630 (opens in a new tab) ). 
+
+[BLOCK text] 
+[H3] Can the PayPal Reader and dock be bought as a bundle for a cheaper price? 
+
+Yes, though the items are individually priced, the Merchant can bundle them. Please see the current pricing as follows: 
+
+USD​ 
+GBP​ 
+EUR​ 
+DKK​ 
+SEK​ 
+NOK​ 
+PayPal Reader (V3)​ 
+79​ 
+69​ 
+79​ 
+539​ 
+799 
+799 
+PayPal Dock (V3) 
+29 
+29 
+29 
+199 
+299 
+299 
+PayPal Reader (V3) (FRD) 
+29 
+29 
+29 
+199 
+249 
+199 
+PayPal Reader (V3) + Dock Bundle 
+108 
+98 
+108 
+738 
+1,098 
+1,098 
+PayPal Reader (V3) (FRD) + Dock Bundle 
+58 
+58 
+58 
+398 
+548 
+498 
+
+[BLOCK text] 
+[H2] Resources 
+
+• TEAM1943 (opens in a new tab) - PayPal Point of Sale (Zettle) 
+
+• HELP580 (opens in a new tab) - What is PayPal Point of Sale System? 
+
+• HELP609 (opens in a new tab) - What is the Card Reader and its accessories? And how do I order them? 
+
+• HELP630 (opens in a new tab) - Point of Sale Warranty 
+
+• TEAM1447 (opens in a new tab) - Zettle/ Point of Sale Glossary 
+
+Complete the content above before moving on.
+
+%%%%%%%%%%%% Quiz %%%%%%%%%%%%
+SKIP TO LESSON In-Person Payments with PayPal 0% COMPLETE 
+• Introduction to PayPal POS (Zettle) 
+
+• Teammate View in Spark 
+
+• Pairing/Troubleshooting 
+
+• FAQs and Resources 
+
+• Quiz 
+
+• Summary 
+Lesson 4 - FAQs and Resources Lesson 5 of 6 
+[H1] Quiz 
+This quiz will test how well you can support In-Person Payments with PayPal. 
+
+• This quiz comprises 4 questions. 
+
+• Read each question carefully. 
+
+• Use any tools and resources available to you. 
+
+You need to score 85% to pass this assessment. 
+START QUIZ 
+[H1] Question 01/04 
+What happens if the PayPal POS App is not installed when scanning the QR code? 
+
+Choose the correct answer from the list below. 
+The pairing process is cancelled 
+The reader shuts down 
+The device connects automatically without the app 
+The merchant is directed to a landing page or app store to install the app 
+Incorrect You did not select the correct response. 
+SUBMIT NEXT 
+[H1] Question 02/04 
+How can a merchant pair the PayPal Reader using the new pairing flow? 
+
+Choose the correct answer from the list below. 
+Through email verification 
+Through Bluetooth or a USB-C cable between the reader and the POS device 
+Only through Wi-Fi 
+Only through NFC 
+Incorrect You did not select the correct response. 
+SUBMIT NEXT 
+[H1] Quiz Results 
+PASSING: 85% Your score: 0% Failed Your score Your score 0% Your score 0% 0% PASSING 85% PASSING 85% TAKE AGAIN 92% Completed 80% Completed 56% Completed 50% Completed Unstarted Unstarted
+
+%%%%%%%%%%%% Summary %%%%%%%%%%%%
+
+[BLOCK text] 
+[H2] Wrap-Up 
+
+You should be able to: 
+
+• Remember the key features and components of PayPal POS (Zettle) 
+
+• Understand how PayPal POS enables merchants to accept in-person payments 
+
+• Explain the evolution from PayPal Here to Zettle and its benefits 
+
+• Apply knowledge to guide merchants on setting up and using POS solutions 
+
+• Analyze merchant needs to determine when POS solutions and support escalation are required 
+
+[BLOCK image] [IMG alt=""] Click the EXIT MODULE button to close the training. 
+
+[BUTTON] EXIT MODULE

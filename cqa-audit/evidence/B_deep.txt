@@ -1,0 +1,655 @@
+
+%%%%%%%%%%%% Introduction %%%%%%%%%%%%
+
+[BLOCK image] Introduction to PayPal Products 
+In today's fast-moving commerce landscape , merchants need flexible and reliable tools to meet the evolving expectations of their customers, and PayPal delivers exactly that. From seamless online checkouts to in-person payments and everything in between, PayPal offers a diverse range of products designed to fit businesses of every size and type. 
+This module will take you on a journey through PayPal's core merchant offerings , helping you understand not just what each product does, but why it matters to the merchants you support. Whether it's a small business exploring Pay Later options or an enterprise merchant looking for robust API integrations , knowing the right solution makes all the difference. 
+By the end of this module, you'll be equipped to have confident, informed conversations with merchants about their payment options, guiding them toward solutions that truly work for their business. 
+[IMG alt=""] 
+[BLOCK text] 
+[H2] Objectives 
+
+By the end of this module, you should be able to: 
+
+• Identify different PayPal merchant products and their key features 
+
+• Explain how various payment solutions support business and customer needs 
+
+• Differentiate between payment products such as Pay Later, Subscriptions, and Virtual Terminal 
+
+• Recognize the role of APIs, integrations, and no-code solutions in payment processing 
+
+• Understand how PayPal products improve checkout experiences and payment flexibility 
+
+CONTINUE
+
+%%%%%%%%%%%% In Person Payments %%%%%%%%%%%%
+
+[BLOCK text] 
+[H2] Introduction to In Person Payments 
+
+PayPal's in-person payment solutions let businesses accept payments at a physical location — whether that's a shop, market stall, or mobile service — all managed from a single PayPal business account alongside any online sales. There are different options, ranging from zero hardware (QR codes, Tap to Pay) to dedicated card readers and full point-of-sale (POS) terminals, so businesses of any size can find a fit. Let's look at the PayPal POS system. 
+
+[BLOCK image] PayPal POS System (Zettle) 
+Zettle is PayPal’s POS solution used by businesses to accept in-person payments . It includes both hardware and software , such as card readers and payment tools . Zettle is being rebranded to PayPal POS, although the Zettle terminal will still appear on our website. 
+While PayPal is widely recognized for online payments , its vision is to be more than just a button at checkout . To achieve this, PayPal also offers in-store payment solutions that support businesses selling in person, expanding its role beyond digital transactions. 
+Within Spark, teammates can view whether a merchant has applied for, activated, or deactivated Zettle services on their PayPal account via the Zettle workflow . This visibility helps teams better support merchants in managing their POS solutions . 
+[IMG alt=""] 
+[BLOCK text] Watch the video below to see how PayPal Zettle makes accepting payments simple, fast, and easy for any business. 
+
+[BLOCK embed] 
+[BLOCK image] Benefits of PayPal POS 
+PayPal POS offers several benefits for businesses, as listed below : 
+
+• Integrated Payments: Accepts credit/debit cards, contactless payments, and PayPal. 
+
+• Inventory Management: Helps track stock levels in real time. 
+
+• Sales Reporting: Provides reports and insights to support decisions. 
+
+• Mobile Access: Can be used on mobile devices for flexible sales. 
+
+• Customer Management: Stores customer details and purchase history for better service. 
+
+[IMG alt=""] 
+[BLOCK text] 
+[H2] Merchant Pain Points 
+
+PayPal POS may also come with certain challenges for merchants, as listed below: 
+
+• Initial Setup: Installing and integrating the system may take time. 
+
+• Hardware Costs: Merchant may need to purchase devices such as card readers and tablets. 
+
+• Internet Dependence: Best performance requires a stable internet connection. 
+
+• Learning Curve: Staff may need training to use all features effectively. 
+
+• Limited Customization: Some businesses may need more tailored functionality. 
+
+[BLOCK quote] [IMG alt=""] BRE teammates should guide merchants on how to sign up for a reader and provide basic product information. 
+A high-level understanding of the product, hardware, and available features is recommended. 
+
+[BLOCK divider] 
+[BLOCK quote] [IMG alt=""] Zettle is available in selected markets including the U.S., U.K., Germany, Sweden, Netherlands, Italy, France, Spain, Portugal, and Mexico. It is not currently available in Brazil. (Zettle was withdrawn from Brazil in 2023) 
+Complete the content above before moving on.
+
+%%%%%%%%%%%% No-Code Solutions %%%%%%%%%%%%
+
+[BLOCK image] No-Code Solutions are designed to simplify the process of integrating PayPal’s payment solutions into a website or online store without the need for extensive coding or technical expertise . This makes it easier for businesses to quickly set up secure and reliable payment options . 
+This feature is particularly beneficial for small business owners, entrepreneurs , and individuals who want to add a secure and reliable payment option to their online presence with minimal effort. It empowers them to accept payments without relying on developers or complex integrations. 
+Small businesses that want to accept payments online or in person can set up pay links, buttons , and QR codes to accept payments directly on their website . You don’t need a developer, coding knowledge , or even a website to start accepting payments. If you already have a website, you can simply copy and paste PayPal buttons to enable transactions instantly. 
+[IMG alt=""] 
+[BLOCK text] 
+[H2] No-Code Solution — Buttons 
+
+PayPal Buttons are customizable payment buttons provided by PayPal that can be integrated into websites or online platforms to facilitate transactions. These buttons allow customers to make payments directly through PayPal, using their PayPal account or credit/debit cards. 
+PayPal offers different types of buttons to support various payment needs. These are: 
+
+• Buy Now Button: Allows customers to make a one-time purchase immediately. 
+
+• Add to Cart Button: Lets customers add items to a shopping cart and continue shopping before checkout. 
+
+• Donate Button: Helps charities and non-profit organizations accept donations. 
+
+[BLOCK image] [IMG alt=""] 
+[BLOCK image] [IMG alt=""] 
+[BLOCK text] Click the tabs below to learn about the other no-code solutions offered by PayPal. 
+Pay Links Sell on Social QR Code PayPal’s Pay Link feature allows merchants to create a simple, shareable payment link that directs customers to a secure checkout page. These links can be shared through email, text messages, websites, or other online platforms, making it easy to accept payments and complete transactions. 
+
+Here are the main features of Pay Link: 
+
+• Shareable Payment Links: Send secure payment links directly to customers. 
+
+• Customizable Options: Customize payment amounts, descriptions, and other transaction details. 
+
+• Flexible Use: Suitable for selling products, services, collecting donations, or event payments. 
+
+• Easy Setup: Quick to create and share with no technical expertise required. 
+
+• Secure Payments: Transactions are safely processed through PayPal’s platform. 
+
+[IMG alt=""] Sell on Social helps businesses sell products directly through social media platforms such as Facebook and Instagram. It allows merchants to create shoppable posts and reach customers where they already spend time online. 
+
+Here are the main features of this solution: 
+
+• Product Listings: List multiple products with images, descriptions, and prices directly on social media profiles. 
+
+• Seamless Checkout: Customers can click the product listings and complete purchases through PayPal checkout. 
+
+• Marketing Reach: Sell on Social leverages the reach and engagement of social media platforms to drive sales and promote products. 
+
+[IMG alt=""] PayPal’s QR Code feature enables businesses and individuals to accept in-person payments using a unique QR code. Customers simply scan the code with their smartphone and pay through their PayPal app. 
+
+Here are the main features of QR Code: 
+
+• Contactless Payments: Supports safe, touch-free transactions. 
+
+• Easy to Use: Customers scan the code and pay in seconds. 
+
+• Versatile: Great for retail stores, markets, and service-based businesses. 
+
+• Secure Transactions: Payments are processed through PayPal’s platform. 
+
+• No Extra Hardware Needed: No card readers or additional payment hardware required. 
+
+[IMG alt=""] 
+[BLOCK text] 
+[H2] Merchant Pain Points 
+
+Some of the pain points of merchants are listed below: 
+
+• Complex Payment Processes: Without Pay Links, merchants may need to set up more complex payment gateways, which can be time-consuming and technically challenging. 
+
+• Limited Payment Choices: Customers may have fewer payment options available, which could result in missed sales opportunities. 
+
+• Slower Payment Processing: Manual or less efficient payment methods may delay receiving funds and impact cash flow. 
+
+• Higher Risk of Errors: Entering payment details manually can increase the risk of errors, potentially causing disputes and customer dissatisfaction. 
+
+• Security Risks: Without PayPal’s security features, merchant may face a greater risk of fraud or data breaches. 
+
+[BLOCK text] 
+[H2] Benefits of No-Code Solutions 
+
+No-Code Solutions offers several benefits for business. These are: 
+
+• Easy to Use: Quickly create and share payment links through email, text, or social media. 
+
+• Multiple Payment Methods: Customers can pay using credit cards, debit cards, or PayPal. 
+
+• Faster Payments: Payments are processed quickly, helping improve cash flow. 
+
+• Customizable Links: Merchants can personalize payment links with amounts, descriptions, and branding. 
+
+• Strong Security: PayPal’s security tools help protect both merchant and customers from fraud. 
+
+[BLOCK quote] [IMG alt=""] Sell on Social (Facebook/Instagram integration) availability depends on the market, so confirm availability before publishing. 
+Complete the content above before moving on.
+
+%%%%%%%%%%%% Subscriptions %%%%%%%%%%%%
+
+[BLOCK image] Subscriptions PayPal’s subscription payment service enables businesses to offer recurring billing options to customers. This feature is ideal for businesses that sell products or services on a regular basis, such as monthly memberships, subscription boxes, or software as a service (SaaS). By using subscription payments, businesses can automate billing and maintain a steady revenue stream. 
+[IMG alt=""] 
+[BLOCK text] 
+[H2] Merchant Pain Points 
+
+The following are some common pain points faced by merchants: 
+
+• Manual Billing: Manual invoicing can be time-consuming and may lead to errors. 
+
+• Customer Retention: Difficulty managing recurring payments can cause service interruptions and customer dissatisfaction. 
+
+• Plan Management: Managing multiple subscription plans can be complex and difficult to organize. 
+
+• Higher Costs: Manual processes can increase administrative time and operating costs. 
+
+• Payment Tracking: Tracking and reconciling recurring payments can be challenging. 
+
+[BLOCK image] [IMG alt=""] 
+[BLOCK text] 
+[H2] Benefits of Subscriptions 
+
+Subscriptions offer several benefits for businesses, as follows: 
+
+• Automated Billing: Customers are charged automatically at scheduled intervals. 
+
+• Customizable Plans: Businesses can create multiple subscription plans with different pricing and billing cycles. 
+
+• Multiple Payment Methods: Customers can pay using credit cards, debit cards, and PayPal. 
+
+• Easy Integration: Subscription features can be added to websites without extensive coding. 
+
+• Customer Management: Businesses can track payments, manage cancellations, and update billing information easily. 
+
+[BLOCK text] Watch the video below to learn how to manage your recurring payments in PayPal. 
+This video could not be loaded. 00:00 / 00:00 Current time 00:00 Duration 00:00 1 x 2x 1.75x 1.5x 1.25x 1x (Normal) 0.75x 0.5x Complete the content above before moving on.
+
+%%%%%%%%%%%% PayPal Pay Later %%%%%%%%%%%%
+
+[BLOCK image] Installment Payments: PayPal Pay Later 
+PayPal Virtual Terminal is: 
+
+• A secure web-based solution that allows businesses to process credit and debit card payments by phone, by mail, or in person. 
+
+• Ideal for businesses that do not use a physical card reader or POS system but still need to accept card payments. 
+
+• Helps businesses expand payment options and offer customers a convenient and flexible way to pay. 
+
+[IMG alt=""] 
+[BLOCK text] 
+[H2] Key Features of PayPal Pay Later 
+
+Here are the key features of PayPal Pay Later suite: 
+
+• Flexible Payment Plans: Customers can select installment plans or deferred payment options that fit their needs. 
+
+• Instant Approval: The approval process is quick, and decisions are often provided during checkout. 
+
+• No Hidden Fees: Clear and transparent terms help customers understand their payment responsibilities. 
+
+• Integrated Checkout: Pay Later is built into the PayPal checkout process, creating a smooth and familiar payment experience. 
+
+• Increased Sales Opportunities: Flexible payment options can help merchant attract more customers and increase average order value. 
+
+[BLOCK image] [IMG alt=""] 
+[BLOCK quote] [IMG alt=""] Pay in 4: Available in the U.S., Italy, France, and Australia. 
+Pay in 3: Available in the U.K. 
+Pay in 1 Month: Available in Germany. 
+Pay Monthly: Available in the U.S. and Germany. 
+Complete the content above before moving on.
+
+%%%%%%%%%%%% Virtual Terminal %%%%%%%%%%%%
+
+[BLOCK image] Virtual Terminal 
+PayPal Virtual Terminal is a secure web-based solution that allows businesses to process credit and debit card payments by phone, by mail, or in person. It is ideal for businesses that do not use a physical card reader or POS system but still need to accept card payments. This solution helps businesses expand payment options and offer customers a convenient and flexible way to pay. 
+[IMG alt=""] 
+[BLOCK image] [IMG alt=""] CONTINUE
+
+%%%%%%%%%%%% API and Integration %%%%%%%%%%%%
+
+[BLOCK text] Now let's understand what API is and how an API connects merchant products to PayPal. We will also go through a basic PayPal Checkout example so you can relate the concept to a real-world business scenario. 
+
+[BLOCK text] 
+[H2] Why This Matters 
+
+When two systems need to work together, they typically do not share a screen or a database directly. Instead, they communicate through an API, which acts as a secure gateway that receives a request, processes it, and returns a response. 
+Simple Analogy: An API works as a waiter in a restaurant. Your app places an order, the waiter delivers it to the kitchen, and the kitchen prepares the request and sends back the result. 
+Business Example: An e-commerce website can use the PayPal API to create an order, redirect the buyer for payment approval, and then capture the payment once it is approved. 
+
+[BLOCK image] How APIs Work 
+The following steps explain how an APIs works: 
+
+• Request: The application sends a request to a specific endpoint, including details such as the item, amount, or customer action. 
+
+• Authentication: The receiving service verifies that the request is coming from an authorized application, often using a secure token. 
+
+• Processing: The server processes the request based on business rules, such as validating data or confirming whether a payment can be completed. 
+
+• Response: The API returns a response, usually in JSON format, so the application understands the outcome and next steps. 
+
+[IMG alt=""] 
+[BLOCK text] 
+[H2] Typical API Flow 
+
+The following steps represent a standard API exchange : 
+
+• Client API: The user clicks “Pay with PayPal.” 
+
+• API Request: The application sends the order details to PayPal. 
+
+• API Response: PayPal responds with an order ID and an approval link. 
+
+• User Action: The buyer reviews and approves the payment. 
+
+Complete the content above before moving on.
+
+%%%%%%%%%%%% PayPal Payment Flow %%%%%%%%%%%%
+
+[BLOCK image] PayPal Payment Flow 
+A typical PayPal checkout process begins when a buyer selects PayPal as the payment method. The merchant then creates an order, the buyer approves the payment on PayPal, and finally, the merchant captures the payment to complete the transaction. 
+[IMG alt=""] 
+[BLOCK text] 
+[H2] End-to-End Process 
+
+Here's how a PayPal-powered checkout works, from order creation to payment capture: 
+
+• Create Order: The application sends product and pricing details to PayPal 
+
+• Return Order ID: PayPal returns an order ID along with an approval path 
+
+• Buyer Approval: The customer chooses PayPal or a card and confirms the payment 
+
+• Capture Order: The application instructs PayPal to capture the funds and finalize the purchase 
+
+[BLOCK text] 
+[H2] Key Terms 
+
+Here are a few key terms along with their definitions: 
+
+[BLOCK text] Endpoint 
+A URL that performs a specific function, such as creating or capturing an order. 
+OAuth Token 
+A temporary token that verifies the application is authorized to access the API. 
+JSON 
+A structured data format used to exchange requests and response data. 
+Capture 
+The step where the payment is finalized and funds are secured. 
+
+[BLOCK text] 
+[H2] Security and Best Practices 
+
+Payment API should never be treated like open or public links. Sensitive information, such as credentials, must always be protected. Secrets should remain on the server side, and every request must be authenticated before performing critical actions. 
+Do: Safely manage client IDs and secrets, exchange them for access tokens, and limit token usage to necessary actions. 
+Do Not: Expose secrets in front-end code or assume a payment is complete before the capture step is successfully completed. Why this matters in training: 
+Even non-technical teams benefit from understanding this flow because it explains why engineers ask for credentials, sandbox testing, approval redirects, and post-payment confirmation. 
+
+[BLOCK text] 
+[H2] Types of API 
+
+There are two types of API that merchants can use to integrate their PayPal account with an eCommerce website: 
+
+• Classic API 
+
+• REST API 
+
+A merchant can choose only one type for integration. 
+Classic API REST API Before adopting Classic APIs, understand their capabilities and limitations: 
+
+• This is the older version of PayPal API. 
+
+• It offers two authentication methods: Signature and Certificate. 
+
+• These API are accessed directly from the PayPal account. 
+
+• They are not compatible with newer checkout features such as Pay with Venmo, Pay in 4, or cryptocurrency payments. 
+
+Unlike Classic APIs, REST APIs are fully equipped for modern payment experiences — here's what sets them apart: 
+
+• This is the latest and recommended version of PayPal API. 
+
+• It uses Client ID and Secret for authentication. 
+
+• These credentials are managed through the PayPal Developer platform. 
+
+• It supports modern checkout features, including Pay with Venmo, Pay in 4, and crypto payments. 
+
+• It also provides a sandbox environment for testing integrations before going live. 
+
+Complete the content above before moving on.
+
+%%%%%%%%%%%% The Fastlane Experience %%%%%%%%%%%%
+
+[BLOCK text] 
+[H2] 
+[H2] Fastlane by PayPal 
+
+Fastlane by PayPal provides a quick and secure online checkout experience. During their first purchase, customers can save their card and shipping details. For future purchases, these details can be automatically filled where Fastlane is available. Customers can review their information before completing payment. For more information about Fastlane, merchants can visit: https://www.paypal.com/guestcheckout (opens in a new tab) . 
+
+[BLOCK image] [IMG alt=""] 
+[BLOCK text] Watch the following videos to understand how Fastlane works and the benefits it offers. 
+This video could not be loaded. 00:00 / 00:00 Current time 00:00 Duration 00:00 1 x 2x 1.75x 1.5x 1.25x 1x (Normal) 0.75x 0.5x 
+[BLOCK embed] 
+[BLOCK embed] 
+[BLOCK text] 
+[H2] How to Get Started with Fastlane 
+
+Merchants can start using Fastlane by creating a PayPal Business account and applying for Expanded Checkout. Once approved for Expanded Checkout, Fastlane can be enabled by creating a REST API and checking the toggle Fastlane option in the PayPal Developer portal. (opens in a new tab) 
+For additional guidance, refer to the Knowledge Center EMAIL334 (opens in a new tab) . 
+Here's a short video demonstrating how a merchant can toggle this feature. 
+This video could not be loaded. 00:00 / 00:00 Current time 00:00 Duration 00:00 1 x 2x 1.75x 1.5x 1.25x 1x (Normal) 0.75x 0.5x 
+[BLOCK quote] [IMG alt=""] Merchant Technical Support 
+For technical issues beyond general product information, such as API setup or feature activation, a support ticket should be submitted to the Merchant Technical Support (MTS) team. 
+
+[BLOCK text] 
+[H2] Consumer Queries 
+
+In addition to merchant inquiries, support team may also receive questions from customers about Fastlane by PayPal. 
+Here are FAQs to provide support for consumers: 
+
+[ACCORDION HEADER] 
+[H2] 
+[ACCORDION HEADER] How can I use Fastlane by PayPal while shopping online? 
+
+[ACCORDION BODY] 
+• Enter your email address during checkout 
+
+• Enter the code that we text you 
+
+• Review your information and place your order 
+
+[ACCORDION HEADER] 
+[H2] 
+[ACCORDION HEADER] How does Fastlane by PayPal ensure that my data is secure? 
+
+[ACCORDION BODY] 
+• Data privacy: We encrypt your information when you pay using Fastlane by PayPal. 
+
+• Identity verification: We text a security code to you when you use Fastlane by PayPal. 
+
+[ACCORDION HEADER] 
+[H2] 
+[ACCORDION HEADER] What information does Fastlane by PayPal share with the places where I shop? 
+
+[ACCORDION BODY] Fastlane by PayPal doesn’t share your full card number or CVV code with the places where you shop. For your order to be processed, we share your: 
+
+• Email address 
+
+• Phone number 
+
+• Shipping and billing addresses 
+
+• Card expiration date 
+
+[ACCORDION HEADER] 
+[H2] 
+[ACCORDION HEADER] How many cards and addresses can I save with Fastlane by PayPal? 
+
+[ACCORDION BODY] 
+• You can add up to 8 cards and unlimited addresses. 
+
+[ACCORDION HEADER] 
+[H2] 
+[ACCORDION HEADER] Where can I get help with an order that I placed using Fastlane by PayPal? 
+
+[ACCORDION BODY] 
+• Contact the store for help with your order or delivery. Use the store’s website or your receipt to find their contact information and support. 
+
+• For assistance with your Fastlane by PayPal profile, contact Fastlane by PayPal Support. You can view your saved cards and addresses by logging in to Fastlane by PayPal. 
+
+[ACCORDION HEADER] 
+[H2] 
+[ACCORDION HEADER] Can I edit or delete information in my profile? 
+
+[ACCORDION BODY] 
+• This feature isn’t currently available, but you can add cards and addresses to your profile during checkout or when you log in to Fastlane by PayPal. 
+
+[ACCORDION HEADER] 
+[H2] 
+[ACCORDION HEADER] How do I delete my Fastlane by PayPal profile? 
+
+[ACCORDION BODY] 
+• Log in to Fastlane by PayPal 
+
+• Select Help 
+
+• Click Delete Profile 
+
+• Click Confirm 
+
+[BLOCK quote] [IMG alt=""] For the latest information on customer queries related to Fastlane, check the Knowledge Center article : TEAM2269 (opens in a new tab) . 
+Complete the content above before moving on.
+
+%%%%%%%%%%%% Product Availability by Region %%%%%%%%%%%%
+
+[BLOCK text] 
+[H2] Product Availability by Region 
+
+[BLOCK text] Product / Feature 
+U.S. 
+U.K. / EMEA 
+🌏 APAC 
+🌎 LATAM 
+PayPal Business Account 
+✅ Available 
+✅ Available 
+✅ Available 
+✅ Available 
+PayPal Checkout (Basic) 
+✅ Available 
+✅ Available 
+✅ Available 
+✅ Available 
+Expanded Checkout (ACDC/PPCP) 
+✅ Available 
+✅ Available 
+⚠️ Select markets 
+⚠️ Select markets 
+PayPal Invoicing 
+✅ Available 
+✅ Available 
+✅ Available 
+✅ Available 
+PayPal Buttons (Pay Link, Donate, etc.) 
+✅ Available 
+✅ Available 
+✅ Available 
+✅ Available 
+QR Code Payments 
+✅ Available 
+✅ Available 
+✅ Available 
+✅ Available 
+Virtual Terminal 
+✅ Available 
+✅ Available 
+⚠️ TBC 
+⚠️ TBC 
+Subscriptions/Smart Subscribe 
+✅ Available 
+✅ Available 
+⚠️ TBC 
+⚠️ TBC 
+Sell on Social (FB/ Instagram) 
+✅ Available 
+⚠️ Select markets 
+⚠️ TBC 
+❌ Not available 
+Venmo (PayPal Exclusive) 
+✅ US Only 
+❌ Not available 
+❌ Not available 
+❌ Not available 
+PayPal Credit (PayPal Exclusive) 
+✅ US Only 
+❌ Not available 
+❌ Not available 
+❌ Not available 
+Pay Later — Pay in 4 
+✅ Available 
+✅ UK + select EU 
+✅ Australia only 
+❌ Not available 
+Pay Later — Pay Monthly 
+✅ US Only 
+❌ Not available 
+❌ Not available 
+❌ Not available 
+Fastlane by PayPal 
+✅ US Only 
+❌ Not available 
+❌ Not available 
+❌ Not available 
+Zettle (POS) 
+❌ Withdrawn 2023 
+✅ UK + select EU 
+❌ Not available 
+✅ MX + BR only 
+Chargeback Protection 
+✅ Available 
+⚠️ TBC 
+⚠️ TBC 
+⚠️ TBC 
+Fraud Protection (Advanced) 
+✅ Available 
+⚠️ TBC 
+⚠️ TBC 
+⚠️ TBC 
+Standard/Legacy Buttons (WPS) 
+⚠️ Pre-Jul 2022 only 
+⚠️ Pre-Jul 2022 only 
+⚠️ Pre-Jul 2022 only 
+⚠️ Pre-Jul 2022 only 
+PayPal Payments Pro/ VT 2.0 
+✅ Legacy product 
+⚠️ TBC 
+⚠️ TBC 
+⚠️ TBC 
+
+[BLOCK text] ✅ Available 
+❌ Not available 
+⚠️ Select markets 
+⚠️ TBC 
+TBC = To Be Confirmed with regional product owners before curriculum launch 
+Complete the content above before moving on.
+
+%%%%%%%%%%%% Quiz %%%%%%%%%%%%
+SKIP TO LESSON Products Deep Dive 0% COMPLETE 
+• Introduction 
+
+• In Person Payments 
+
+• No-Code Solutions 
+
+• Subscriptions 
+
+• PayPal Pay Later 
+
+• Virtual Terminal 
+
+• API and Integration 
+
+• PayPal Payment Flow 
+
+• The Fastlane Experience 
+
+• Product Availability by Region 
+
+• Quiz 
+
+• Summary 
+Lesson 10 - Product Availability by Region Lesson 11 of 12 
+[H1] Quiz 
+This quiz will test how well you can support Products Deep Dive. 
+
+• This quiz comprises 5 questions. 
+
+• Read each question carefully. 
+
+• Use any tools and resources available to you. 
+
+You need to score 80% to pass this assessment. 
+START QUIZ 
+[H1] Question 01/05 
+Which PayPal solution allows businesses to accept recurring payments automatically? 
+
+Choose the correct answer from the options below. 
+Pay Later 
+Subscriptions 
+Virtual Terminal 
+Fastlane by PayPal 
+Incorrect You did not select the correct response. 
+SUBMIT NEXT 
+[H1] Question 02/05 
+What is the primary purpose of PayPal APIs and Integrations? 
+
+Choose the correct answer from the options below. 
+To print invoices 
+To create social media posts 
+Managing employee payroll 
+To connect PayPal services with websites or applications 
+Incorrect You did not select the correct response. 
+SUBMIT NEXT 
+[H1] Quiz Results 
+PASSING: 80% Your score: 0% Failed Your score Your score 0% Your score 0% 0% PASSING 80% PASSING 80% TAKE AGAIN Unstarted Unstarted Unstarted Unstarted Unstarted Unstarted Unstarted Unstarted Unstarted Unstarted Unstarted Unstarted
+
+%%%%%%%%%%%% Summary %%%%%%%%%%%%
+
+[BLOCK text] 
+[H2] Wrap-Up 
+
+You should be able to: 
+
+• Identify different PayPal merchant products and their key features 
+
+• Explain how various payment solutions support business and customer needs 
+
+• Differentiate between payment products such as Pay Later, Subscriptions, and Virtual Terminal 
+
+• Recognize the role of APIs, integrations, and no-code solutions in payment processing 
+
+• Understand how PayPal products improve checkout experiences and payment flexibility 
+
+[BLOCK image] [IMG alt=""] Click the EXIT MODULE button to close the training. 
+
+[BUTTON] EXIT MODULE

@@ -1,0 +1,1180 @@
+{
+  "module": "A",
+  "title": "In-Person Payments with PayPal",
+  "review_url": "https://360.articulate.com/review/content/0aa5a2c1-aa69-4e63-8a7e-a9f233d5fc38/review",
+  "base": "https://articulateusercontent.com/review/uploads/ii4eAmTLR7Uy6fYzgF6uD30Iw_2_-k0i/Cy6Sg2km/index.html",
+  "screens": [
+    {
+      "id": "A1.1",
+      "lesson": "Lesson 1 of 6 — Introduction to PayPal POS (Zettle)",
+      "screen": "Opening paragraphs",
+      "href": "#/lessons/zYAvj2B3DTu64Vs1zw_UKUBTlkFeuUYW",
+      "prep": [],
+      "items": [
+        {
+          "quote": "mobile Card Readers",
+          "comment": "Change “mobile Card Readers” to “mobile card readers”",
+          "reason": "“Card reader” is a common noun here, not a product name, so it takes lower case."
+        },
+        {
+          "quote": "compete with the big players",
+          "comment": "Change “compete with the big players” to “compete with larger businesses”",
+          "reason": "“The big players” is informal. Use plain, simple language."
+        },
+        {
+          "quote": "PayPal helps its users to grow their businesses",
+          "comment": "Change “PayPal helps its users to grow their businesses” to “We help users grow their businesses”",
+          "reason": "Two problems. The paragraph switches between third person (“PayPal”, “its”) and first person (“we”) in the very next sentence — refer to PayPal as “we”. Also “to” is not needed after “helps”."
+        },
+        {
+          "quote": "help them to start, run, and grow their business",
+          "comment": "Change “help them to start, run, and grow their business” to “help them start, run, and grow their businesses”",
+          "reason": "“To” is not needed after “help”, and “them” is plural so “business” should be “businesses”."
+        }
+      ]
+    },
+    {
+      "id": "A1.2",
+      "lesson": "Lesson 1 of 6 — Introduction to PayPal POS (Zettle)",
+      "screen": "Objectives",
+      "href": "#/lessons/zYAvj2B3DTu64Vs1zw_UKUBTlkFeuUYW",
+      "prep": [],
+      "items": [
+        {
+          "quote": "enables merchant to accept in-person payments",
+          "comment": "Change “enables merchant to accept in-person payments” to “enables merchants to accept in-person payments”",
+          "reason": "“Merchant” should be plural. As written the sentence is missing either the plural or an article."
+        },
+        {
+          "quote": "Apply knowledge to guide a merchant on setting up and using POS solutions",
+          "comment": "Change “guide a merchant” to “guide merchants”",
+          "reason": "The Summary lesson lists this same objective as “guide merchants”. The two lists must match word for word."
+        }
+      ]
+    },
+    {
+      "id": "A1.3",
+      "lesson": "Lesson 1 of 6 — Introduction to PayPal POS (Zettle)",
+      "screen": "Disclaimer callout and video lead-in",
+      "href": "#/lessons/zYAvj2B3DTu64Vs1zw_UKUBTlkFeuUYW",
+      "prep": [],
+      "items": [
+        {
+          "quote": "initial support from BRE teammates",
+          "comment": "Spell out “BRE” on first use, then use “BRE teammates” after that",
+          "reason": "Acronyms must be expanded the first time they appear. “BRE” is never explained in either module."
+        },
+        {
+          "quote": "More advanced queries or issues should be transferred to the PayPal POS support team",
+          "comment": "Change to “Transfer more advanced queries or issues to the PayPal POS support team (Level 2)”",
+          "reason": "The sentence is passive. Use active voice and the imperative for an instruction."
+        },
+        {
+          "quote": "The PayPal POS Card Reader is the physical hardware device",
+          "comment": "Change “The PayPal POS Card Reader” to “The PayPal POS card reader”",
+          "reason": "“Card reader” is a common noun and takes lower case."
+        },
+        {
+          "quote": "PayPal Point of Sale system",
+          "comment": "Change “PayPal Point of Sale system” to “PayPal Point-of-Sale (POS) system”",
+          "reason": "The cover page writes it “Point-of-Sale (POS)”. Use one spelling throughout."
+        },
+        {
+          "quote": "Let us dive deeper into its details.",
+          "comment": "Change “Let us dive deeper into its details.” to “Let’s dive deeper into its details.”",
+          "reason": "Use positive contractions to sound natural and conversational."
+        }
+      ]
+    },
+    {
+      "id": "A1.4",
+      "lesson": "Lesson 1 of 6 — Introduction to PayPal POS (Zettle)",
+      "screen": "Zettle Terminal video (placed in the Zettle Reader section)",
+      "href": "#/lessons/zYAvj2B3DTu64Vs1zw_UKUBTlkFeuUYW",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Zettle Terminal video",
+          "box": {
+            "selector": ".block-embed",
+            "nth": 0
+          },
+          "comment": "Add a lead line above this video, for example “Watch the video below to see the Zettle Terminal in action.”",
+          "reason": "The style guide requires a lead line before any embedded or interactive element. This video appears straight after the Zettle Reader bullet list with no introduction."
+        },
+        {
+          "quote": "Zettle Terminal video 2",
+          "box": {
+            "selector": ".block-embed",
+            "nth": 0
+          },
+          "comment": "Move this video to a section about the Zettle Terminal, or replace it with a video about the Zettle Reader",
+          "reason": "The section is headed “Zettle Reader” and lists the reader’s specifications, but the video introduces the Zettle Terminal, which is a different product."
+        }
+      ]
+    },
+    {
+      "id": "A1.5",
+      "lesson": "Lesson 1 of 6 — Introduction to PayPal POS (Zettle)",
+      "screen": "POS Readers and Hardware / Zettle Reader specifications",
+      "href": "#/lessons/zYAvj2B3DTu64Vs1zw_UKUBTlkFeuUYW",
+      "prep": [],
+      "items": [
+        {
+          "quote": "merchant approval is required. The application process can be started",
+          "comment": "Change “merchant approval is required. The application process can be started through the PayPal POS page.” to “merchants must be approved. They can start the application on the PayPal POS page.”",
+          "reason": "Both sentences are passive. Use active voice."
+        },
+        {
+          "quote": "technical specifications of the Zettle reader are mentioned below",
+          "comment": "Change to “The Zettle Reader has the following functions and technical specifications:”",
+          "reason": "Two problems. “Zettle reader” does not match the “Zettle Reader” heading directly above it, and “are mentioned below” is indirect."
+        },
+        {
+          "quote": "No magnet strip, only Chip and Tap (Contactless)",
+          "comment": "Change “No magnet strip, only Chip and Tap (Contactless)” to “Supports Chip and Tap (contactless) only — no magnetic stripe”",
+          "reason": "Parallelism. The list mixes verb phrases, noun phrases and full sentences — every bullet should start with a verb. Also “magnet strip” should be “magnetic stripe”, which is the term the quiz uses."
+        },
+        {
+          "quote": "Battery time is 8+ hours",
+          "comment": "Change “Battery time is 8+ hours” to “Provides 8+ hours of battery life”",
+          "reason": "Parallelism — this bullet is a full sentence while others are phrases. “Battery life” is also the standard term."
+        },
+        {
+          "quote": "Zettle Reader value is $79 USD, the first Zettle Reader is discounted at $29 USD",
+          "comment": "Change to “Costs $79, with the first reader discounted to $29”",
+          "reason": "Two complete sentences are joined by a comma (comma splice). Also “$79 USD” states the currency twice — use either “$79” or “79 USD”, not both."
+        },
+        {
+          "quote": "Available in White and Black color options",
+          "comment": "Change “Available in White and Black color options” to “Comes in white and black”",
+          "reason": "Colours are common nouns and take lower case. “Color options” repeats what “white and black” already says."
+        }
+      ]
+    },
+    {
+      "id": "A1.6",
+      "lesson": "Lesson 1 of 6 — Introduction to PayPal POS (Zettle)",
+      "screen": "Ready-made Store Kits",
+      "href": "#/lessons/zYAvj2B3DTu64Vs1zw_UKUBTlkFeuUYW",
+      "prep": [],
+      "items": [
+        {
+          "quote": "these sleek, space-saving kits are game-changers",
+          "comment": "Change “these sleek, space-saving kits are game-changers” to “these kits are compact and save counter space”",
+          "reason": "“Game-changers” is marketing jargon. Use simple, jargon-free language."
+        },
+        {
+          "quote": "For those on the move",
+          "comment": "Change “For those on the move” to “For those selling on the move”",
+          "reason": "Parallelism. The other three captions follow the pattern “For those + verb-ing”; this one breaks it."
+        }
+      ]
+    },
+    {
+      "id": "A1.7",
+      "lesson": "Lesson 1 of 6 — Introduction to PayPal POS (Zettle)",
+      "screen": "Addressing Merchant Needs",
+      "href": "#/lessons/zYAvj2B3DTu64Vs1zw_UKUBTlkFeuUYW",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Here's some examples of feedback",
+          "comment": "Change “Here’s some examples” to “Here are some examples”",
+          "reason": "“Examples” is plural, so the verb must be “are”."
+        },
+        {
+          "quote": "feedback PayPal received from Merchants",
+          "comment": "Change “Merchants” to “merchants”",
+          "reason": "“Merchant” is a common noun and takes lower case. This applies everywhere it appears capitalised in the module."
+        },
+        {
+          "quote": "regarding their needs with accepting in-store payments",
+          "comment": "Change “regarding their needs with accepting in-store payments” to “about their needs when accepting in-store payments”",
+          "reason": "“Regarding their needs with” is awkward and unclear."
+        },
+        {
+          "quote": "offline payments",
+          "comment": "Remove the blue colour from “offline payments”, “(Bluetooth)”, “WIFI”, “screen looks old”, “tip” and “pair/unpair constantly”, and use bold instead",
+          "reason": "The blue used here (#008CFF) is the same colour as links in the module, so learners will try to click text that is not clickable."
+        },
+        {
+          "quote": "It should be WIFI",
+          "comment": "Change “WIFI” to “WiFi”. If the quotation is verbatim, keep the merchant’s wording and add [sic]",
+          "reason": "The style guide spells it “WiFi”. The module currently uses “WIFI” here and “Wi-Fi” in the accordion below."
+        },
+        {
+          "quote": "We want to do more events and festivals",
+          "comment": "Use curly double quotes (“ ”) for all six quotations",
+          "reason": "The first and last quotations use straight quotes while the rest use curly quotes."
+        },
+        {
+          "quote": "One negative thing we have heard about the V2 (Bluetooth).",
+          "comment": "Either label these as verbatim merchant quotes or paraphrase them",
+          "reason": "Several quotes contain comma splices and run-on sentences, and this one gives no actual feedback. Verbatim quotes should not be silently corrected, so mark them as verbatim."
+        }
+      ]
+    },
+    {
+      "id": "A1.8",
+      "lesson": "Lesson 1 of 6 — Introduction to PayPal POS (Zettle)",
+      "screen": "Introducing the latest PayPal Reader",
+      "href": "#/lessons/zYAvj2B3DTu64Vs1zw_UKUBTlkFeuUYW",
+      "prep": [],
+      "items": [
+        {
+          "quote": "designed to improve payment experience",
+          "comment": "Change “designed to improve payment experience” to “designed to improve the payment experience”",
+          "reason": "Definite article is missing."
+        },
+        {
+          "quote": "It works with Android, iOS devices, and web support (expected in future updates).",
+          "comment": "Change to “It works with Android and iOS devices. Web support is expected in a future update.”",
+          "reason": "Parallelism. The three items in the list are different kinds of things — “Android” and “iOS devices” are platforms, “web support” is a feature that does not yet exist."
+        },
+        {
+          "quote": "Click the tabs below to learn about the key improvements in the PayPal reader v3.",
+          "comment": "Change to “Select each heading below to learn about the key improvements in the PayPal Reader (V3).”",
+          "reason": "The interaction below is an accordion, not tabs, so the instruction tells the learner to do something that is not on screen. Also “PayPal reader v3” does not match the product name “PayPal Reader (V3)” used elsewhere."
+        }
+      ]
+    },
+    {
+      "id": "A1.9",
+      "lesson": "Lesson 1 of 6 — Introduction to PayPal POS (Zettle)",
+      "screen": "Key improvements accordion (all panels expanded)",
+      "href": "#/lessons/zYAvj2B3DTu64Vs1zw_UKUBTlkFeuUYW",
+      "prep": [
+        {
+          "type": "accordionAll"
+        }
+      ],
+      "items": [
+        {
+          "quote": "Tipping — Easier and faster",
+          "comment": "Change “Tipping — Easier and faster” to “Tipping — Easier and Faster”",
+          "reason": "The other four accordion headings use title case."
+        },
+        {
+          "quote": "A 3.2-inch color touchscreen for better visibility",
+          "comment": "Change to “Provides a 3.2-inch color touchscreen for better visibility, QR code display, and itemized purchase view.”",
+          "reason": "Parallelism. This panel is a sentence fragment while the other four start with a verb (“It features…”, “Enables…”, “Offers…”, “Allows…”)."
+        },
+        {
+          "quote": "if the customer should lose the Bluetooth connection",
+          "comment": "Change “if the customer should lose the Bluetooth connection” to “if the customer loses the Bluetooth connection”",
+          "reason": "“Should lose” is unnecessarily formal."
+        },
+        {
+          "quote": "It features Bluetooth, Wi-Fi, USB",
+          "comment": "Change “Wi-Fi” to “WiFi”",
+          "reason": "The style guide spells it “WiFi”. The module currently uses three spellings: “WIFI”, “Wi-Fi” and none consistently."
+        },
+        {
+          "quote": "The multipay feature is a future update which will be released later",
+          "comment": "Change to “Note: Multi-Pay will be released in a future update.”",
+          "reason": "“Multipay” does not match the “Multi-Pay” heading above it, and “a future update which will be released later” says the same thing twice."
+        },
+        {
+          "quote": "Allows transactions even without internet access, reducing missed sales",
+          "comment": "Change to “Allows payments even without internet access, reducing missed sales.”",
+          "reason": "The full stop is missing — the other four panels end with one. Also the style guide says to use “payment” rather than “transaction”."
+        }
+      ]
+    },
+    {
+      "id": "A1.10",
+      "lesson": "Lesson 1 of 6 — Introduction to PayPal POS (Zettle)",
+      "screen": "Pricing tables",
+      "href": "#/lessons/zYAvj2B3DTu64Vs1zw_UKUBTlkFeuUYW",
+      "prep": [],
+      "items": [
+        {
+          "quote": "The PayPal reader costs outlined below are structured to offer",
+          "comment": "Change to “The PayPal Reader prices below give small and medium-sized businesses a competitively priced in-person payment solution.”",
+          "reason": "“Costs outlined below are structured to offer” is wordy. Also “PayPal reader” should be capitalised to match the product name."
+        },
+        {
+          "quote": "USD",
+          "comment": "Change the table header fill from #008CFF to PayPal Blue #003087",
+          "reason": "#008CFF is not one of the brand colours. The palette is White #FFFFFF, Black #000000, PayPal Blue #003087 and Bright Blue #60CDFF. The Products Deep Dive module already uses #003087 for its table header."
+        },
+        {
+          "quote": "PayPal Reader (V3)",
+          "comment": "Add a heading such as “Product” to the first column of both pricing tables",
+          "reason": "The first header cell is empty, so the column has no label."
+        },
+        {
+          "quote": "A discount will be offered on the PayPal Reader to new eligible business users.",
+          "comment": "Change to “We offer a discount on the PayPal Reader to eligible new business users.”",
+          "reason": "The sentence is passive, and “new eligible” reverses the normal adjective order."
+        },
+        {
+          "quote": "The Merchant should log in or sign up to check their eligibility.",
+          "comment": "Change “The Merchant” to “The merchant”",
+          "reason": "“Merchant” is a common noun and takes lower case."
+        }
+      ]
+    },
+    {
+      "id": "A1.11",
+      "lesson": "Lesson 1 of 6 — Introduction to PayPal POS (Zettle)",
+      "screen": "Hardware accessories (image-based panels)",
+      "href": "#/lessons/zYAvj2B3DTu64Vs1zw_UKUBTlkFeuUYW",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Supporting POS hardware",
+          "comment": "Rebuild the “Supporting POS hardware” and “Printers and thermal rolls” panels as Rise content instead of flat images",
+          "reason": "The text inside these images is far smaller than the 16pt body text, cannot be read by a screen reader, and uses a different font from the rest of the module.",
+          "box": {
+            "selector": ".block-image",
+            "nth": 2
+          }
+        },
+        {
+          "quote": "Present brief receipt information",
+          "comment": "Change “Present brief receipt information” to “Presents brief receipt information”",
+          "reason": "Parallelism. The matching card next to it says “Presents detailed receipt information”.",
+          "box": {
+            "selector": ".block-image",
+            "nth": 3
+          }
+        },
+        {
+          "quote": "Prints receipts wherever you are",
+          "comment": "Show the full description on the Portable Printer card",
+          "reason": "The description is clipped at the bottom of the card, so the sentence is cut off.",
+          "box": {
+            "selector": ".block-image",
+            "nth": 3
+          }
+        },
+        {
+          "quote": "Locks Zettle Reader 2 into place",
+          "comment": "Confirm whether these accessory images should show Zettle Reader 2 while the lesson covers the PayPal Reader (V3)",
+          "reason": "The images refer to an older product than the one the lesson is teaching.",
+          "box": {
+            "selector": ".block-image",
+            "nth": 2
+          }
+        },
+        {
+          "quote": "Stores a lot of cash securely",
+          "comment": "Change “Stores a lot of cash securely” to “Stores cash securely”",
+          "reason": "“A lot of” is informal and adds nothing.",
+          "box": {
+            "selector": ".block-image",
+            "nth": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "A1.12",
+      "lesson": "Lesson 1 of 6 — Introduction to PayPal POS (Zettle)",
+      "screen": "Reader vs Terminal comparison",
+      "href": "#/lessons/zYAvj2B3DTu64Vs1zw_UKUBTlkFeuUYW",
+      "prep": [],
+      "items": [
+        {
+          "quote": "What merchant would benefit using the PayPal Reader compared to the PayPal Terminal?",
+          "comment": "Change to “Which merchants would benefit from using the PayPal Reader compared with the PayPal Terminal?”",
+          "reason": "“What merchant” should be “Which merchants”, and “benefit” needs “from” before “using”."
+        },
+        {
+          "quote": "What merchant would benefit using",
+          "comment": "Format this question as a Heading 2, like “Pricing” and “Ready-made Store Kits”",
+          "reason": "It starts a new section but is styled as bold body text, which breaks the heading order on the page."
+        },
+        {
+          "quote": "The PayPal Terminal will suit the following merchants profiles:",
+          "comment": "Change to “The PayPal Terminal suits the following merchant profiles:”",
+          "reason": "“Merchants profiles” should be “merchant profiles”, and the future tense is not needed."
+        },
+        {
+          "quote": "Mobile Retail Services",
+          "comment": "Change “Mobile Retail Services” and “Table Service” to “Mobile retail services” and “Table service”",
+          "reason": "The second list uses sentence case. Both lists must be capitalised the same way."
+        },
+        {
+          "quote": "Fixed location retail with counter payments",
+          "comment": "Change “Fixed location retail” to “Fixed-location retail”",
+          "reason": "Hyphenate a compound adjective before a noun."
+        },
+        {
+          "quote": "Whereas the PayPal Reader (V3) will be more suited to:",
+          "comment": "Move the PayPal Reader list above the PayPal Terminal list",
+          "reason": "The question names the Reader first, so the answer should follow the same order."
+        },
+        {
+          "quote": "Events",
+          "comment": "Confirm that the two lists are the right way round",
+          "reason": "The compact, mobile Reader is matched to fixed-counter and kiosk use, while the Terminal is matched to mobile services and events. This looks reversed — please verify against the source."
+        }
+      ]
+    },
+    {
+      "id": "A2.1",
+      "lesson": "Lesson 2 of 6 — Teammate View in Spark",
+      "screen": "Zettle Workflow — Spark",
+      "href": "#/lessons/1NILfU1YQxctMRuCslSp3uOyJs3C_-7h",
+      "prep": [],
+      "items": [
+        {
+          "quote": "whether a merchant has applied, activated, or deactivated Zettle",
+          "comment": "Change to “whether a merchant has applied for, activated, or deactivated Zettle”",
+          "reason": "Parallelism. “Applied Zettle” is not correct — the verb needs “for”. The Products Deep Dive module writes this sentence correctly."
+        },
+        {
+          "quote": "on their PayPal account using the following steps:",
+          "comment": "Change “using the following steps” to “by following these steps”",
+          "reason": "“Using the following steps” attaches to the wrong subject — it reads as though the account is using the steps."
+        },
+        {
+          "quote": "Step one - Choose Zettle from Workflow in Spark.",
+          "comment": "Change “Step one - Choose Zettle” to “Step 1: Choose Zettle”",
+          "reason": "A hyphen is used where a colon belongs. Apply the same change to “Step two”."
+        }
+      ]
+    },
+    {
+      "id": "A3.1",
+      "lesson": "Lesson 3 of 6 — Pairing/Troubleshooting",
+      "screen": "Pairing the PayPal Reader",
+      "href": "#/lessons/mTf06eB2hK453aRy9OubIvqXVbOd-cUT",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Pairing the PayPal Reader",
+          "comment": "Change the lesson title “Pairing/Troubleshooting” to “Pairing and Troubleshooting”",
+          "reason": "A slash reads as “or” and is harder to scan. Spell out the connecting word."
+        },
+        {
+          "quote": "The PayPal Reader can be paired using the following connectivity options",
+          "comment": "Change to “Merchants can pair the PayPal Reader in two ways:”",
+          "reason": "The sentence is passive. Use active voice."
+        },
+        {
+          "quote": "depending on if the Merchant has the PayPal POS App installed or not",
+          "comment": "Change to “depending on whether the merchant has the PayPal POS app installed”",
+          "reason": "“Depending on if” should be “depending on whether”, “or not” is unnecessary, and “Merchant” takes lower case."
+        },
+        {
+          "quote": "If PayPal POS App is Not Installed",
+          "comment": "Change “If PayPal POS App is Not Installed” to “If the PayPal POS app is not installed”",
+          "reason": "Definite article is missing, and “Not Installed” should not be capitalised mid-sentence."
+        },
+        {
+          "quote": "If PayPal POS App is Installed",
+          "comment": "Change “If PayPal POS App is Installed” to “If the PayPal POS app is installed”",
+          "reason": "Definite article is missing, and “App” takes lower case. The module uses both “App” and “app”."
+        }
+      ]
+    },
+    {
+      "id": "A3.2",
+      "lesson": "Lesson 3 of 6 — Pairing/Troubleshooting",
+      "screen": "QR Code Pairing Steps",
+      "href": "#/lessons/mTf06eB2hK453aRy9OubIvqXVbOd-cUT",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Here are the steps to pair a PayPal reader using a QR code:",
+          "comment": "Change “a PayPal reader” to “the PayPal Reader”",
+          "reason": "Capitalise the product name consistently, and use the definite article as elsewhere in the lesson."
+        },
+        {
+          "quote": "The Merchant will be directed to the PayPal POS App to either log in or continue with the steps",
+          "comment": "Change to “Log in to the PayPal POS app, or continue with the steps. If the app is not installed, install it from Google Play or the App Store.”",
+          "reason": "Parallelism. Steps 1, 2 and 6 are instructions, but steps 3, 4 and 5 describe what happens. Keep every step in the same form."
+        },
+        {
+          "quote": "the Merchant will be directed to the Play/App store to install it",
+          "comment": "Change “Play/App store” to “Google Play or the App Store”",
+          "reason": "The slash hides two separate store names, and “App Store” is capitalised as an Apple brand."
+        },
+        {
+          "quote": "After logging in, the system will search for the reader",
+          "comment": "Change to “After the merchant logs in, the system searches for the reader”",
+          "reason": "As written, the system does the logging in. The opening phrase attaches to the wrong subject."
+        },
+        {
+          "quote": "A six digit code will display on the PayPal Reader",
+          "comment": "Change “A six digit code will display” to “A six-digit code will appear”",
+          "reason": "Hyphenate the compound adjective — the next list already writes “six-digit”. Also “display” needs an object; “appear” is correct here."
+        },
+        {
+          "quote": "Let's review these steps in action in the following video:",
+          "comment": "Format this line as body text rather than a heading",
+          "reason": "It is tagged as a heading but styled like body text, which breaks the heading order on the page."
+        }
+      ]
+    },
+    {
+      "id": "A3.3",
+      "lesson": "Lesson 3 of 6 — Pairing/Troubleshooting",
+      "screen": "Alternative Pairing Method — Pair with Serial Number",
+      "href": "#/lessons/mTf06eB2hK453aRy9OubIvqXVbOd-cUT",
+      "prep": [],
+      "items": [
+        {
+          "quote": "they can still connect their reader to their device through the Reader serial number",
+          "comment": "Change to “they can still connect the reader to their device using the reader’s serial number”",
+          "reason": "The possessive apostrophe is missing, and “through” should be “using”."
+        },
+        {
+          "quote": "Merchant logs into their PayPal POS App and navigates to their settings",
+          "comment": "Change to “Log in to the PayPal POS app and go to Settings”",
+          "reason": "Parallelism. The other steps are instructions. Also “logs into” should be “log in to” as a verb."
+        },
+        {
+          "quote": "Locate and select \"PayPal Reader\"",
+          "comment": "Change “Locate and select “PayPal Reader”” to “Locate and select **PayPal Reader**” (in bold)",
+          "reason": "The style guide says clickable actions are formatted in bold. Step 3 already bolds its UI label, so the two steps are inconsistent."
+        },
+        {
+          "quote": "The Merchant confirms the three-digit code on their PayPal Reader and device",
+          "comment": "Delete either this step or the six-digit step below it, and keep one code length",
+          "reason": "Step 6 says three-digit and step 7 says six-digit for the same confirmation. The two steps contradict each other."
+        },
+        {
+          "quote": "Once the Merchant selects the blue confirm button in the screen of their Reader the Reader will display",
+          "comment": "Change to “Once the merchant selects the blue **confirm** button on the reader screen, the reader displays ‘Reader Paired’.”",
+          "reason": "“In the screen” should be “on the screen”, a comma is missing before “the Reader”, and “Reader” is repeated in the same clause."
+        },
+        {
+          "quote": "three-digit code",
+          "comment": "Remove the blue colour from “three-digit code”, “six-digit code” and “blue confirm button”, and use bold instead",
+          "reason": "The blue is the same colour as links, so learners will try to click text that is not clickable."
+        }
+      ]
+    },
+    {
+      "id": "A3.4",
+      "lesson": "Lesson 3 of 6 — Pairing/Troubleshooting",
+      "screen": "Resetting the PayPal Reader",
+      "href": "#/lessons/mTf06eB2hK453aRy9OubIvqXVbOd-cUT",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Press and hold the power button (left side) and the No. 9 button",
+          "comment": "Use “No. 9” and “No. 3” consistently across the module",
+          "reason": "The FAQ in Lesson 4 writes “no.3” with no capital and no space."
+        },
+        {
+          "quote": "power button",
+          "comment": "Remove the blue colour from “power button”, “No. 9 button” and “five seconds”, and use bold instead",
+          "reason": "The blue is the link colour, so it suggests these words are clickable."
+        },
+        {
+          "quote": "Next step:",
+          "comment": "Replace the hand-drawn pointing-hand graphic with the icon style used elsewhere in the module",
+          "reason": "Every other visual in the module is a product photo or 3D render, so the sketch style is inconsistent."
+        }
+      ]
+    },
+    {
+      "id": "A4.1",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 1 of 10 (front)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Will the PayPal reader deprecate the Zettle Reader 2?",
+          "comment": "Change to “Will the PayPal Reader replace the Zettle Reader 2?”",
+          "reason": "“Deprecate” is technical jargon, and “reader” needs a capital as part of the product name."
+        },
+        {
+          "quote": "Click to flip",
+          "comment": "Add a lead line above the flashcards, for example “Flip through the cards below for answers to common merchant questions.”",
+          "reason": "The style guide requires a lead line before any interactive element, to connect it to the surrounding content. This interaction has none."
+        }
+      ]
+    },
+    {
+      "id": "A4.2",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 1 of 10 (back)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "flip"
+        }
+      ],
+      "items": [
+        {
+          "quote": "removed from the PayPal POS web shop in the but will still be available",
+          "comment": "Change “removed from the PayPal POS web shop in the but will still be available for direct sales” to “removed from the PayPal POS web shop in [month/quarter] but will still be available for direct sales”",
+          "reason": "The sentence is incomplete — a date is missing after “in the”."
+        },
+        {
+          "quote": "Any broken Reader 2 will be replaced with Reader 2 until further notice.",
+          "comment": "Change to “Faulty Reader 2 units will be replaced with the same model until further notice.”",
+          "reason": "The sentence repeats “Reader 2” and reads as circular."
+        }
+      ]
+    },
+    {
+      "id": "A4.3",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 2 of 10 (front)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 1
+        }
+      ],
+      "items": [
+        {
+          "quote": "Will Reader and the Dock be available in black and white at launch?",
+          "comment": "Change “Will Reader and the Dock” to “Will the Reader and the Dock”",
+          "reason": "Definite article is missing before “Reader”."
+        }
+      ]
+    },
+    {
+      "id": "A4.4",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 2 of 10 (back)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 1
+        },
+        {
+          "type": "flip"
+        }
+      ],
+      "items": [
+        {
+          "quote": "the Merchant will be able to choose between black-and-white options",
+          "comment": "Change to “the merchant can choose between black and white”",
+          "reason": "“Merchant” takes lower case, “will be able to” is simply “can”, and hyphenating “black-and-white” makes it read as monochrome rather than two separate colours."
+        }
+      ]
+    },
+    {
+      "id": "A4.5",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 3 of 10 (front)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 2
+        }
+      ],
+      "items": [
+        {
+          "quote": "Will there be a sign-up offer/discount for the first PayPal Reader?",
+          "comment": "Change “offer/discount” to “offer or discount”",
+          "reason": "A slash reads as “or”. Spell out the connecting word."
+        }
+      ]
+    },
+    {
+      "id": "A4.6",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 4 of 10 (back)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 3
+        },
+        {
+          "type": "flip"
+        }
+      ],
+      "items": [
+        {
+          "quote": "No",
+          "comment": "Change the answer “No” to “No, the PayPal Reader Dock cannot print receipts.”",
+          "reason": "The other cards answer in full sentences."
+        }
+      ]
+    },
+    {
+      "id": "A4.7",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 5 of 10 (front)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 4
+        }
+      ],
+      "items": [
+        {
+          "quote": "How should I store/clean my PayPal Reader?",
+          "comment": "Change “store/clean” to “store and clean”",
+          "reason": "A slash reads as “or”. Spell out the connecting word."
+        }
+      ]
+    },
+    {
+      "id": "A4.8",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 5 of 10 (back)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 4
+        },
+        {
+          "type": "flip"
+        }
+      ],
+      "items": [
+        {
+          "quote": "should be kept in a cool dry place",
+          "comment": "Change “a cool dry place” to “a cool, dry place”",
+          "reason": "A comma is needed between two adjectives that describe the same noun."
+        },
+        {
+          "quote": "When cleaning the Readers exterior, soft, damp cloth should be used.",
+          "comment": "Change to “Clean the Reader’s exterior with a soft, damp cloth.”",
+          "reason": "The possessive apostrophe in “Reader’s” is missing, the article “a” is missing before “soft”, and the passive sentence reads better as an instruction."
+        },
+        {
+          "quote": "No liquid should be sprayed directly onto the device and avoid exposure",
+          "comment": "Change to “Do not spray liquid directly onto the device, and keep its openings away from moisture.”",
+          "reason": "Parallelism. The sentence starts in the passive and switches to an instruction halfway through."
+        },
+        {
+          "quote": "Ensure that nothing enters the card Reader through any openings",
+          "comment": "Change “the card Reader” to “the card reader” and “Ensure that” to “Make sure”",
+          "reason": "“Card Reader” has a capital in the middle of the term, and “ensure” is more formal than needed."
+        },
+        {
+          "quote": "Avoid causing shock or negligent handling of the card Reader.",
+          "comment": "Rewrite the whole answer as instructions: “Keep the PayPal Reader in a cool, dry place. Clean the exterior with a soft, damp cloth. Do not spray liquid onto the device or use solvents. Handle the reader carefully and avoid dropping it.”",
+          "reason": "The answer is passive throughout and “avoid causing shock or negligent handling” is unclear. The style guide prefers active voice and simple instructions."
+        }
+      ]
+    },
+    {
+      "id": "A4.9",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 6 of 10 (front)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 5
+        }
+      ],
+      "items": [
+        {
+          "quote": "how do we get more info on the error code?",
+          "comment": "Change to “how do you get more information about the error code?”",
+          "reason": "The module addresses the learner as “you”, not “we”, and “info” is an informal shortening."
+        }
+      ]
+    },
+    {
+      "id": "A4.10",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 6 of 10 (back)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 5
+        },
+        {
+          "type": "flip"
+        }
+      ],
+      "items": [
+        {
+          "quote": "Press the no.3 key on the Reader",
+          "comment": "Change “no.3” to “No. 3”",
+          "reason": "“No.” needs a capital and a space after it, to match “No. 9” in Lesson 3."
+        },
+        {
+          "quote": "to display the error code, ask the Merchant for a photo",
+          "comment": "Change to “to display the error code. Then ask the merchant for a photo of the code and their serial number to raise an SLS escalation.”",
+          "reason": "Two instructions are joined by a comma (comma splice)."
+        },
+        {
+          "quote": "continue with an SLS escalation",
+          "comment": "Spell out “SLS” on first use",
+          "reason": "Acronyms must be expanded the first time they appear. “SLS” is never explained."
+        }
+      ]
+    },
+    {
+      "id": "A4.11",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 7 of 10 (front)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 6
+        }
+      ],
+      "items": [
+        {
+          "quote": "the volume on their Reader is too loud, can a merchant adjust this?",
+          "comment": "Change to “The merchant says the volume on their reader is too loud. Can they adjust it?”",
+          "reason": "Two sentences are joined by a comma (comma splice), and the sentence switches from “the merchant” to “a merchant” for the same person."
+        }
+      ]
+    },
+    {
+      "id": "A4.12",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 7 of 10 (back)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 6
+        },
+        {
+          "type": "flip"
+        }
+      ],
+      "items": [
+        {
+          "quote": "to alert the Merchant if their payment has been processed",
+          "comment": "Change to “to tell the merchant when a payment has been processed”",
+          "reason": "“Merchant” takes lower case, and “if” should be “when” because the sound always follows a payment."
+        }
+      ]
+    },
+    {
+      "id": "A4.13",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 8 of 10 (front)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 7
+        }
+      ],
+      "items": [
+        {
+          "quote": "Where can a customer go to sign up for PayPal POS (Zettle)?",
+          "comment": "Change “a customer” to “a merchant”",
+          "reason": "Merchants sign up for POS, not customers. The rest of the module uses “merchant”."
+        }
+      ]
+    },
+    {
+      "id": "A4.14",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 8 of 10 (back)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 7
+        },
+        {
+          "type": "flip"
+        }
+      ],
+      "items": [
+        {
+          "quote": "PayPal.com/POS",
+          "comment": "Change “PayPal.com/POS” to “paypal.com/pos”",
+          "reason": "Web addresses are written in lower case."
+        }
+      ]
+    },
+    {
+      "id": "A4.15",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 9 of 10 (back)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 8
+        },
+        {
+          "type": "flip"
+        }
+      ],
+      "items": [
+        {
+          "quote": "Yes, Transfer",
+          "comment": "Change “Yes, Transfer” to “Yes, transfer the merchant to the Zettle team.”",
+          "reason": "“Transfer” has a capital in the middle of a sentence, there is no full stop, and the other cards answer in full sentences."
+        }
+      ]
+    },
+    {
+      "id": "A4.16",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 10 of 10 (front)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 9
+        }
+      ],
+      "items": [
+        {
+          "quote": "Is there a new warranty process for the PayPal V3 Reader?",
+          "comment": "Change “the PayPal V3 Reader” to “the PayPal Reader (V3)”",
+          "reason": "Match the product name used in the rest of the module."
+        }
+      ]
+    },
+    {
+      "id": "A4.17",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "FAQ flashcards — card 10 of 10 (back)",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [
+        {
+          "type": "carousel",
+          "index": 9
+        },
+        {
+          "type": "flip"
+        }
+      ],
+      "items": [
+        {
+          "quote": "the process will be exactly the same as the Zettle Reader 2",
+          "comment": "Change to “the process is exactly the same as it is for the Zettle Reader 2”",
+          "reason": "As written, a process is compared with a product. The comparison is incomplete."
+        }
+      ]
+    },
+    {
+      "id": "A4.18",
+      "lesson": "Lesson 4 of 6 — FAQs and Resources",
+      "screen": "Bundle pricing FAQ and Resources list",
+      "href": "#/lessons/zIbgtyRdqbejwlG66uwkp3xjZEm5g06K",
+      "prep": [],
+      "items": [
+        {
+          "quote": "Can the PayPal Reader and dock be bought as a bundle for a cheaper price?",
+          "comment": "Move this FAQ into the flashcard set, or move all the FAQs out of the flashcards",
+          "reason": "One FAQ is presented as a heading and table while the other ten are flashcards. The presentation is inconsistent."
+        },
+        {
+          "quote": "and dock be bought",
+          "comment": "Change “dock” to “Dock”",
+          "reason": "“Dock” is capitalised elsewhere as part of the product name."
+        },
+        {
+          "quote": "Please see the current pricing as follows:",
+          "comment": "Change to “The current pricing is as follows:”",
+          "reason": "“Please see … as follows” is wordy."
+        },
+        {
+          "quote": "PayPal Reader (V3) (FRD)",
+          "comment": "Change “PayPal Reader (V3) (FRD)” to “PayPal Reader (V3) — First Reader Discount”",
+          "reason": "“FRD” is never explained anywhere in the module."
+        },
+        {
+          "quote": "PayPal Point of Sale (Zettle)",
+          "comment": "Change “TEAM1943 - PayPal Point of Sale (Zettle)” to “TEAM1943: PayPal Point of Sale (Zettle)”, and do the same for all five resources",
+          "reason": "A hyphen is used where a colon belongs."
+        },
+        {
+          "quote": "Zettle/ Point of Sale Glossary",
+          "comment": "Change “Zettle/ Point of Sale Glossary” to “Zettle and Point of Sale Glossary”",
+          "reason": "There is a stray space after the slash, and a slash reads as “or”."
+        },
+        {
+          "quote": "What is the Card Reader and its accessories? And how do I order them?",
+          "comment": "Change to “What is the card reader, what are its accessories, and how do I order them?”",
+          "reason": "Two questions are run together and the second one starts with “And”."
+        }
+      ]
+    },
+    {
+      "id": "A5.1",
+      "lesson": "Lesson 5 of 6 — Quiz",
+      "screen": "Quiz introduction",
+      "href": "#/lessons/W0p7W8u1zReSyvXwYJRL2RbchSJnemSs",
+      "prep": [],
+      "items": [
+        {
+          "quote": "This quiz comprises 4 questions.",
+          "comment": "Change “This quiz comprises 4 questions.” to “Answer all four questions”",
+          "reason": "Two problems. Parallelism — the other two bullets are instructions (“Read each question carefully”, “Use any tools…”) while this one is a statement. Also numbers one to nine are spelled out."
+        },
+        {
+          "quote": "Read each question carefully.",
+          "comment": "Remove the full stops from all three bullets",
+          "reason": "The style guide says bulleted lists in training modules should not end with periods."
+        },
+        {
+          "quote": "You need to score 85% to pass this assessment.",
+          "comment": "Change the pass mark to 75%, or add a fifth question",
+          "reason": "With four questions, the only score above 85% is 100%, so the stated pass mark is effectively “every answer correct”."
+        }
+      ]
+    },
+    {
+      "id": "A5.2",
+      "lesson": "Lesson 5 of 6 — Quiz",
+      "screen": "Question 1 of 4",
+      "href": "#/lessons/W0p7W8u1zReSyvXwYJRL2RbchSJnemSs",
+      "prep": [
+        {
+          "type": "quizStart"
+        },
+        {
+          "type": "quizFind",
+          "text": "key feature of the Zettle Reader"
+        }
+      ],
+      "items": [
+        {
+          "quote": "Comes free of cost",
+          "comment": "Change “Comes free of cost” to “Comes free of charge”",
+          "reason": "“Free of cost” is not standard English."
+        },
+        {
+          "quote": "Supports magnetic stripe payments only",
+          "comment": "Change “No magnet strip” in Lesson 1 to “No magnetic stripe” so it matches this option",
+          "reason": "The lesson and the quiz use different terms for the same thing."
+        },
+        {
+          "quote": "Choose the correct answer from the list below.",
+          "comment": "Change “from the list below” to “from the options below”",
+          "reason": "The Products Deep Dive module uses “from the options below”. Use one wording across the curriculum."
+        }
+      ]
+    },
+    {
+      "id": "A5.3",
+      "lesson": "Lesson 5 of 6 — Quiz",
+      "screen": "Question 2 of 4",
+      "href": "#/lessons/W0p7W8u1zReSyvXwYJRL2RbchSJnemSs",
+      "prep": [
+        {
+          "type": "quizStart"
+        },
+        {
+          "type": "quizFind",
+          "text": "sign up for PayPal POS"
+        }
+      ],
+      "items": [
+        {
+          "quote": "Square.com",
+          "comment": "Add two more answer options to this question, and replace “Square.com” with a PayPal address such as “paypal.com/business”",
+          "reason": "This question offers only two options while the other three offer four. Naming a competitor as the only wrong answer also makes the question too easy."
+        },
+        {
+          "quote": "Where can a customer go to sign up for PayPal POS (Zettle)?",
+          "comment": "Change “a customer” to “a merchant”",
+          "reason": "Merchants sign up for POS, not customers."
+        }
+      ]
+    },
+    {
+      "id": "A5.4",
+      "lesson": "Lesson 5 of 6 — Quiz",
+      "screen": "Questions 3 and 4, and feedback",
+      "href": "#/lessons/W0p7W8u1zReSyvXwYJRL2RbchSJnemSs",
+      "prep": [
+        {
+          "type": "quizStart"
+        },
+        {
+          "type": "quizFind",
+          "text": "not installed when scanning"
+        },
+        {
+          "type": "quizSubmit"
+        }
+      ],
+      "items": [
+        {
+          "quote": "when scanning the QR code?",
+          "comment": "Change to “What happens if the PayPal POS app is not installed when the merchant scans the QR code?”",
+          "reason": "As written, no one is doing the scanning — the phrase attaches to the wrong subject. Also “app” takes lower case."
+        },
+        {
+          "quote": "The pairing process is cancelled",
+          "comment": "Change “cancelled” to “canceled”",
+          "reason": "The style guide requires American English spelling."
+        },
+        {
+          "quote": "directed to a landing page or app store to install the app",
+          "comment": "Change “or app store” to “or the app store”",
+          "reason": "Definite article is missing."
+        },
+        {
+          "quote": "correct response",
+          "comment": "Add specific feedback for each question explaining why the answer is right or wrong",
+          "reason": "Every question shows the same generic message, so a learner who answers incorrectly is told nothing that helps them learn."
+        }
+      ]
+    },
+    {
+      "id": "A6.1",
+      "lesson": "Lesson 6 of 6 — Summary",
+      "screen": "Wrap-Up",
+      "href": "#/lessons/4L-ywICQkeBU1NFfCBBNxNHAwKztv5aA",
+      "prep": [],
+      "items": [
+        {
+          "quote": "You should be able to:",
+          "comment": "Change “You should be able to:” to “You should now be able to:”",
+          "reason": "The style guide sets this exact wrap-up phrase. The word “now” is missing."
+        },
+        {
+          "quote": "Understand how PayPal POS enables merchants to accept in-person payments",
+          "comment": "Make the Wrap-Up bullets word-for-word identical to the Objectives bullets in Lesson 1",
+          "reason": "Objective 2 in Lesson 1 says “enables merchant” and objective 4 says “a merchant”, while the Wrap-Up says “merchants” in both."
+        },
+        {
+          "quote": "Click the EXIT MODULE button to close the training.",
+          "comment": "Format “EXIT MODULE” in bold",
+          "reason": "The style guide says clickable actions are formatted in bold."
+        }
+      ]
+    }
+  ],
+  "other": [
+    {
+      "title": "Theme accent colour is off-palette",
+      "text": "The module uses #008CFF for the top navigation bar, table headers and emphasis text, and #0070CC for the lesson bar. Neither is in the brand palette (White #FFFFFF, Black #000000, PayPal Blue #003087, Bright Blue #60CDFF). The lesson header band #60CDFF is correct. The Products Deep Dive module uses PayPal Blue #003087 for its table header, so the two modules do not match."
+    },
+    {
+      "title": "Table body text is not pure black",
+      "text": "Text inside the pricing tables renders at #1B1C1C rather than the #000000 specified in the palette."
+    },
+    {
+      "title": "Lesson 2 is very thin",
+      "text": "“Teammate View in Spark” contains only two steps and three screenshots. Consider adding what a teammate should do for each of the three statuses (Not Applied, Activated, Deactivated)."
+    },
+    {
+      "title": "Objectives use unobservable verbs",
+      "text": "“Remember” and “Understand” cannot be observed or assessed. Consider replacing them with verbs that describe what the learner will do, such as “List” and “Describe”."
+    },
+    {
+      "title": "Quiz results wording",
+      "text": "The results screen says “Failed”. The style guide asks for an empathetic, encouraging tone — consider “Not passed — try again” if the Rise label can be customised."
+    },
+    {
+      "title": "Cross-module consistency",
+      "text": "This module writes “In-Person Payments” (hyphenated); Products Deep Dive writes “In Person Payments”. This module’s quiz says “from the list below”; the other says “from the options below”. Both modules omit “now” from the wrap-up phrase, and neither expands “BRE”."
+    },
+    {
+      "title": "Video playback could not be verified",
+      "text": "The self-hosted MP4 videos would not play in the audit browser, although the files themselves are served correctly. This is a limitation of the audit environment, not a defect in the module. Please confirm playback manually. The embedded YouTube videos played normally."
+    }
+  ]
+}
