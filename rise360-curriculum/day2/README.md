@@ -1,7 +1,7 @@
 # Day 2 — Blocks that carry your content
 
 Facilitator deck for day 2 of the five-day Articulate Rise 360 beginner curriculum.
-29 slides, 1920 × 1080, speaker notes on every slide.
+30 slides, 1920 × 1080, speaker notes on every slide.
 
 `build/rise360-day2-blocks.pptx`
 
@@ -24,9 +24,26 @@ layout settings that go with them:
 
 42 blocks, one screenshot each, all from the supplied asset pack.
 
-Plus: the three ways to add a block, swapping a block's type without losing content,
-padding, backgrounds and contrast, block entrance animations, the anti-clutter rules,
-the five beginner mistakes, the lab brief and a done-checklist.
+Plus: **creating the lesson from scratch**, the three ways to add a block, swapping a
+block's type without losing content, padding, backgrounds and contrast, block entrance
+animations, the anti-clutter rules, the five beginner mistakes, the lab brief and a
+done-checklist.
+
+## Day 1 hand-off
+
+This deck assumes **no lesson exists yet**. Day 1 as delivered ended with the concepts
+and a tour of the dashboard, not with anything built, so Day 2 creates the lesson before
+touching a single block:
+
+- The recap slide lists what learners *know*, not what they *built*, and states plainly
+  that nobody has a lesson yet.
+- A dedicated slide walks the five steps from dashboard to open block editor, and covers
+  the two traps: `Shift + Enter` gives a Section (a label that holds nothing) rather than
+  a Lesson, and Microlearning cannot hold the quiz that Day 4 adds.
+- The lab brief builds out the lesson created that morning rather than assuming one
+  arrived from yesterday.
+
+The creation path works whether or not a course already exists — step 1 covers both.
 
 **Deliberately excluded** — interactive blocks (accordion, tabs, labeled graphic, process,
 scenario, sorting, timeline, flashcards, buttons, Storyline) and the assessment blocks.
@@ -35,7 +52,7 @@ Those are Days 3 and 4, and the lab brief tells learners not to use them today.
 ## Structure
 
 1. Title · where Day 2 sits · yesterday → today
-2. **The stack** — a lesson is a vertical stack; three ways to add a block; the nine families
+2. **The stack** — a lesson is a vertical stack; creating the lesson; three ways to add a block; the nine families
 3. **The nine families** — one slide each: official purpose, every member, a per-member note, one thing to watch
 4. **Layout & polish** — padding, backgrounds and contrast, entrance animations
 5. **Keeping it readable** — four rules of thumb, five beginner mistakes

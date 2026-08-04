@@ -288,8 +288,8 @@ function familySlide(category, opts) {
   });
   footer(s, true);
   s.addNotes(
-    'Welcome to Day 2. Yesterday was the mental model and the outline: Course > Sections > Lessons > Blocks. ' +
-    'Today we go one level down and live inside a single lesson.\n\n' +
+    'Welcome to Day 2. Yesterday was the mental model — Course > Sections > Lessons > Blocks — and finding your ' +
+    'way around. Nobody has built a lesson yet, so today starts by creating one, and then we live inside it.\n\n' +
     'Framing to say out loud: Rise gives you roughly 42 static blocks. Nobody memorises 42 things. ' +
     'What you memorise is nine families and what each family is FOR. Once you know the family, you pick the ' +
     'member by eye from the block library.\n\n' +
@@ -303,8 +303,8 @@ function familySlide(category, opts) {
 {
   const s = contentSlide('Where today sits', 'Five days, one build workflow. Today is the second step: filling a lesson.');
   const days = [
-    { n: '1', t: 'Orientation', d: 'The web-page model, the hierarchy, the dashboard, your outline' },
-    { n: '2', t: 'Static blocks & layout', d: 'The nine content families, padding, backgrounds, anti-clutter' },
+    { n: '1', t: 'Orientation', d: 'The web-page model, the hierarchy, the dashboard, Course vs Microlearning' },
+    { n: '2', t: 'Static blocks & layout', d: 'Create a lesson, the nine content families, padding, backgrounds, anti-clutter' },
     { n: '3', t: 'Interactive blocks', d: 'Accordion, tabs, labeled graphic, process, sorting, scenario' },
     { n: '4', t: 'Assessment & theme', d: 'Knowledge checks, quizzes, colours, fonts, free vs restricted navigation' },
     { n: '5', t: 'Preview & publish', d: 'Multi-device preview, Quick Share, Reach 360, LMS export' },
@@ -347,19 +347,19 @@ function familySlide(category, opts) {
 
 // ---- 3. Recap -> today ----------------------------------------------------
 {
-  const s = contentSlide('From yesterday to today', 'You built an empty shelf. Today you put things on it.');
+  const s = contentSlide('From yesterday to today', 'Yesterday was the map. Today you build on it — starting from nothing.');
   const colW = (CW - 0.9) / 2;
   // left
   card(s, M, 1.9, colW, 4.05);
-  s.addText('YOU CAN ALREADY', {
+  s.addText('WHAT YOU ALREADY KNOW', {
     x: M + 0.4, y: 2.18, w: colW - 0.8, h: 0.3, margin: 0,
     fontFace: BODY, fontSize: 11, bold: true, color: C.slate, charSpacing: 1.8,
   });
   s.addText([
-    { text: 'Explain why Rise is responsive, not slide-based', options: { bullet: true, breakLine: true } },
-    { text: 'Create a course and set title, description, cover image', options: { bullet: true, breakLine: true } },
-    { text: 'Build an outline of sections and lessons', options: { bullet: true, breakLine: true } },
-    { text: 'Reorder lessons by dragging them', options: { bullet: true } },
+    { text: 'Why Rise is responsive, not slide-based', options: { bullet: true, breakLine: true } },
+    { text: 'The hierarchy: Course › Sections › Lessons › Blocks', options: { bullet: true, breakLine: true } },
+    { text: 'Your way around the dashboard', options: { bullet: true, breakLine: true } },
+    { text: 'The difference between a Course and Microlearning', options: { bullet: true } },
   ], {
     x: M + 0.4, y: 2.58, w: colW - 0.8, h: 3.1, margin: 0, valign: 'top',
     fontFace: BODY, fontSize: 14, color: C.ink, lineSpacing: 21, paraSpaceAfter: 10,
@@ -371,6 +371,7 @@ function familySlide(category, opts) {
     fontFace: BODY, fontSize: 11, bold: true, color: C.ember, charSpacing: 1.8,
   });
   s.addText([
+    { text: 'Create a lesson and open the block editor', options: { bullet: true, breakLine: true } },
     { text: 'Name the nine static families and what each is for', options: { bullet: true, breakLine: true } },
     { text: 'Add, reorder, swap and delete blocks fluently', options: { bullet: true, breakLine: true } },
     { text: 'Set padding and backgrounds on purpose, not by accident', options: { bullet: true, breakLine: true } },
@@ -379,7 +380,19 @@ function familySlide(category, opts) {
     x: M + colW + 1.3, y: 2.58, w: colW - 0.8, h: 3.1, margin: 0, valign: 'top',
     fontFace: BODY, fontSize: 14, color: 'FFFFFF', lineSpacing: 21, paraSpaceAfter: 10,
   });
+  card(s, M, 6.12, CW, 0.62, { fill: 'FFF4EE', line: C.emberDim, flat: true });
+  s.addShape(pres.ShapeType.ellipse, {
+    x: M + 0.22, y: 6.31, w: 0.24, h: 0.24,
+    fill: { color: C.ember }, line: { type: 'none' },
+  });
+  s.addText('Nobody has a lesson yet — that is the first thing we do today, before a single block goes in.', {
+    x: M + 0.58, y: 6.12, w: CW - 0.86, h: 0.62, margin: 0, valign: 'middle',
+    fontFace: BODY, fontSize: 12.5, color: '7A3F1C',
+  });
   s.addNotes(
+    'Say the orange line out loud. Day 1 ended with the concepts and the tour, not with anything built, ' +
+    'so start from the assumption that everyone is looking at an empty account. That is fine — creating the ' +
+    'lesson takes about five minutes and it is the next thing we do.\n\n' +
     'Quick verbal check before you move on — ask two people to answer, do not lecture:\n' +
     '  1. Why does Rise not have slide dimensions?\n' +
     '  2. What is the difference between a Section and a Lesson?\n\n' +
@@ -390,10 +403,14 @@ function familySlide(category, opts) {
 }
 
 // ---- 4. Section 1 ---------------------------------------------------------
-sectionSlide('SECTION ONE', 'The stack', 'How a lesson is assembled, and the three ways to put a block into it.')
+sectionSlide('SECTION ONE', 'The stack',
+  'What a lesson is, how to create one from scratch, and the three ways to put a block into it.')
   .addNotes(
-    'Short section. Two ideas only: a lesson is a vertical stack, and there are three routes to add to it.\n\n' +
-    'Do not start clicking yet — this is the last piece of framing before the families.'
+    'Three ideas in this section: a lesson is a vertical stack, here is how you create one, and here are the ' +
+    'three routes for adding to it.\n\n' +
+    'This is the section that changed because Day 1 did not end with a built lesson. Everyone leaves this ' +
+    'section with an empty lesson open in the block editor — do not move on to the families until they do, ' +
+    'or the rest of the day is a spectator sport.'
   );
 
 // ---- 5. A lesson is a stack ----------------------------------------------
@@ -463,6 +480,76 @@ sectionSlide('SECTION ONE', 'The stack', 'How a lesson is assembled, and the thr
     'Naming it now saves you a support question every single cohort.\n\n' +
     'Second trap: people assume a desktop layout is the layout. It is one of five previews. We check all five on Day 5, ' +
     'but get them previewing on mobile today, while their lessons are still small.'
+  );
+}
+
+// ---- 5b. Create the lesson ------------------------------------------------
+{
+  const s = contentSlide('First: create the lesson you will fill today',
+    'Five minutes, once. Everything after this happens inside the block editor.');
+
+  const steps = [
+    ['Open your course', 'From the dashboard, open the course you want this lesson in. No course yet? Create › Course › Blank.'],
+    ['Name the lesson', 'Type the lesson title straight into the outline. Titles run to 100 characters and save themselves.'],
+    ['Choose Lesson', 'Press Enter and Rise offers Lesson or Quiz. Take Lesson. Shift + Enter would give you a Section instead.'],
+    ['Add Content', 'Click Add Content on the new lesson, then Blank Lesson. Templates are there; start blank today.'],
+    ['You are in the editor', 'The block editor opens on an empty stack. This is where the rest of the day happens.'],
+  ];
+  const gap = 0.26;
+  const w = (CW - gap * 4) / 5;
+  steps.forEach((st, i) => {
+    const x = M + i * (w + gap);
+    card(s, x, 2.0, w, 3.04);
+    s.addShape(pres.ShapeType.ellipse, {
+      x: x + 0.26, y: 2.26, w: 0.46, h: 0.46,
+      fill: { color: C.ember }, line: { type: 'none' },
+    });
+    s.addText(String(i + 1), {
+      x: x + 0.26, y: 2.26, w: 0.46, h: 0.46, margin: 0, align: 'center', valign: 'middle',
+      fontFace: BODY, fontSize: 14, bold: true, color: 'FFFFFF',
+    });
+    s.addText(st[0], {
+      x: x + 0.26, y: 2.86, w: w - 0.52, h: 0.78, margin: 0, valign: 'top',
+      fontFace: HEAD, fontSize: 15.5, bold: true, color: C.ink,
+    });
+    s.addText(st[1], {
+      x: x + 0.26, y: 3.68, w: w - 0.52, h: 1.24, margin: 0, valign: 'top',
+      fontFace: BODY, fontSize: 11.5, color: C.slate, lineSpacing: 16,
+    });
+  });
+
+  const colW = (CW - 0.4) / 2;
+  card(s, M, 5.3, colW, 1.28, { fill: C.ink, line: C.ink });
+  s.addText('Enter vs Shift + Enter', {
+    x: M + 0.36, y: 5.46, w: colW - 0.72, h: 0.32, margin: 0,
+    fontFace: HEAD, fontSize: 15.5, bold: true, color: 'FFFFFF',
+  });
+  s.addText('Enter makes a Lesson — a place blocks live. Shift + Enter makes a Section — a text-only label that groups lessons and holds nothing. Everyone does this by accident once.',
+    { x: M + 0.36, y: 5.8, w: colW - 0.72, h: 0.7, margin: 0, valign: 'top',
+      fontFace: BODY, fontSize: 12, color: C.slateLt, lineSpacing: 16 });
+
+  card(s, M + colW + 0.4, 5.3, colW, 1.28);
+  s.addText('Course, not Microlearning', {
+    x: M + colW + 0.76, y: 5.46, w: colW - 0.72, h: 0.32, margin: 0,
+    fontFace: HEAD, fontSize: 15.5, bold: true, color: C.ink,
+  });
+  s.addText('Microlearning is a single lesson and does not support quizzes. For a course you will grow — and assess on Day 4 — start from Course.',
+    { x: M + colW + 0.76, y: 5.8, w: colW - 0.72, h: 0.7, margin: 0, valign: 'top',
+      fontFace: BODY, fontSize: 12, color: C.slate, lineSpacing: 16 });
+
+  s.addNotes(
+    'Do this together, screens up, everybody following. It is the one moment today where you want the whole ' +
+    'room in lockstep, because everything else depends on having an empty lesson open.\n\n' +
+    'Walk the five steps on your own screen first, then give them five minutes and walk the room. ' +
+    'Do not move on until every person has the block editor open. Ask them to say "in" when they are there.\n\n' +
+    'The two boxes at the bottom are the two traps.\n\n' +
+    'Shift + Enter is the classic one: someone presses it, gets a Section, and cannot work out why there is ' +
+    'no Add Content button. A Section is a label, not a container — it holds no content at all. Show the ' +
+    'difference on screen rather than describing it.\n\n' +
+    'The Course versus Microlearning point matters because Microlearning cannot hold a quiz, and we add ' +
+    'a quiz on Day 4. Anyone who starts a Microlearning today will have to rebuild.\n\n' +
+    'Tell them to pick a real topic from their own work now, not later — the lesson they create here is the ' +
+    'one they will build in this afternoon\u2019s lab and carry into Day 3.'
   );
 }
 
@@ -1096,7 +1183,7 @@ sectionSlide('SECTION FIVE', 'Build it', 'The rest of today is hands on. One les
 // ---- 26. Lab brief --------------------------------------------------------
 {
   const s = contentSlide('Your build: one varied lesson',
-    'Pick a real topic from your own work. Not a demo topic — you will want to keep this.');
+    'Fill out the lesson you created this morning. A real topic from your own work — you will want to keep this.');
 
   const colW = (CW - 0.5) / 2;
   card(s, M, 1.95, colW, 4.05, { fill: C.ink, line: C.ink });
@@ -1147,6 +1234,8 @@ sectionSlide('SECTION FIVE', 'Build it', 'The rest of today is hands on. One les
   });
   s.addNotes(
     'Give them a real block of time — an hour is not too much. Walk the room; do not narrate from the front.\n\n' +
+    'They already have the empty lesson from this morning, so nobody should be starting from the dashboard. ' +
+    'If anyone is, sort it out before the lab proper begins.\n\n' +
     'Insist on a real topic. People build a throwaway lesson about coffee, learn nothing they can reuse, and delete it. ' +
     'A lesson from their actual work becomes the seed of a real course and they will care whether the layout is any good.\n\n' +
     'The peer test in the top-right corner is the part to protect. It is the only feedback in the day that comes from ' +
