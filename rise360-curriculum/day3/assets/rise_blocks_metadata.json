@@ -1,0 +1,415 @@
+[
+    {
+        "category": "Text Blocks",
+        "category_description": "Tell your story with these text block layouts.",
+        "block_name": "Paragraph",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/paragraph.png",
+        "local_image_path": "/home/ubuntu/rise_assets/paragraph.png"
+    },
+    {
+        "category": "Text Blocks",
+        "category_description": "Tell your story with these text block layouts.",
+        "block_name": "Paragraph with heading",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/paragraph-with-heading.png",
+        "local_image_path": "/home/ubuntu/rise_assets/paragraph_with_heading.png"
+    },
+    {
+        "category": "Text Blocks",
+        "category_description": "Tell your story with these text block layouts.",
+        "block_name": "Paragraph with subheading",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/paragraph-with-subheading.png",
+        "local_image_path": "/home/ubuntu/rise_assets/paragraph_with_subheading.png"
+    },
+    {
+        "category": "Text Blocks",
+        "category_description": "Tell your story with these text block layouts.",
+        "block_name": "Heading",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/heading.png",
+        "local_image_path": "/home/ubuntu/rise_assets/heading.png"
+    },
+    {
+        "category": "Text Blocks",
+        "category_description": "Tell your story with these text block layouts.",
+        "block_name": "Subheading",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/subheading.png",
+        "local_image_path": "/home/ubuntu/rise_assets/subheading.png"
+    },
+    {
+        "category": "Text Blocks",
+        "category_description": "Tell your story with these text block layouts.",
+        "block_name": "Two column",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/two-column.png",
+        "local_image_path": "/home/ubuntu/rise_assets/two_column.png"
+    },
+    {
+        "category": "Text Blocks",
+        "category_description": "Tell your story with these text block layouts.",
+        "block_name": "Table",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/Table-Block-Icon.png",
+        "local_image_path": "/home/ubuntu/rise_assets/table.png"
+    },
+    {
+        "category": "Statement Blocks",
+        "category_description": "Make important information stand out with statement blocks. There are four uniquely-styled statement blocks and a useful note block.",
+        "block_name": "Statement A",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/statement-a.png",
+        "local_image_path": "/home/ubuntu/rise_assets/statement_a.png"
+    },
+    {
+        "category": "Statement Blocks",
+        "category_description": "Make important information stand out with statement blocks. There are four uniquely-styled statement blocks and a useful note block.",
+        "block_name": "Statement B",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/statement-b.png",
+        "local_image_path": "/home/ubuntu/rise_assets/statement_b.png"
+    },
+    {
+        "category": "Statement Blocks",
+        "category_description": "Make important information stand out with statement blocks. There are four uniquely-styled statement blocks and a useful note block.",
+        "block_name": "Statement C",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/statement-c.png",
+        "local_image_path": "/home/ubuntu/rise_assets/statement_c.png"
+    },
+    {
+        "category": "Statement Blocks",
+        "category_description": "Make important information stand out with statement blocks. There are four uniquely-styled statement blocks and a useful note block.",
+        "block_name": "Statement D",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/statement-d.png",
+        "local_image_path": "/home/ubuntu/rise_assets/statement_d.png"
+    },
+    {
+        "category": "Statement Blocks",
+        "category_description": "Make important information stand out with statement blocks. There are four uniquely-styled statement blocks and a useful note block.",
+        "block_name": "Note",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/note.png",
+        "local_image_path": "/home/ubuntu/rise_assets/note.png"
+    },
+    {
+        "category": "Quote Blocks",
+        "category_description": "Highlight quotes in your story using these eye-catching quote blocks.",
+        "block_name": "Quote A",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/quote-a.png",
+        "local_image_path": "/home/ubuntu/rise_assets/quote_a.png"
+    },
+    {
+        "category": "Quote Blocks",
+        "category_description": "Highlight quotes in your story using these eye-catching quote blocks.",
+        "block_name": "Quote B",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/quote-b.png",
+        "local_image_path": "/home/ubuntu/rise_assets/quote_b.png"
+    },
+    {
+        "category": "Quote Blocks",
+        "category_description": "Highlight quotes in your story using these eye-catching quote blocks.",
+        "block_name": "Quote C",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/quote-c.png",
+        "local_image_path": "/home/ubuntu/rise_assets/quote_c.png"
+    },
+    {
+        "category": "Quote Blocks",
+        "category_description": "Highlight quotes in your story using these eye-catching quote blocks.",
+        "block_name": "Quote D",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/quote-d.png",
+        "local_image_path": "/home/ubuntu/rise_assets/quote_d.png"
+    },
+    {
+        "category": "Quote Blocks",
+        "category_description": "Highlight quotes in your story using these eye-catching quote blocks.",
+        "block_name": "Quote on image",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/quote-on-image.png",
+        "local_image_path": "/home/ubuntu/rise_assets/quote_on_image.png"
+    },
+    {
+        "category": "Quote Blocks",
+        "category_description": "Highlight quotes in your story using these eye-catching quote blocks.",
+        "block_name": "Quote carousel",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/quote-carousel.png",
+        "local_image_path": "/home/ubuntu/rise_assets/quote_carousel.png"
+    },
+    {
+        "category": "List Blocks",
+        "category_description": "Make your point with lists. Choose from three styles.",
+        "block_name": "Numbered list",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/numbered-list.png",
+        "local_image_path": "/home/ubuntu/rise_assets/numbered_list.png"
+    },
+    {
+        "category": "List Blocks",
+        "category_description": "Make your point with lists. Choose from three styles.",
+        "block_name": "Checkbox list",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/checkbox-list.png",
+        "local_image_path": "/home/ubuntu/rise_assets/checkbox_list.png"
+    },
+    {
+        "category": "List Blocks",
+        "category_description": "Make your point with lists. Choose from three styles.",
+        "block_name": "Bulleted list",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/bulleted-list.png",
+        "local_image_path": "/home/ubuntu/rise_assets/bulleted_list.png"
+    },
+    {
+        "category": "Image Blocks",
+        "category_description": "Make pictures pop with these stunning image blocks.",
+        "block_name": "Image centered",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/image-centered.png",
+        "local_image_path": "/home/ubuntu/rise_assets/image_centered.png"
+    },
+    {
+        "category": "Image Blocks",
+        "category_description": "Make pictures pop with these stunning image blocks.",
+        "block_name": "Image full width",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/image-full-width.png",
+        "local_image_path": "/home/ubuntu/rise_assets/image_full_width.png"
+    },
+    {
+        "category": "Image Blocks",
+        "category_description": "Make pictures pop with these stunning image blocks.",
+        "block_name": "Image & text",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/image-and-text.png",
+        "local_image_path": "/home/ubuntu/rise_assets/image___text.png"
+    },
+    {
+        "category": "Image Blocks",
+        "category_description": "Make pictures pop with these stunning image blocks.",
+        "block_name": "Text on image",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/text-on-image.png",
+        "local_image_path": "/home/ubuntu/rise_assets/text_on_image.png"
+    },
+    {
+        "category": "Image Blocks",
+        "category_description": "Make pictures pop with these stunning image blocks.",
+        "block_name": "Banner",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/banner.png",
+        "local_image_path": "/home/ubuntu/rise_assets/banner.png"
+    },
+    {
+        "category": "Gallery Blocks",
+        "category_description": "Showcase multiple images in gallery blocks, including carousels and grids.",
+        "block_name": "Carousel",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/carousel.png",
+        "local_image_path": "/home/ubuntu/rise_assets/carousel.png"
+    },
+    {
+        "category": "Gallery Blocks",
+        "category_description": "Showcase multiple images in gallery blocks, including carousels and grids.",
+        "block_name": "Two column grid",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/two-column-grid.png",
+        "local_image_path": "/home/ubuntu/rise_assets/two_column_grid.png"
+    },
+    {
+        "category": "Gallery Blocks",
+        "category_description": "Showcase multiple images in gallery blocks, including carousels and grids.",
+        "block_name": "Three column grid",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/three-column-grid.png",
+        "local_image_path": "/home/ubuntu/rise_assets/three_column_grid.png"
+    },
+    {
+        "category": "Gallery Blocks",
+        "category_description": "Showcase multiple images in gallery blocks, including carousels and grids.",
+        "block_name": "Four column grid",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/four-column-grid.png",
+        "local_image_path": "/home/ubuntu/rise_assets/four_column_grid.png"
+    },
+    {
+        "category": "Multimedia Blocks",
+        "category_description": "Create media-rich content with multimedia blocks, including audio clips, videos, website embeds, file attachments, and code snippets (text only).",
+        "block_name": "Audio",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/audio.png",
+        "local_image_path": "/home/ubuntu/rise_assets/audio.png"
+    },
+    {
+        "category": "Multimedia Blocks",
+        "category_description": "Create media-rich content with multimedia blocks, including audio clips, videos, website embeds, file attachments, and code snippets (text only).",
+        "block_name": "Video",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/video.png",
+        "local_image_path": "/home/ubuntu/rise_assets/video.png"
+    },
+    {
+        "category": "Multimedia Blocks",
+        "category_description": "Create media-rich content with multimedia blocks, including audio clips, videos, website embeds, file attachments, and code snippets (text only).",
+        "block_name": "Embed",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/embed.png",
+        "local_image_path": "/home/ubuntu/rise_assets/embed.png"
+    },
+    {
+        "category": "Multimedia Blocks",
+        "category_description": "Create media-rich content with multimedia blocks, including audio clips, videos, website embeds, file attachments, and code snippets (text only).",
+        "block_name": "Attachment",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/attachment.png",
+        "local_image_path": "/home/ubuntu/rise_assets/attachment.png"
+    },
+    {
+        "category": "Multimedia Blocks",
+        "category_description": "Create media-rich content with multimedia blocks, including audio clips, videos, website embeds, file attachments, and code snippets (text only).",
+        "block_name": "Code snippet",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/code-snippet.png",
+        "local_image_path": "/home/ubuntu/rise_assets/code_snippet.png"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Give learners a hands-on experience with these engaging interactive blocks.",
+        "block_name": "Accordion",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/accordion.png",
+        "local_image_path": "/home/ubuntu/rise_assets/accordion.png"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Give learners a hands-on experience with these engaging interactive blocks.",
+        "block_name": "Tabs",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/tabs.png",
+        "local_image_path": "/home/ubuntu/rise_assets/tabs.png"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Give learners a hands-on experience with these engaging interactive blocks.",
+        "block_name": "Labeled Graphic",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/Rise_Labeled_Graphics.jpg",
+        "local_image_path": "/home/ubuntu/rise_assets/labeled_graphic.jpg"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Give learners a hands-on experience with these engaging interactive blocks.",
+        "block_name": "Process",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/rise-process-block.png",
+        "local_image_path": "/home/ubuntu/rise_assets/process.png"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Give learners a hands-on experience with these engaging interactive blocks.",
+        "block_name": "Scenario",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/Rise-360-Scenario-Block-Icon.png",
+        "local_image_path": "/home/ubuntu/rise_assets/scenario.png"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Give learners a hands-on experience with these engaging interactive blocks.",
+        "block_name": "Sorting Activity",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/Rise_Sorting_Activity.jpg",
+        "local_image_path": "/home/ubuntu/rise_assets/sorting_activity.jpg"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Give learners a hands-on experience with these engaging interactive blocks.",
+        "block_name": "Timeline",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/Rise-Timeline-Block-New.jpg",
+        "local_image_path": "/home/ubuntu/rise_assets/timeline.jpg"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Give learners a hands-on experience with these engaging interactive blocks.",
+        "block_name": "Flashcard grid",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/flashcard-grid.png",
+        "local_image_path": "/home/ubuntu/rise_assets/flashcard_grid.png"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Give learners a hands-on experience with these engaging interactive blocks.",
+        "block_name": "Flashcard stack",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/flashcard-stack.png",
+        "local_image_path": "/home/ubuntu/rise_assets/flashcard_stack.png"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Give learners a hands-on experience with these engaging interactive blocks.",
+        "block_name": "Button",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/button.png",
+        "local_image_path": "/home/ubuntu/rise_assets/button.png"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Give learners a hands-on experience with these engaging interactive blocks.",
+        "block_name": "Button stack",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/button-stack.png",
+        "local_image_path": "/home/ubuntu/rise_assets/button_stack.png"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Give learners a hands-on experience with these engaging interactive blocks.",
+        "block_name": "Storyline",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/storyline.png",
+        "local_image_path": "/home/ubuntu/rise_assets/storyline.png"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Create varied, engaging assessments with these blocks to determine how well your learners are absorbing your content.",
+        "block_name": "Multiple Choice",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/Rise-KC-Multiple-Choice-Small.jpg",
+        "local_image_path": "/home/ubuntu/rise_assets/multiple_choice.jpg"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Create varied, engaging assessments with these blocks to determine how well your learners are absorbing your content.",
+        "block_name": "Multiple Response",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/Rise-KC-Multiple-Select-New.jpg",
+        "local_image_path": "/home/ubuntu/rise_assets/multiple_response.jpg"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Create varied, engaging assessments with these blocks to determine how well your learners are absorbing your content.",
+        "block_name": "Fill in the Blank",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/Rise-KC-Fill-in-the-Blank-New.jpg",
+        "local_image_path": "/home/ubuntu/rise_assets/fill_in_the_blank.jpg"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Create varied, engaging assessments with these blocks to determine how well your learners are absorbing your content.",
+        "block_name": "Matching",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/Rise-KC-Matching-New.jpg",
+        "local_image_path": "/home/ubuntu/rise_assets/matching.jpg"
+    },
+    {
+        "category": "Interactive Blocks",
+        "category_description": "Create varied, engaging assessments with these blocks to determine how well your learners are absorbing your content.",
+        "block_name": "Draw from Question Bank",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/question-bank.png",
+        "local_image_path": "/home/ubuntu/rise_assets/draw_from_question_bank.png"
+    },
+    {
+        "category": "Chart Blocks",
+        "category_description": "Create gorgeous data visualizations to your projects with chart blocks. It's simple to build bar, line, and pie charts your learners will love.",
+        "block_name": "Bar",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/Rise-360-Bar-Chart.png",
+        "local_image_path": "/home/ubuntu/rise_assets/bar.png"
+    },
+    {
+        "category": "Chart Blocks",
+        "category_description": "Create gorgeous data visualizations to your projects with chart blocks. It's simple to build bar, line, and pie charts your learners will love.",
+        "block_name": "Line",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/Rise-360-Line-Chart.png",
+        "local_image_path": "/home/ubuntu/rise_assets/line.png"
+    },
+    {
+        "category": "Chart Blocks",
+        "category_description": "Create gorgeous data visualizations to your projects with chart blocks. It's simple to build bar, line, and pie charts your learners will love.",
+        "block_name": "Pie",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/Rise-360-Pie-Chart.png",
+        "local_image_path": "/home/ubuntu/rise_assets/pie.png"
+    },
+    {
+        "category": "Divider Blocks",
+        "category_description": "Organize block lessons into logical sections with dividers, numbered dividers, and spacers. And use continue blocks to encourage learners to master content before moving on.",
+        "block_name": "Continue",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/continue.png",
+        "local_image_path": "/home/ubuntu/rise_assets/continue.png"
+    },
+    {
+        "category": "Divider Blocks",
+        "category_description": "Organize block lessons into logical sections with dividers, numbered dividers, and spacers. And use continue blocks to encourage learners to master content before moving on.",
+        "block_name": "Divider",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/divider.png",
+        "local_image_path": "/home/ubuntu/rise_assets/divider.png"
+    },
+    {
+        "category": "Divider Blocks",
+        "category_description": "Organize block lessons into logical sections with dividers, numbered dividers, and spacers. And use continue blocks to encourage learners to master content before moving on.",
+        "block_name": "Numbered Divider",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/numbered-divider.png",
+        "local_image_path": "/home/ubuntu/rise_assets/numbered_divider.png"
+    },
+    {
+        "category": "Divider Blocks",
+        "category_description": "Organize block lessons into logical sections with dividers, numbered dividers, and spacers. And use continue blocks to encourage learners to master content before moving on.",
+        "block_name": "Spacer",
+        "image_url": "https://cdn.articulate.com/assets/kb/360/rise-blocks/spacer.png",
+        "local_image_path": "/home/ubuntu/rise_assets/spacer.png"
+    }
+]

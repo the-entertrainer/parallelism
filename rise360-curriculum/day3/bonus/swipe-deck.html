@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swipe practice — static or interactive?</title>
+<style>
+  :root { --ink:#12161F; --slate:#5A6675; --line:#E2E6EB; --ember:#ED6A2A; --yes:#1F8A5B; --no:#C2410C }
+  * { box-sizing:border-box }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         background:#F4F6F8; color:var(--ink); padding:24px; font:16px/1.5 "Segoe UI", Roboto, Arial, sans-serif }
+  .app { width:min(340px,86vw); text-align:center }
+  .lead { font-size:14px; color:var(--slate); margin:0 0 4px }
+  .q { font-size:19px; font-weight:700; margin:0 0 16px }
+  .deck { position:relative; height:min(430px,62vh); margin-bottom:18px }
+  .card { position:absolute; inset:0; background:#fff; border:1px solid var(--line); border-radius:18px;
+          box-shadow:0 10px 30px rgba(18,22,31,.13); padding:26px 24px; display:flex; flex-direction:column;
+          justify-content:center; cursor:grab; touch-action:none; user-select:none; will-change:transform }
+  .card.animate { transition:transform .32s cubic-bezier(.2,.7,.3,1), opacity .32s }
+  .card .scenario { font-size:19px; font-weight:600; line-height:1.45; margin:0 }
+  .card .hint { margin-top:14px; font-size:13px; color:var(--slate) }
+  .card .n { position:absolute; top:16px; left:20px; font-size:12px; color:var(--slate) }
+  .stamp { position:absolute; top:22px; padding:6px 12px; border:3px solid currentColor; border-radius:10px;
+           font-weight:800; font-size:15px; text-transform:uppercase; opacity:0; pointer-events:none }
+  .stamp.yes { right:20px; color:var(--yes); transform:rotate(12deg) }
+  .stamp.no { left:20px; color:var(--no); transform:rotate(-12deg) }
+  .controls { display:flex; gap:12px }
+  .btn { flex:1; border:1px solid var(--line); background:#fff; color:var(--ink); border-radius:12px;
+         padding:12px 10px; font-size:14px; font-weight:600; cursor:pointer }
+  .btn:focus-visible { outline:3px solid var(--ember); outline-offset:2px }
+  .btn .k { display:block; font-size:11px; font-weight:500; color:var(--slate); margin-top:2px }
+  .meter { margin-top:14px; height:4px; background:var(--line); border-radius:2px }
+  .meter i { display:block; height:100%; width:0; background:var(--ember); transition:width .3s }
+  .done { display:none; background:#fff; border:1px solid var(--line); border-radius:18px; padding:28px }
+  .done h2 { margin:0 0 6px; font-size:22px }   .done p { margin:0 0 18px; color:var(--slate) }
+  .score { font-size:44px; font-weight:800; color:var(--ember); line-height:1 }
+  .sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0) }
+  @media (prefers-reduced-motion:reduce) { .card.animate, .meter i { transition:none } }
+</style>
+</head>
+<body>
+<div class="app">
+  <p class="lead">Swipe practice</p>
+  <p class="q" id="prompt">Would you build this with a static block or an interactive one?</p>
+  <div class="deck" id="deck"></div>
+  <div class="controls">
+    <button class="btn" id="btnNo" type="button">Static block<span class="k">&larr; left arrow</span></button>
+    <button class="btn" id="btnYes" type="button">Interactive<span class="k">right arrow &rarr;</span></button>
+  </div>
+  <div class="meter"><i id="meter"></i></div>
+  <div class="done" id="done">
+    <div class="score" id="score">0/6</div>
+    <h2>Deck finished</h2>
+    <p id="verdict"></p>
+    <button class="btn" id="again" type="button">Go again</button>
+  </div>
+  <p class="sr" role="status" aria-live="polite" id="live"></p>
+</div>
+<script>
+// answer: true = an interactive block earns its place here; false = a static block does the job.
+var CARDS = [
+  { text:'Twelve policy FAQs that most learners will never read in full.', answer:true,
+    why:'Accordion — hide the secondary text, let people open only what they need.' },
+  { text:'One sentence you want every learner to remember.', answer:false,
+    why:'Statement block. An interaction would bury the thing you are emphasising.' },
+  { text:'Three pricing plans the learner needs to compare.', answer:true,
+    why:'Tabs — same shape of content, switched in place, easy to compare.' },
+  { text:'A photo of the reader with five parts to name.', answer:true,
+    why:'Labeled Graphic — markers on the image beat a list underneath it.' },
+  { text:'A two-line safety warning that must not be missed.', answer:false,
+    why:'Note block. Never hide a warning behind a click.' },
+  { text:'A refund call where the answer depends on what the customer says.', answer:true,
+    why:'Scenario — a decision needs consequences, not an explanation.' }
+];
+var THRESHOLD = 96;                                    // px of travel that commits a swipe
+var deckEl = document.getElementById('deck'), doneEl = document.getElementById('done');
+var meterEl = document.getElementById('meter'), liveEl = document.getElementById('live');
+var idx, right;
+
+function show(on) {                                    // flip between the deck and the result
+  ['deck','prompt'].forEach(function (id) { document.getElementById(id).style.display = on ? '' : 'none' });
+  document.querySelector('.controls').style.display = on ? '' : 'none';
+  document.querySelector('.meter').style.display = on ? '' : 'none';
+  doneEl.style.display = on ? 'none' : 'block';
+}
+function start() { idx = 0; right = 0; show(true); render() }
+
+function render() {                                    // draw at most three cards, back to front
+  deckEl.innerHTML = '';
+  for (var i = Math.min(idx + 2, CARDS.length - 1); i >= idx; i--) {
+    var d = i - idx, el = document.createElement('article');
+    el.className = 'card';
+    el.style.zIndex = 100 - d;
+    el.style.transform = 'translateY(' + d * 10 + 'px) scale(' + (1 - d * 0.04) + ')';
+    el.innerHTML = '<span class="n">' + (i + 1) + ' of ' + CARDS.length + '</span>' +
+      '<span class="stamp yes">Interactive</span><span class="stamp no">Static</span>' +
+      '<p class="scenario">' + CARDS[i].text + '</p>' +
+      (d ? '' : '<p class="hint">Drag the card, use the buttons, or press &larr; / &rarr;</p>');
+    deckEl.appendChild(el);
+    if (!d) attach(el);
+  }
+  meterEl.style.width = (idx / CARDS.length * 100) + '%';
+}
+
+function attach(el) {
+  var startX = 0, dx = 0, dy = 0, dragging = false;
+  var yes = el.querySelector('.stamp.yes'), no = el.querySelector('.stamp.no');
+  el.addEventListener('pointerdown', function (e) {     // one path for mouse, touch and pen
+    dragging = true; startX = e.clientX;
+    el.setPointerCapture(e.pointerId); el.classList.remove('animate');
+  });
+  el.addEventListener('pointermove', function (e) {
+    if (!dragging) return;
+    dx = e.clientX - startX;
+    el.style.transform = 'translate(' + dx + 'px,' + dy + 'px) rotate(' + dx / 18 + 'deg)';
+    var t = Math.min(Math.abs(dx) / THRESHOLD, 1);      // stamps fade in as the card travels
+    yes.style.opacity = dx > 0 ? t : 0;
+    no.style.opacity = dx < 0 ? t : 0;
+  });
+  function release() {
+    if (!dragging) return;
+    dragging = false;
+    el.classList.add('animate');
+    if (Math.abs(dx) >= THRESHOLD) commit(el, dx > 0);   // past the line: fly off
+    else { el.style.transform = ''; yes.style.opacity = no.style.opacity = 0 }  // short: snap back
+    dx = 0;
+  }
+  el.addEventListener('pointerup', release);
+  el.addEventListener('pointercancel', release);
+}
+
+function commit(el, saidInteractive) {
+  var card = CARDS[idx], correct = (card.answer === saidInteractive);
+  if (correct) right++;
+  el.classList.add('animate');
+  el.style.transform = 'translate(' + (saidInteractive ? 1 : -1) * (window.innerWidth || 800) +
+    'px, 40px) rotate(' + (saidInteractive ? 24 : -24) + 'deg)';
+  el.style.opacity = '0';
+  liveEl.textContent = (correct ? 'Correct. ' : 'Not quite. ') + card.why;
+  setTimeout(function () { idx++; idx >= CARDS.length ? finish() : render() }, 300);
+}
+
+function choose(saidInteractive) {                      // buttons and keys use the same path,
+  var top = deckEl.querySelector('.card');              // so it works without a pointer
+  if (top) commit(top, saidInteractive);
+}
+document.getElementById('btnYes').addEventListener('click', function () { choose(true) });
+document.getElementById('btnNo').addEventListener('click', function () { choose(false) });
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'ArrowRight') choose(true);
+  if (e.key === 'ArrowLeft') choose(false);
+});
+
+function finish() {
+  show(false);
+  document.getElementById('score').textContent = right + '/' + CARDS.length;
+  document.getElementById('verdict').textContent = right === CARDS.length
+    ? 'Every one right. You are picking interactions on purpose.'
+    : 'Read the feedback for the ones you missed, then go again.';
+}
+document.getElementById('again').addEventListener('click', start);
+start();
+</script>
+</body>
+</html>
